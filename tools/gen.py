@@ -370,12 +370,12 @@ add(F("sink", "シンク", "Sink", "sink", [
     b(0, 0, 1, 16, 12, 16, "p"), b(0, 12, 0, 16, 14, 16, "m"), b(0, 14, 0, 2, 16, 16, "m"), b(14, 14, 0, 16, 16, 16, "m"),
     b(2, 14, 0, 14, 16, 2, "m"), b(2, 14, 14, 14, 16, 16, "m"), b(7, 16, 13, 9, 21, 15, "m", shape=False), b(7, 19, 9, 9, 21, 13, "m", shape=False),
     b(2, 12.5, 2, 14, 13, 14, "q", shape=False)],
-    {"p": "minecraft:block/oak_planks", "m": IRON, "q": "minecraft:block/water_still"}, sound="metal", tool="pickaxe",
+    {"p": "minecraft:block/oak_planks", "m": IRON, "q": "jsn_furniture:block/water"}, sound="metal", tool="pickaxe",
     recipe=(["I I", "IWI", "PPP"], {"I": "minecraft:iron_ingot", "W": "minecraft:water_bucket", "P": "#minecraft:planks"})))
 add(F("bathtub", "お風呂", "Bathtub", "seat", [
     b(0, 0, 0, 16, 2, 16, "q"), b(0, 2, 0, 16, 10, 1.5, "q"), b(0, 2, 14.5, 16, 10, 16, "q"), b(0, 2, 1.5, 1.5, 10, 14.5, "q"),
     b(14.5, 2, 1.5, 16, 10, 14.5, "q"), b(1.5, 7, 1.5, 14.5, 7.5, 14.5, "a", shape=False)],
-    {"q": QUARTZ, "a": "minecraft:block/water_still"}, seat=3, sound="stone", tool="pickaxe",
+    {"q": QUARTZ, "a": "jsn_furniture:block/water"}, seat=3, sound="stone", tool="pickaxe",
     recipe=(["Q Q", "QQQ"], {"Q": "minecraft:quartz_block"})))
 add(F("toilet", "トイレ", "Toilet", "seat", [
     b(5, 0, 3, 11, 6, 11, "q"), b(3, 6, 1, 13, 8, 12, "q"), b(3, 8, 1, 13, 8.5, 12, "w", shape=False), b(3, 6, 12, 13, 18, 16, "q", shape=False),
@@ -477,7 +477,7 @@ for i, (kid, kja, ken) in enumerate((("fuji", "富士山", "Mt. Fuji"), ("koi", 
 add(F("bonsai", "盆栽", "Bonsai", "basic", [
     b(3, 0, 5, 13, 3, 11, "t"), b(7, 3, 7, 9, 8, 9, "l", shape=False), b(5, 7, 6, 9, 8, 8, "l", shape=False),
     b(3, 8, 4, 9, 11, 10, "f", shape=False), b(8, 9, 6, 13, 12, 10, "f", shape=False), b(5, 11, 5, 10, 13, 9, "f", shape=False)],
-    {"t": "minecraft:block/brown_terracotta", "l": "minecraft:block/spruce_log", "f": "minecraft:block/spruce_leaves_opaque"},
+    {"t": "minecraft:block/brown_terracotta", "l": "minecraft:block/spruce_log", "f": "minecraft:block/azalea_leaves"},
     tab="wa", sound="grass", recipe=(["L", "S", "T"], {"L": "minecraft:spruce_sapling", "S": "minecraft:stick", "T": "minecraft:brown_terracotta"})))
 add(F("wagasa", "和傘", "Wagasa Umbrella", "basic", [
     b(7.5, 0, 7.5, 8.5, 26, 8.5, "s"), b(5, 0, 5, 11, 1, 11, "s"),
@@ -742,6 +742,11 @@ def make_textures():
         im = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
         im.paste(top.resize((8, 8), Image.NEAREST), (4, 0)); im.paste(bot.resize((8, 8), Image.NEAREST), (4, 8))
         save(im, f"item/{name}")
+    # 水（バニラの水の絵は色をつけて使う前提なので、青い水を用意）
+    im = Image.new("RGBA", (16, 16)); noise_fill(im, (60, 110, 210), 10, 35); d = ImageDraw.Draw(im)
+    for y in (3, 9, 14):
+        d.line([(1, y), (5, y - 1), (9, y)], fill=(140, 180, 240, 255))
+    save(im, "block/water")
     # ベッドの布
     im = Image.new("RGBA", (16, 16)); noise_fill(im, (240, 240, 245), 3, 31); save(im, "block/bed_sheet")
     im = Image.new("RGBA", (16, 16)); noise_fill(im, (70, 100, 170), 5, 33); d = ImageDraw.Draw(im)

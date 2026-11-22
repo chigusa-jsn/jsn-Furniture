@@ -3,7 +3,7 @@
  "textures": {
   "p": "minecraft:block/oak_planks",
   "m": "minecraft:block/iron_block",
-  "q": "minecraft:block/water_still",
+  "q": "jsn_furniture:block/water",
   "particle": "minecraft:block/oak_planks"
  },
  "elements": [

@@ -3,7 +3,7 @@
  "textures": {
   "t": "minecraft:block/brown_terracotta",
   "l": "minecraft:block/spruce_log",
-  "f": "minecraft:block/spruce_leaves_opaque",
+  "f": "minecraft:block/azalea_leaves",
   "particle": "minecraft:block/brown_terracotta"
  },
  "elements": [

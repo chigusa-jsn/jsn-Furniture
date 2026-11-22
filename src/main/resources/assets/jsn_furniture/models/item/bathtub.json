@@ -2,7 +2,7 @@
  "parent": "minecraft:block/block",
  "textures": {
   "q": "minecraft:block/quartz_block_side",
-  "a": "minecraft:block/water_still",
+  "a": "jsn_furniture:block/water",
   "particle": "minecraft:block/quartz_block_side"
  },
  "elements": [
