@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "III",
+  "IWI",
+  "III"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "W": {
+   "item": "minecraft:water_bucket"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:washing_machine",
+  "count": 1
+ }
+}

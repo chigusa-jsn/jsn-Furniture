@@ -265,6 +265,23 @@ public class FurnitureBlock extends Block implements EntityBlock {
                 if (!level.isClientSide) SeatEntity.sit(level, pos, spec.seat() / 16.0, player, st.getValue(FACING));
                 return InteractionResult.sidedSuccess(level.isClientSide);
             }
+            case "swing" -> {
+                if (player.isShiftKeyDown()) return InteractionResult.PASS;
+                if (!level.isClientSide) SeatEntity.ride(level, pos, player, st.getValue(FACING), SeatEntity.SWING);
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
+            case "slide" -> {
+                if (!level.isClientSide) SeatEntity.ride(level, pos, player, st.getValue(FACING), SeatEntity.SLIDE);
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
+            case "instrument" -> {
+                if (!level.isClientSide) Instruments.play((ServerLevel) level, pos, st.getValue(FACING), spec.instrument(), hit, player);
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
+            case "darts" -> {
+                if (!level.isClientSide) Instruments.darts((ServerLevel) level, pos, player);
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
             case "pet" -> {
                 if (!level.isClientSide) SeatEntity.seatPet(level, pos, spec.seat() / 16.0, player, st.getValue(FACING));
                 return InteractionResult.sidedSuccess(level.isClientSide);
@@ -355,6 +372,20 @@ public class FurnitureBlock extends Block implements EntityBlock {
             }
             return;
         }
+        String pp = spec.particles();
+        if (pp.equals("fountain")) {
+            for (int i = 0; i < 3; i++) {
+                level.addParticle(ParticleTypes.SPLASH, pos.getX() + 0.5 + (r.nextDouble() - 0.5) * 0.15, pos.getY() + 0.85, pos.getZ() + 0.5 + (r.nextDouble() - 0.5) * 0.15,
+                        (r.nextDouble() - 0.5) * 0.2, 0.3, (r.nextDouble() - 0.5) * 0.2);
+            }
+            if (r.nextInt(3) == 0) level.addParticle(ParticleTypes.FALLING_WATER, pos.getX() + 0.3 + r.nextDouble() * 0.4, pos.getY() + 0.66, pos.getZ() + 0.3 + r.nextDouble() * 0.4, 0, 0, 0);
+            if (r.nextInt(30) == 0) level.playLocalSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, SoundEvents.WATER_AMBIENT, SoundSource.BLOCKS, 0.3f, 1.2f, false);
+            return;
+        }
+        if (pp.equals("steam")) {
+            if (r.nextInt(3) == 0) level.addParticle(ParticleTypes.WHITE_SMOKE, pos.getX() + 0.5 + (r.nextDouble() - 0.5) * 0.4, pos.getY() + 0.95, pos.getZ() + 0.5 + (r.nextDouble() - 0.5) * 0.4, 0, 0.03, 0);
+            return;
+        }
         if (st.hasProperty(LIT) && st.getValue(LIT) && !upper(st)) {
             String p = spec.particles();
             if (p.contains("flame") && r.nextInt(2) == 0) {
@@ -394,6 +425,7 @@ public class FurnitureBlock extends Block implements EntityBlock {
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState st) {
         if (upper(st)) return null;
+        if (!spec.anim().isEmpty()) return new AnimBlockEntity(pos, st);
         return switch (spec.kind()) {
             case "storage" -> new StorageBlockEntity(pos, st);
             case "display" -> new DisplayBlockEntity(pos, st);

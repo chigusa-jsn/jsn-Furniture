@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "IRI",
+  "IGI",
+  "ICI"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:vending_machine",
+  "count": 1
+ }
+}

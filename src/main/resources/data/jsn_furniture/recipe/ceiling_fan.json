@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PIP",
+  " G "
+ ],
+ "key": {
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "G": {
+   "item": "minecraft:glowstone_dust"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:ceiling_fan",
+  "count": 1
+ }
+}

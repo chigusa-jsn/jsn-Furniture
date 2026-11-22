@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "  S",
+  "PPP",
+  "C C"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "P": {
+   "item": "minecraft:bamboo_planks"
+  },
+  "C": {
+   "item": "minecraft:bamboo_slab"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bamboo_rocking_chair",
+  "count": 1
+ }
+}

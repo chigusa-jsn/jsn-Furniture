@@ -1,0 +1,82 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "w": "minecraft:block/white_concrete",
+  "t": "minecraft:block/light_gray_concrete",
+  "r": "jsn_furniture:block/washer_ring",
+  "k": "minecraft:block/black_concrete",
+  "d": "jsn_furniture:block/washer_drum",
+  "particle": "minecraft:block/white_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    4,
+    3,
+    1.4
+   ],
+   "to": [
+    12,
+    11,
+    1.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d",
+     "uv": [
+      4,
+      5,
+      12,
+      13
+     ]
+    },
+    "south": {
+     "texture": "#d",
+     "uv": [
+      4,
+      5,
+      12,
+      13
+     ]
+    },
+    "east": {
+     "texture": "#d",
+     "uv": [
+      14.4,
+      5,
+      14.6,
+      13
+     ]
+    },
+    "west": {
+     "texture": "#d",
+     "uv": [
+      1.4,
+      5,
+      1.6,
+      13
+     ]
+    },
+    "up": {
+     "texture": "#d",
+     "uv": [
+      4,
+      1.4,
+      12,
+      1.6
+     ]
+    },
+    "down": {
+     "texture": "#d",
+     "uv": [
+      4,
+      14.4,
+      12,
+      14.6
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

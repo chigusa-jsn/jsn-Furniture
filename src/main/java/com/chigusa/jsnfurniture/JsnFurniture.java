@@ -90,9 +90,18 @@ public class JsnFurniture {
     public static final Supplier<BlockEntityType<FurinBlockEntity>> FURIN_BE = BLOCK_ENTITIES.register("furin",
             () -> BlockEntityType.Builder.of(FurinBlockEntity::new, blocksOf("furin")).build(null));
 
+    public static final Supplier<BlockEntityType<com.chigusa.jsnfurniture.block.AnimBlockEntity>> ANIM_BE = BLOCK_ENTITIES.register("anim",
+            () -> BlockEntityType.Builder.of(com.chigusa.jsnfurniture.block.AnimBlockEntity::new, animBlocks()).build(null));
+
+    private static Block[] animBlocks() {
+        List<Block> list = new ArrayList<>();
+        for (Spec s : Spec.ALL) if (!s.anim().isEmpty()) list.add(FURNITURE.get(s.id()).get());
+        return list.toArray(new Block[0]);
+    }
+
     public static final Supplier<EntityType<SeatEntity>> SEAT = ENTITIES.register("seat",
             () -> EntityType.Builder.<SeatEntity>of(SeatEntity::new, MobCategory.MISC).sized(0.001f, 0.001f).noSummon()
-                    .clientTrackingRange(10).updateInterval(20).build("seat"));
+                    .clientTrackingRange(10).updateInterval(5).build("seat"));
 
     static {
         tab("west", "chair");

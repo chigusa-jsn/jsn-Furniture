@@ -64,6 +64,23 @@
   "jsn_furniture:furin_turtle",
   "jsn_furniture:furin_allay",
   "jsn_furniture:furin_enaga",
-  "jsn_furniture:furin_capybara"
+  "jsn_furniture:furin_capybara",
+  "jsn_furniture:swing",
+  "jsn_furniture:slide",
+  "jsn_furniture:fountain",
+  "jsn_furniture:flower_bed_red",
+  "jsn_furniture:flower_bed_yellow",
+  "jsn_furniture:flower_bed_tulip",
+  "jsn_furniture:flower_bed_sunflower",
+  "jsn_furniture:flower_bed_mix",
+  "jsn_furniture:garden_table",
+  "jsn_furniture:garden_chair",
+  "jsn_furniture:washing_machine",
+  "jsn_furniture:tv",
+  "jsn_furniture:game_console",
+  "jsn_furniture:piano",
+  "jsn_furniture:telescope",
+  "jsn_furniture:coffee_machine",
+  "jsn_furniture:vending_machine"
  ]
 }

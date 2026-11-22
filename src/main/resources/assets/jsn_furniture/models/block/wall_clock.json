@@ -3,6 +3,7 @@
  "textures": {
   "c": "jsn_furniture:block/clock_face",
   "d": "minecraft:block/dark_oak_planks",
+  "h": "minecraft:block/black_concrete",
   "particle": "jsn_furniture:block/clock_face"
  },
  "elements": [

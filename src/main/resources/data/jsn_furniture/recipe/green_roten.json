@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  "S S",
+  "PCP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:green_wool"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:green_roten",
+  "count": 1
+ }
+}

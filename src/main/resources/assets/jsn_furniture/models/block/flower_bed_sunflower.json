@@ -1,0 +1,328 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "b": "minecraft:block/bricks",
+  "d": "minecraft:block/dirt",
+  "f0": "minecraft:block/sunflower_front",
+  "f1": "minecraft:block/sunflower_front",
+  "f2": "minecraft:block/sunflower_front",
+  "particle": "minecraft:block/bricks"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    6,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#b",
+     "uv": [
+      0,
+      10,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#b",
+     "uv": [
+      0,
+      10,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#b",
+     "uv": [
+      0,
+      10,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#b",
+     "uv": [
+      0,
+      10,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#b",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    -0.5,
+    6,
+    4
+   ],
+   "to": [
+    8.5,
+    18,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f0",
+     "uv": [
+      -0.5,
+      -2,
+      8.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f0",
+     "uv": [
+      -0.5,
+      -2,
+      8.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": 45
+   }
+  },
+  {
+   "from": [
+    -0.5,
+    6,
+    4
+   ],
+   "to": [
+    8.5,
+    18,
+    4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f0",
+     "uv": [
+      -0.5,
+      -2,
+      8.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f0",
+     "uv": [
+      -0.5,
+      -2,
+      8.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": -45
+   }
+  },
+  {
+   "from": [
+    7.5,
+    6,
+    7
+   ],
+   "to": [
+    16.5,
+    18,
+    7
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f1",
+     "uv": [
+      7.5,
+      -2,
+      16.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f1",
+     "uv": [
+      7.5,
+      -2,
+      16.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": 45
+   }
+  },
+  {
+   "from": [
+    7.5,
+    6,
+    7
+   ],
+   "to": [
+    16.5,
+    18,
+    7
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f1",
+     "uv": [
+      7.5,
+      -2,
+      16.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f1",
+     "uv": [
+      7.5,
+      -2,
+      16.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": -45
+   }
+  },
+  {
+   "from": [
+    1.5,
+    6,
+    12
+   ],
+   "to": [
+    10.5,
+    18,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f2",
+     "uv": [
+      1.5,
+      -2,
+      10.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f2",
+     "uv": [
+      1.5,
+      -2,
+      10.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": 45
+   }
+  },
+  {
+   "from": [
+    1.5,
+    6,
+    12
+   ],
+   "to": [
+    10.5,
+    18,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f2",
+     "uv": [
+      1.5,
+      -2,
+      10.5,
+      10
+     ]
+    },
+    "south": {
+     "texture": "#f2",
+     "uv": [
+      1.5,
+      -2,
+      10.5,
+      10
+     ]
+    }
+   },
+   "rotation": {
+    "origin": [
+     8,
+     8,
+     8
+    ],
+    "axis": "y",
+    "angle": -45
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

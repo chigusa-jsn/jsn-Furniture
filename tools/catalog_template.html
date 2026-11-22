@@ -77,7 +77,7 @@ footer{color:var(--sub);font-size:14px}
   <div class="room" id="room" role="img" aria-label="家具を並べた部屋"></div>
 </div></header>
 <nav><div class="wrap">
-  <a href="#wood">木の家具</a><a href="#color">色の家具</a><a href="#west">洋風</a><a href="#wa">和風</a><a href="#animal">動物</a><a href="#furin">風鈴</a>
+  <a href="#wood">木の家具</a><a href="#color">色の家具</a><a href="#west">洋風</a><a href="#wa">和風</a><a href="#play">お庭・遊び</a><a href="#shop">お店・屋台</a><a href="#animal">動物</a><a href="#furin">風鈴</a>
 </div></nav>
 <section class="band" id="wood"><div class="wrap">
   <h2>木の家具</h2><p class="lead">オーク・トウヒ・シラカバなど、11種類の木で作れます。丸いボタンで木を切り替え、「全部見る」で並べて比べられます。</p>
@@ -94,6 +94,14 @@ footer{color:var(--sub);font-size:14px}
 <section class="band" id="wa"><div class="wrap">
   <h2>和風</h2><p class="lead">畳の部屋、縁側、神社の入り口まで。</p>
   <div class="grid" id="g-wa"></div>
+</div></section>
+<section class="band" id="play"><div class="wrap">
+  <h2>お庭・動く家具・遊び</h2><p class="lead">ブランコはゆれて、すべり台はすべれます。時計の針はゲームの時間で動き、ピアノや木琴は押した場所で音の高さが変わります。</p>
+  <div class="grid" id="g-play"></div>
+</div></section>
+<section class="band" id="shop"><div class="wrap">
+  <h2>お店・屋台</h2><p class="lead">夏祭りの屋台や露店、カフェの道具。屋台や露店には品物を入れておけます。</p>
+  <div class="grid" id="g-shop"></div>
 </div></section>
 <section class="band" id="animal"><div class="wrap">
   <h2>動物</h2><p class="lead">縁起物の置物、ぬいぐるみ、クッション、ペットの家具、動物の形の家具。マイクラの動物や、シマエナガ・カピバラも。ペットの家具を右クリックすると、リードでつないだ動物か近くの自分のペットが座ります。</p>
@@ -119,7 +127,7 @@ const variant=(t,names,gi,ti)=>`<div class="card wide" data-g="${gi}" data-t="${
 </div>`;
 const G={wood:[D.wood,D.woods],color:[D.color,D.colors]};
 for(const g of ['wood','color'])document.getElementById('g-'+g).innerHTML=G[g][0].map((t,i)=>variant(t,G[g][1],g,i)).join('');
-for(const g of ['west','wa','animal','furin'])document.getElementById('g-'+g).innerHTML=D[g].map(single).join('');
+for(const g of ['west','wa','play','shop','animal','furin'])document.getElementById('g-'+g).innerHTML=D[g].map(single).join('');
 document.addEventListener('click',e=>{
   const card=e.target.closest('.card.wide');if(!card)return;
   const [types,names]=G[card.dataset.g];const t=types[+card.dataset.t];

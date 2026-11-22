@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "BCB",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:bamboo_slab"
+  },
+  "B": {
+   "item": "minecraft:book"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bamboo_bookshelf",
+  "count": 1
+ }
+}

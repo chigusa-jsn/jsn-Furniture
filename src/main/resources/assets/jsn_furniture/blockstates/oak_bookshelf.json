@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/oak_bookshelf"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/oak_bookshelf",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/oak_bookshelf",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/oak_bookshelf",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "RRR",
+  "SXS",
+  "PCP"
+ ],
+ "key": {
+  "R": {
+   "item": "minecraft:red_wool"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "X": {
+   "item": "minecraft:apple"
+  },
+  "P": {
+   "item": "minecraft:spruce_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:yatai_ringoame",
+  "count": 1
+ }
+}

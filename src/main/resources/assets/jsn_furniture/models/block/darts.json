@@ -1,0 +1,79 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "d": "jsn_furniture:block/darts",
+  "k": "minecraft:block/black_concrete",
+  "particle": "jsn_furniture:block/darts"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    1,
+    15
+   ],
+   "to": [
+    15,
+    15,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#k",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    },
+    "east": {
+     "texture": "#k",
+     "uv": [
+      0,
+      1,
+      1,
+      15
+     ]
+    },
+    "west": {
+     "texture": "#k",
+     "uv": [
+      15,
+      1,
+      16,
+      15
+     ]
+    },
+    "up": {
+     "texture": "#k",
+     "uv": [
+      1,
+      15,
+      15,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#k",
+     "uv": [
+      1,
+      0,
+      15,
+      1
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

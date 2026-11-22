@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "  I",
+  " RI",
+  "R I"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "R": {
+   "item": "minecraft:red_concrete"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:slide",
+  "count": 1
+ }
+}

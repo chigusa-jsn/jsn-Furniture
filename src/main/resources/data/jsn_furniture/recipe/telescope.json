@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "  G",
+  " C ",
+  "S S"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "C": {
+   "item": "minecraft:copper_ingot"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:telescope",
+  "count": 1
+ }
+}

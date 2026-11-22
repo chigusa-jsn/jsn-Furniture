@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PNP",
+  "IWI"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:black_concrete"
+  },
+  "N": {
+   "item": "minecraft:note_block"
+  },
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "W": {
+   "item": "minecraft:white_concrete"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:piano",
+  "count": 1
+ }
+}

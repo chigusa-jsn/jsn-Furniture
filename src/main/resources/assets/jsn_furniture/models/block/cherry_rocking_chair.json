@@ -1,0 +1,10 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "p": "minecraft:block/cherry_planks",
+  "s": "minecraft:block/stripped_cherry_log",
+  "particle": "minecraft:block/cherry_planks"
+ },
+ "elements": [],
+ "render_type": "minecraft:cutout"
+}

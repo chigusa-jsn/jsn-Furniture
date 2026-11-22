@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "III",
+  "IBI",
+  "I I"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "B": {
+   "item": "minecraft:cocoa_beans"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:coffee_machine",
+  "count": 1
+ }
+}

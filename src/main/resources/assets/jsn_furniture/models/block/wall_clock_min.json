@@ -1,0 +1,80 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "c": "jsn_furniture:block/clock_face",
+  "d": "minecraft:block/dark_oak_planks",
+  "h": "minecraft:block/black_concrete",
+  "particle": "jsn_furniture:block/clock_face"
+ },
+ "elements": [
+  {
+   "from": [
+    7.7,
+    8,
+    14.5
+   ],
+   "to": [
+    8.3,
+    12,
+    14.7
+   ],
+   "faces": {
+    "north": {
+     "texture": "#h",
+     "uv": [
+      7.7,
+      4,
+      8.3,
+      8
+     ]
+    },
+    "south": {
+     "texture": "#h",
+     "uv": [
+      7.7,
+      4,
+      8.3,
+      8
+     ]
+    },
+    "east": {
+     "texture": "#h",
+     "uv": [
+      1.3,
+      4,
+      1.5,
+      8
+     ]
+    },
+    "west": {
+     "texture": "#h",
+     "uv": [
+      14.5,
+      4,
+      14.7,
+      8
+     ]
+    },
+    "up": {
+     "texture": "#h",
+     "uv": [
+      7.7,
+      14.5,
+      8.3,
+      14.7
+     ]
+    },
+    "down": {
+     "texture": "#h",
+     "uv": [
+      7.7,
+      1.3,
+      8.3,
+      1.5
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/flower_bed_red"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/flower_bed_red",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/flower_bed_red",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/flower_bed_red",
+   "y": 270
+  }
+ }
+}

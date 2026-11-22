@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  "S S",
+  "PCP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:blue_wool"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:blue_roten",
+  "count": 1
+ }
+}

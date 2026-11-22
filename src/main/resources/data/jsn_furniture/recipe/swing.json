@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "III",
+  "I I",
+  "IPI"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "P": {
+   "tag": "minecraft:wooden_slabs"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:swing",
+  "count": 1
+ }
+}

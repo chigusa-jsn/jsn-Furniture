@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "  S",
+  "PS ",
+  "PP "
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:string"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:guitar",
+  "count": 1
+ }
+}

@@ -1,0 +1,350 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "w": "minecraft:block/white_concrete",
+  "particle": "minecraft:block/white_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    14,
+    1
+   ],
+   "to": [
+    15,
+    15,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      2
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      2
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      2
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      2
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    1,
+    7
+   ],
+   "to": [
+    9,
+    14,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      7,
+      2,
+      9,
+      15
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      7,
+      2,
+      9,
+      15
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      7,
+      2,
+      9,
+      15
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      7,
+      2,
+      9,
+      15
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      7,
+      7,
+      9,
+      9
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      7,
+      7,
+      9,
+      9
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    0,
+    7
+   ],
+   "to": [
+    13,
+    1,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      3,
+      15,
+      13,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      3,
+      15,
+      13,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      7,
+      15,
+      9,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      7,
+      15,
+      9,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      3,
+      7,
+      13,
+      9
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      3,
+      7,
+      13,
+      9
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    0,
+    3
+   ],
+   "to": [
+    9,
+    1,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      7,
+      15,
+      9,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      7,
+      15,
+      9,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      3,
+      15,
+      13,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      3,
+      15,
+      13,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      7,
+      3,
+      9,
+      13
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      7,
+      3,
+      9,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    15,
+    7.5
+   ],
+   "to": [
+    8.5,
+    16,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      1
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      1
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      1
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      1
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      7.5,
+      8.5,
+      8.5
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      7.5,
+      7.5,
+      8.5,
+      8.5
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

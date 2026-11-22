@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/flower_bed_sunflower"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/flower_bed_sunflower",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/flower_bed_sunflower",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/flower_bed_sunflower",
+   "y": 270
+  }
+ }
+}

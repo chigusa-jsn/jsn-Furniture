@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "LLL",
+  "WNW",
+  "WWW"
+ ],
+ "key": {
+  "L": {
+   "item": "minecraft:leather"
+  },
+  "W": {
+   "item": "minecraft:stripped_spruce_log"
+  },
+  "N": {
+   "item": "minecraft:note_block"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:taiko",
+  "count": 1
+ }
+}

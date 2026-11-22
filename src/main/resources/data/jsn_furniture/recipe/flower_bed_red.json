@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "FFF",
+  "BDB"
+ ],
+ "key": {
+  "F": {
+   "item": "minecraft:poppy"
+  },
+  "B": {
+   "item": "minecraft:bricks"
+  },
+  "D": {
+   "item": "minecraft:dirt"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:flower_bed_red",
+  "count": 1
+ }
+}

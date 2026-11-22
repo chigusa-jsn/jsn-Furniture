@@ -17,7 +17,7 @@ import java.util.List;
  */
 public record Spec(String id, String kind, String tab, boolean tall, boolean full, float seat, int rows, int light,
                    String sound, boolean wall, boolean hanging, String particles, String furin, boolean passable,
-                   String tool, List<double[]> shape, List<double[]> openShape) {
+                   String tool, List<double[]> shape, List<double[]> openShape, String anim, String instrument, List<String> parts) {
 
     public boolean is(String k) {
         return kind.equals(k);
@@ -41,7 +41,7 @@ public record Spec(String id, String kind, String tab, boolean tall, boolean ful
                         o.get("rows").getAsInt(), o.get("light").getAsInt(), o.get("sound").getAsString(),
                         o.get("wall").getAsBoolean(), o.get("hanging").getAsBoolean(), o.get("particles").getAsString(),
                         o.get("furin").getAsString(), o.get("passable").getAsBoolean(), o.get("tool").getAsString(),
-                        boxes(o.get("shape")), boxes(o.get("open"))));
+                        boxes(o.get("shape")), boxes(o.get("open")), str(o, "anim"), str(o, "instrument"), strings(o.get("parts"))));
             }
             for (JsonElement e : root.getAsJsonArray("beds")) {
                 JsonObject o = e.getAsJsonObject();
@@ -53,6 +53,16 @@ public record Spec(String id, String kind, String tab, boolean tall, boolean ful
         } catch (Exception ex) {
             throw new IllegalStateException("jsn_furniture_specs.json を読めません", ex);
         }
+    }
+
+    private static String str(JsonObject o, String k) {
+        return o.has(k) && !o.get(k).isJsonNull() ? o.get(k).getAsString() : "";
+    }
+
+    private static List<String> strings(JsonElement e) {
+        List<String> out = new ArrayList<>();
+        if (e != null && e.isJsonArray()) for (JsonElement x : e.getAsJsonArray()) out.add(x.getAsString());
+        return out;
     }
 
     private static List<double[]> boxes(JsonElement e) {

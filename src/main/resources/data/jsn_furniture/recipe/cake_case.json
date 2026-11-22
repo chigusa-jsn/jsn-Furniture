@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "GGG",
+  "GCG",
+  "QQQ"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass"
+  },
+  "C": {
+   "item": "minecraft:cake"
+  },
+  "Q": {
+   "item": "minecraft:quartz_block"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cake_case",
+  "count": 1
+ }
+}

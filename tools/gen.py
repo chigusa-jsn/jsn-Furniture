@@ -209,7 +209,7 @@ RECIPES = []  # (id, count, pattern, keys)
 class F:
     def __init__(self, id, ja, en, kind, els, tex, tab="west", tall=False, full=False, seat=-1, rows=0, light=0,
                  sound="wood", wall=False, particles="", on=None, open_els=None, tilt_els=None, body=None,
-                 furin="", tool="axe", passable=False, hanging=False, recipe=None, count=1):
+                 furin="", tool="axe", passable=False, hanging=False, recipe=None, count=1, anim="", instrument="", parts=None, static=None):
         self.__dict__.update(locals())
         del self.__dict__["self"]
 
@@ -400,7 +400,8 @@ add(F("ceiling_light", "天井ライト", "Ceiling Light", "lamp", [
     {"m": WHITE, "g": "jsn_furniture:block/lamp_shade"}, light=15, sound="glass", tool="pickaxe", hanging=True,
     recipe=(["III", "GGG"], {"I": "minecraft:iron_ingot", "G": "minecraft:glowstone_dust"}), count=2))
 add(F("wall_clock", "壁かけ時計", "Wall Clock", "basic", [b(3, 3, 15, 13, 13, 16, "c"), b(2.5, 2.5, 15.5, 13.5, 13.5, 16, "d")],
-      {"c": "jsn_furniture:block/clock_face", "d": "minecraft:block/dark_oak_planks"}, wall=True, sound="wood",
+      {"c": "jsn_furniture:block/clock_face", "d": "minecraft:block/dark_oak_planks", "h": "minecraft:block/black_concrete"}, wall=True, sound="wood",
+      parts={"hour": [b(7.6, 8, 14.7, 8.4, 10.8, 14.9, "h")], "min": [b(7.7, 8, 14.5, 8.3, 12, 14.7, "h")]}, anim="clock",
       recipe=(["PPP", "PCP", "PPP"], {"P": "minecraft:stick", "C": "minecraft:clock"})))
 add(F("mirror", "鏡", "Mirror", "basic", [b(2, 0, 15, 14, 16, 16, "f"), b(3, 1, 14.6, 13, 15, 15, "g", shape=False)],
       {"f": "minecraft:block/gold_block", "g": "jsn_furniture:block/mirror"}, wall=True, sound="glass", tool="pickaxe",
@@ -839,6 +840,179 @@ for a, wool in CUSHION_WOOL.items():
           recipe=(["X", "W"], {"X": f"{NS}:tanuki_okimono" if a == "tanuki" else f"{NS}:plush_{a}", "W": f"minecraft:{wool}_wool"}), count=2))
 
 
+# ------------------------------------------------------------ お庭・動く家具・遊び・お店
+WHITE_C = "minecraft:block/white_concrete"
+RED_C = "minecraft:block/red_concrete"
+YEL_C = "minecraft:block/yellow_concrete"
+BLUE_C = "minecraft:block/blue_concrete"
+
+# ブランコ：わくは動かず、板とつなが前後にゆれる（座ったとき）
+add(F("swing", "ブランコ", "Swing", "swing",
+      [b(0, 0, 6, 1, 31, 10, "f"), b(15, 0, 6, 16, 31, 10, "f"), b(0, 30, 7, 16, 32, 9, "f"), b(3, 5, 5, 13, 6, 11, "s")],
+      {"f": RED_C, "s": "minecraft:block/oak_planks", "c": "minecraft:block/iron_block"},
+      static=[b(0, 0, 6, 1, 31, 10, "f"), b(-1, 0, 4, 2, 1, 12, "f"), b(15, 0, 6, 16, 31, 10, "f"), b(14, 0, 4, 17, 1, 12, "f"), b(0, 30, 7, 16, 32, 9, "f")],
+      parts={"anim": [b(3, 5, 5, 13, 6.2, 11, "s"), b(3.5, 6, 7.6, 4.2, 30, 8.4, "c"), b(11.8, 6, 7.6, 12.5, 30, 8.4, "c")]},
+      anim="swing", seat=6, tool="pickaxe", sound="metal",
+      recipe=(["III", "I I", "IPI"], {"I": "minecraft:iron_ingot", "P": "#minecraft:wooden_slabs"})))
+# すべり台：てっぺんから前へすべる（前のマスまでスロープがのびる）
+SLIDE_ROT = {"origin": [8, 11, -1], "axis": "x", "angle": -45}
+add(F("slide", "すべり台", "Slide", "slide",
+      [b(1, 0, 14, 2, 22, 16, "y"), b(14, 0, 14, 15, 22, 16, "y"), b(2, 4, 15, 14, 5, 16, "y"), b(2, 9, 15, 14, 10, 16, "y"), b(2, 14, 15, 14, 15, 16, "y"),
+       b(1, 0, 6, 2, 20, 8, "y"), b(14, 0, 6, 15, 20, 8, "y"), b(1, 19, 6, 15, 20, 16, "p"), b(1, 20, 7, 2, 24, 15, "y"), b(14, 20, 7, 15, 24, 15, "y"),
+       b(2, 10.5, -13.75, 14, 11.5, 11.75, "r", shape=False, rot=SLIDE_ROT), b(1, 11.5, -13.75, 2, 13, 11.75, "y", shape=False, rot=SLIDE_ROT),
+       b(14, 11.5, -13.75, 15, 13, 11.75, "y", shape=False, rot=SLIDE_ROT)],
+      {"y": YEL_C, "r": RED_C, "p": BLUE_C}, tool="pickaxe", sound="metal",
+      recipe=(["  I", " RI", "R I"], {"I": "minecraft:iron_ingot", "R": "minecraft:red_concrete"})))
+# 噴水
+add(F("fountain", "噴水", "Fountain", "basic", [
+    b(0, 0, 0, 16, 1, 16, "s"), b(0, 1, 0, 16, 5, 1.5, "s"), b(0, 1, 14.5, 16, 5, 16, "s"), b(0, 1, 1.5, 1.5, 5, 14.5, "s"), b(14.5, 1, 1.5, 16, 5, 14.5, "s"),
+    b(1.5, 3.5, 1.5, 14.5, 4, 14.5, "w", shape=False), b(6.5, 1, 6.5, 9.5, 10, 9.5, "s"), b(4.5, 10, 4.5, 11.5, 11, 11.5, "s"),
+    b(5, 10.6, 5, 11, 10.9, 11, "w", shape=False), b(7.3, 11, 7.3, 8.7, 13, 8.7, "s")],
+    {"s": "minecraft:block/smooth_stone", "w": "jsn_furniture:block/water"}, particles="fountain", tool="pickaxe", sound="stone",
+    recipe=(["SWS", "S S", "SSS"], {"S": "minecraft:smooth_stone", "W": "minecraft:water_bucket"})))
+# 花壇
+for fid, fja, fen, flowers_, item in (("red", "赤い花の花壇", "Red Flower Bed", ["poppy", "red_tulip", "poppy"], "minecraft:poppy"),
+                                      ("yellow", "黄色い花の花壇", "Yellow Flower Bed", ["dandelion", "dandelion", "dandelion"], "minecraft:dandelion"),
+                                      ("tulip", "チューリップの花壇", "Tulip Bed", ["red_tulip", "orange_tulip", "pink_tulip"], "minecraft:pink_tulip"),
+                                      ("sunflower", "ひまわりの花壇", "Sunflower Bed", ["sunflower_front", "sunflower_front", "sunflower_front"], "minecraft:sunflower"),
+                                      ("mix", "ミックスの花壇", "Mixed Flower Bed", ["cornflower", "allium", "oxeye_daisy"], "minecraft:allium")):
+    els = [b(0, 0, 0, 16, 6, 16, {"up": "d", "down": "b", "north": "b", "south": "b", "east": "b", "west": "b"})]
+    tx = {"b": "minecraft:block/bricks", "d": "minecraft:block/dirt"}
+    for i, (x, z) in enumerate(((4, 4), (12, 7), (6, 12))):
+        k = f"f{i}"
+        tx[k] = f"minecraft:block/{flowers_[i]}"
+        size = 7 if fid != "sunflower" else 9
+        els += cross(x - size / 2, 6, x + size / 2, 6 + size + (3 if fid == "sunflower" else 0), k, z=z)
+    add(F(f"flower_bed_{fid}", fja, fen, "basic", els, tx, tool="pickaxe", sound="stone",
+          recipe=(["FFF", "BDB"], {"F": item, "B": "minecraft:bricks", "D": "minecraft:dirt"})))
+add(F("garden_table", "ガーデンテーブル", "Garden Table", "basic", [
+    b(1, 14, 1, 15, 15, 15, "w"), b(7, 1, 7, 9, 14, 9, "w"), b(3, 0, 7, 13, 1, 9, "w"), b(7, 0, 3, 9, 1, 13, "w"), b(7.5, 15, 7.5, 8.5, 16, 8.5, "w")],
+    {"w": WHITE_C}, tool="pickaxe", sound="metal", recipe=(["III", " I ", "I I"], {"I": "minecraft:iron_nugget"})))
+add(F("garden_chair", "ガーデンチェア", "Garden Chair", "seat", [
+    b(3, 0, 3, 4, 8, 4, "w"), b(12, 0, 3, 13, 8, 4, "w"), b(3, 0, 12, 4, 8, 13, "w"), b(12, 0, 12, 13, 8, 13, "w"), b(3, 8, 3, 13, 9, 13, "w"),
+    b(3, 9, 12, 4, 20, 13, "w", shape=False), b(12, 9, 12, 13, 20, 13, "w", shape=False), b(4, 12, 12.3, 12, 19, 12.7, "w", shape=False)],
+    {"w": WHITE_C}, seat=9, tool="pickaxe", sound="metal", recipe=(["I  ", "III", "I I"], {"I": "minecraft:iron_nugget"}), count=2))
+
+# 動く家具
+add(F("ceiling_fan", "シーリングファン", "Ceiling Fan", "lamp", [b(7, 13, 7, 9, 16, 9, "k"), b(6, 10, 6, 10, 13, 10, "k"), b(6.5, 9, 6.5, 9.5, 10, 9.5, "g")],
+      {"k": "minecraft:block/dark_oak_planks", "g": "jsn_furniture:block/lamp_shade", "b": "minecraft:block/stripped_dark_oak_log"},
+      parts={"anim": [b(0, 11, 7, 6, 11.5, 9, "b"), b(10, 11, 7, 16, 11.5, 9, "b"), b(7, 11, 0, 9, 11.5, 6, "b"), b(7, 11, 10, 9, 11.5, 16, "b")]},
+      anim="fan", light=12, hanging=True, sound="wood",
+      recipe=(["PIP", " G "], {"P": "#minecraft:planks", "I": "minecraft:iron_ingot", "G": "minecraft:glowstone_dust"})))
+add(F("grandfather_clock", "柱時計", "Grandfather Clock", "basic", [
+    b(2, 0, 3, 14, 31, 14, "w"), b(1.5, 31, 2.5, 14.5, 32, 14.5, "w"), b(4, 22, 2.8, 12, 30, 3, "c"), b(4, 4, 2.8, 12, 20, 3, "g")],
+    {"w": "minecraft:block/dark_oak_planks", "c": "jsn_furniture:block/clock_face", "g": "jsn_furniture:block/clock_glass", "h": "minecraft:block/black_concrete", "o": "minecraft:block/gold_block"},
+    parts={"hour": [b(7.6, 26, 2.5, 8.4, 28.5, 2.7, "h")], "min": [b(7.7, 26, 2.3, 8.3, 29.5, 2.5, "h")],
+           "pendulum": [b(7.7, 8, 3.2, 8.3, 20, 3.4, "o"), b(6.5, 6, 3.1, 9.5, 9, 3.5, "o")]},
+    anim="grandfather", tall=True, recipe=(["PCP", "PGP", "PPP"], {"P": "minecraft:dark_oak_planks", "C": "minecraft:clock", "G": "minecraft:gold_ingot"})))
+for w, wja, wen in WOODS:
+    T = wood_tex(w)
+    chair_els = [b(2, 0, 1, 3, 1.5, 15, "s"), b(13, 0, 1, 14, 1.5, 15, "s"), b(3, 1, 4, 4, 7, 5, "s"), b(12, 1, 4, 13, 7, 5, "s"), b(3, 1, 11, 4, 7, 12, "s"), b(12, 1, 11, 13, 7, 12, "s"),
+                 b(2, 7, 3, 14, 9, 13, "p"), b(2.5, 9, 12, 3.5, 22, 13, "s"), b(12.5, 9, 12, 13.5, 22, 13, "s"), b(3.5, 12, 12.3, 12.5, 21, 12.7, "p"),
+                 b(2, 11, 4, 3, 12, 12, "s"), b(13, 11, 4, 14, 12, 12, "s")]
+    add(F(f"{w}_rocking_chair", f"{wja}のロッキングチェア", f"{wen} Rocking Chair", "seat", chair_els, {"p": T["p"], "s": T["s"]},
+          static=[], parts={"anim": chair_els}, anim="rocker", seat=9,
+          recipe=(["  S", "PPP", "C C"], {"S": "minecraft:stick", "P": wood_items(w)["P"], "C": wood_items(w)["H"]})))
+add(F("washing_machine", "洗濯機", "Washing Machine", "lamp", [
+    b(1, 0, 2, 15, 15, 15, "w"), b(1, 15, 2, 15, 16, 15, "t"), b(3, 2, 1.6, 13, 12, 2, "r", shape=False), b(10, 13, 1.6, 13, 14.5, 2, "k", shape=False)],
+    {"w": WHITE_C, "t": "minecraft:block/light_gray_concrete", "r": "jsn_furniture:block/washer_ring", "k": "minecraft:block/black_concrete", "d": "jsn_furniture:block/washer_drum"},
+    parts={"anim": [b(4, 3, 1.4, 12, 11, 1.6, "d")]}, anim="washer", light=0, tool="pickaxe", sound="metal",
+    recipe=(["III", "IWI", "III"], {"I": "minecraft:iron_ingot", "W": "minecraft:water_bucket"})))
+TV_ON = lambda: [b(2, 4, 6.8, 14, 13, 7, "o", shape=False)]
+add(F("tv", "テレビ", "TV", "lamp", [b(5, 0, 6, 11, 1, 11, "k"), b(7, 1, 8, 9, 3, 9, "k"), b(1, 3, 7, 15, 14, 9, "k"), b(2, 4, 6.9, 14, 13, 7, "s", shape=False)],
+      {"k": "minecraft:block/black_concrete", "s": "jsn_furniture:block/tv_off", "o": "jsn_furniture:block/tv_on"}, on=TV_ON, light=7, tool="pickaxe", sound="metal",
+      recipe=(["III", "IGI", " R "], {"I": "minecraft:iron_ingot", "G": "minecraft:glass_pane", "R": "minecraft:redstone"})))
+add(F("game_console", "ゲーム機", "Game Console", "basic", [b(3, 0, 4, 13, 2, 12, "c"), b(4, 0, 1, 7, 1, 3, "p"), b(9, 0, 1, 12, 1, 3, "p"), b(5.5, 0.5, 2, 10.5, 0.8, 2.5, "k")],
+      {"c": "jsn_furniture:block/console_top", "p": "minecraft:block/gray_concrete", "k": "minecraft:block/black_concrete"}, tool="pickaxe", sound="metal",
+      recipe=(["IRI", "B B"], {"I": "minecraft:iron_ingot", "R": "minecraft:redstone", "B": "minecraft:stone_button"})))
+
+# 遊び・趣味
+add(F("piano", "ピアノ", "Piano", "instrument", [
+    b(0, 0, 8, 16, 16, 16, "k"), b(0, 7, 2, 16, 8, 8, "k"), b(0.5, 8, 2.5, 15.5, 9, 7.5, {"up": "y", "north": "k", "south": "k", "east": "k", "west": "k", "down": "k"},
+                                                            uv={"up": [0, 0, 16, 16]}), b(1, 0, 3, 2, 7, 4, "k"), b(14, 0, 3, 15, 7, 4, "k")],
+    {"k": "minecraft:block/black_concrete", "y": "jsn_furniture:block/piano_keys"}, instrument="piano", tool="pickaxe", sound="wood",
+    recipe=(["PPP", "PNP", "IWI"], {"P": "minecraft:black_concrete", "N": "minecraft:note_block", "I": "minecraft:iron_ingot", "W": "minecraft:white_concrete"})))
+add(F("xylophone", "木琴", "Xylophone", "instrument", [b(1, 0, 3, 2, 8, 4, "l"), b(14, 0, 3, 15, 8, 4, "l"), b(1, 0, 12, 2, 8, 13, "l"), b(14, 0, 12, 15, 8, 13, "l"),
+                                                         b(0, 8, 3, 16, 9, 13, {"up": "x", "north": "l", "south": "l", "east": "l", "west": "l", "down": "l"}, uv={"up": [0, 0, 16, 16]})],
+      {"l": "minecraft:block/dark_oak_planks", "x": "jsn_furniture:block/xylophone"}, instrument="xylophone",
+      recipe=(["BBB", "S S"], {"B": "minecraft:bone_block", "S": "minecraft:stick"})))
+add(F("guitar", "ギター", "Guitar", "instrument", [
+    b(5, 0, 6, 11, 2, 10, "k"), b(4.5, 1, 7, 11.5, 9, 9, {"north": "g", "south": "w", "east": "w", "west": "w", "up": "w", "down": "w"}, uv={"north": [0, 0, 16, 16]}),
+    b(7, 9, 7.5, 9, 20, 8.5, "n", shape=False), b(6.5, 20, 7.3, 9.5, 23, 8.7, "n", shape=False)],
+    {"k": "minecraft:block/black_concrete", "g": "jsn_furniture:block/guitar_front", "w": "minecraft:block/orange_terracotta", "n": "minecraft:block/dark_oak_planks"},
+    instrument="guitar", recipe=(["  S", "PS ", "PP "], {"S": "minecraft:string", "P": "#minecraft:planks"})))
+add(F("taiko", "和太鼓", "Taiko Drum", "instrument", [
+    b(2, 0, 2, 14, 2, 14, "s"), b(3, 2, 3, 13, 14, 13, {"up": "t", "down": "t", "north": "w", "south": "w", "east": "w", "west": "w"}, uv={"up": [0, 0, 16, 16]}),
+    b(2.5, 3, 2.5, 13.5, 4, 13.5, "r", shape=False), b(2.5, 12, 2.5, 13.5, 13, 13.5, "r", shape=False)],
+    {"s": "minecraft:block/dark_oak_planks", "t": "jsn_furniture:block/taiko_skin", "w": "minecraft:block/stripped_spruce_log", "r": "minecraft:block/gold_block"},
+    instrument="taiko", tab="wa", recipe=(["LLL", "WNW", "WWW"], {"L": "minecraft:leather", "W": "minecraft:stripped_spruce_log", "N": "minecraft:note_block"})))
+add(F("darts", "ダーツ", "Dartboard", "darts", [b(1, 1, 15, 15, 15, 16, {"north": "d", "south": "k", "east": "k", "west": "k", "up": "k", "down": "k"}, uv={"north": [0, 0, 16, 16]})],
+      {"d": "jsn_furniture:block/darts", "k": "minecraft:block/black_concrete"}, wall=True,
+      recipe=(["RWR", "WAW", "RWR"], {"R": "minecraft:red_dye", "W": "minecraft:white_wool", "A": "minecraft:arrow"})))
+for bid, bja, ben, item, tab in (("shogi", "将棋盤", "Shogi Board", "minecraft:flint", "wa"), ("go", "碁盤", "Go Board", "minecraft:white_dye", "wa"),
+                                 ("chess", "チェス盤", "Chess Board", "minecraft:black_dye", "west")):
+    els = [b(1, 0, 1, 15, 1, 15, {"up": "t", "down": "w", "north": "w", "south": "w", "east": "w", "west": "w"}, uv={"up": [0, 0, 16, 16]})]
+    if bid in ("shogi", "go"):
+        els = [b(1, 3, 1, 15, 6, 15, {"up": "t", "down": "w", "north": "w", "south": "w", "east": "w", "west": "w"}, uv={"up": [0, 0, 16, 16]}),
+               b(2, 0, 2, 4, 3, 4, "w"), b(12, 0, 2, 14, 3, 4, "w"), b(2, 0, 12, 4, 3, 14, "w"), b(12, 0, 12, 14, 3, 14, "w")]
+    add(F(f"{bid}_board", bja, ben, "basic", els, {"t": f"jsn_furniture:block/board_{bid}", "w": "minecraft:block/stripped_oak_log"}, tab=tab,
+          recipe=(["X", "P"], {"X": item, "P": "minecraft:oak_pressure_plate"})))
+add(F("telescope", "望遠鏡", "Telescope", "basic", [
+    b(7.5, 0, 3, 8.5, 12, 4, "k"), b(3, 0, 12, 4, 12, 13, "k"), b(12, 0, 12, 13, 12, 13, "k"), b(7, 12, 7, 9, 13, 9, "k"),
+    b(6.5, 12, 1, 9.5, 15, 15, "b", shape=False, rot={"origin": [8, 13.5, 8], "axis": "x", "angle": 22.5})],
+    {"k": "minecraft:block/black_concrete", "b": "minecraft:block/gold_block"}, tool="pickaxe", sound="metal",
+    recipe=(["  G", " C ", "S S"], {"G": "minecraft:glass_pane", "C": "minecraft:copper_ingot", "S": "minecraft:stick"})))
+for w, wja, wen in WOODS:
+    T = wood_tex(w)
+    add(F(f"{w}_bookshelf", f"{wja}の本棚", f"{wen} Bookshelf", "storage", [
+        b(0, 0, 4, 16, 16, 16, {"north": "b", "south": "p", "east": "p", "west": "p", "up": "p", "down": "p"}, uv={"north": [0, 0, 16, 16]}),
+        b(0, 0, 3, 16, 1, 4, "p"), b(0, 15, 3, 16, 16, 4, "p"), b(0, 1, 3, 1, 15, 4, "p"), b(15, 1, 3, 16, 15, 4, "p"), b(1, 7.5, 3, 15, 8.5, 4, "p")],
+        {"p": T["p"], "b": "minecraft:block/bookshelf"}, rows=3,
+        recipe=(["PPP", "BCB", "PPP"], {"P": wood_items(w)["H"], "B": "minecraft:book", "C": "minecraft:chest"})))
+
+# お店・屋台（屋根が上のマスまでのびる）
+
+
+def yatai(top_tex):
+    return [b(0, 0, 2, 16, 13, 16, "w"), b(-0.5, 13, 0, 16.5, 14, 16, "c"), b(0.5, 14, 1, 15.5, 14.5, 15, "f", shape=False),
+            b(0, 13, 14, 1, 28, 16, "w"), b(15, 13, 14, 16, 28, 16, "w"), b(0, 13, 0, 1, 28, 2, "w", shape=False), b(15, 13, 0, 16, 28, 2, "w", shape=False),
+            b(-1, 28, -1, 17, 29, 17, "r", shape=False), b(0, 22, 0.5, 16, 28, 1, "n", shape=False)]
+
+
+for sid, sja, sen, food, noren, item in (("takoyaki", "たこ焼きの屋台", "Takoyaki Stall", "takoyaki", "noren_takoyaki", "minecraft:wheat"),
+                                         ("ringoame", "りんご飴の屋台", "Candy Apple Stall", "ringoame", "noren_ringoame", "minecraft:apple"),
+                                         ("yakisoba", "焼きそばの屋台", "Yakisoba Stall", "yakisoba", "noren_yakisoba", "minecraft:carrot"),
+                                         ("kakigori", "かき氷の屋台", "Shaved Ice Stall", "kakigori", "noren_kakigori", "minecraft:ice"),
+                                         ("kingyo", "金魚すくいの屋台", "Goldfish Scooping Stall", "kingyo", "noren_kingyo", "minecraft:tropical_fish")):
+    add(F(f"yatai_{sid}", sja, sen, "storage", yatai(food),
+          {"w": "minecraft:block/stripped_spruce_log", "c": "minecraft:block/spruce_planks", "f": f"jsn_furniture:block/food_{food}",
+           "r": "minecraft:block/red_wool" if sid != "kakigori" else "minecraft:block/light_blue_wool", "n": f"jsn_furniture:block/{noren}"},
+          rows=2, tab="wa", particles="steam" if sid in ("takoyaki", "yakisoba") else "",
+          recipe=(["RRR", "SXS", "PCP"], {"R": "minecraft:red_wool", "S": "minecraft:stick", "X": item, "P": "minecraft:spruce_planks", "C": "minecraft:chest"})))
+for c in ("red", "blue", "green", "yellow"):
+    cja = {"red": "赤", "blue": "青", "green": "緑", "yellow": "黄色"}[c]
+    add(F(f"{c}_roten", f"{cja}い露店" if c != "green" else "緑の露店", f"{c.title()} Market Stall", "storage", [
+        b(0, 0, 4, 16, 10, 16, "w"), b(0, 10, 3, 16, 11, 16, "p"), b(0, 11, 14, 1, 26, 16, "w"), b(15, 11, 14, 16, 26, 16, "w"),
+        b(-1, 26, 2, 17, 27, 17, "c", shape=False), b(-1, 25, 0, 17, 26, 2, "c", shape=False), b(-1, 23, -1, 17, 25, 0, "c", shape=False)],
+        {"w": "minecraft:block/oak_planks", "p": "minecraft:block/stripped_oak_log", "c": f"jsn_furniture:block/awning_{c}"}, rows=2,
+        recipe=(["WWW", "S S", "PCP"], {"W": f"minecraft:{c}_wool", "S": "minecraft:stick", "P": "#minecraft:planks", "C": "minecraft:chest"})))
+add(F("coffee_machine", "コーヒーマシン", "Coffee Machine", "basic", [
+    b(4, 0, 4, 12, 1, 12, "k"), b(4, 1, 9, 12, 13, 13, "m"), b(4, 10, 4, 12, 13, 9, "m"), b(6.5, 1, 5.5, 9.5, 4, 8.5, "c"), b(7.5, 9, 6.5, 8.5, 10, 7.5, "k")],
+    {"k": "minecraft:block/black_concrete", "m": "minecraft:block/iron_block", "c": "jsn_furniture:block/coffee_cup"}, particles="steam", tool="pickaxe", sound="metal",
+    recipe=(["III", "IBI", "I I"], {"I": "minecraft:iron_ingot", "B": "minecraft:cocoa_beans"})))
+add(F("cake_case", "ケーキのショーケース", "Cake Display Case", "storage", [
+    b(0, 0, 1, 16, 6, 16, "w"), b(0.5, 6, 1.5, 15.5, 15, 15.5, "g"), b(0, 15, 1, 16, 16, 16, "w"),
+    b(2, 7, 3, 6, 9, 7, "k", shape=False), b(7, 7, 3, 11, 9, 7, "s", shape=False), b(12, 7, 3, 15, 9, 7, "k", shape=False),
+    b(2, 11, 9, 6, 13, 13, "s", shape=False), b(7, 11, 9, 11, 13, 13, "k", shape=False), b(1, 10, 2, 15, 10.5, 15, "w", shape=False)],
+    {"w": WHITE_C, "g": "jsn_furniture:block/case_glass", "k": "jsn_furniture:block/cake_short", "s": "jsn_furniture:block/cake_choco"}, rows=1,
+    recipe=(["GGG", "GCG", "QQQ"], {"G": "minecraft:glass", "C": "minecraft:cake", "Q": "minecraft:quartz_block"})))
+add(F("vending_machine", "自動販売機", "Vending Machine", "storage", [
+    b(1, 0, 3, 15, 31, 15, "r"), b(2, 14, 2.6, 14, 29, 3, "d", shape=False), b(2, 3, 2.6, 14, 6, 3, "k", shape=False), b(12, 9, 2.6, 13.5, 12, 3, "m", shape=False)],
+    {"r": RED_C, "d": "jsn_furniture:block/vending_drinks", "k": "minecraft:block/black_concrete", "m": "minecraft:block/iron_block"},
+    tall=True, rows=3, light=10, tool="pickaxe", sound="metal",
+    recipe=(["IRI", "IGI", "ICI"], {"I": "minecraft:iron_ingot", "R": "minecraft:red_dye", "G": "minecraft:glass_pane", "C": "minecraft:chest"})))
+
+
 # ============================================================ テクスチャ
 
 
@@ -1063,6 +1237,122 @@ def make_animal_textures():
         save(im, f"block/paw_rug_{c}")
 
 
+def make_textures3():
+    def new(rgb=(0, 0, 0, 0)):
+        im = Image.new("RGBA", (16, 16), rgb); return im, ImageDraw.Draw(im)
+    im, d = new((215, 230, 240, 90)); d.rectangle([0, 0, 15, 15], outline=(80, 60, 40, 255)); save(im, "block/clock_glass")
+    im, d = new((0, 0, 0, 0)); d.ellipse([0, 0, 15, 15], outline=(180, 180, 190, 255), width=2); save(im, "block/washer_ring")
+    im, d = new((0, 0, 0, 0)); d.ellipse([0, 0, 15, 15], fill=(120, 150, 180, 230))
+    for x, y, c in ((5, 5, (230, 80, 80)), (10, 8, (80, 140, 230)), (6, 10, (240, 220, 90))):
+        d.rectangle([x - 2, y - 1, x + 1, y + 1], fill=c + (255,))
+    save(im, "block/washer_drum")
+    im, d = new((20, 22, 28, 255)); d.line([2, 2, 5, 5], fill=(60, 70, 80, 255)); save(im, "block/tv_off")
+    # テレビの画面：色が変わっていくアニメ
+    frames = 8
+    strip = Image.new("RGBA", (16, 16 * frames))
+    rnd = random.Random(3)
+    for f in range(frames):
+        fr, dd = new((40 + f * 20, 120, 200 - f * 15, 255))
+        dd.rectangle([0, 10, 15, 15], fill=(60, 160 - f * 5, 70, 255))
+        dd.ellipse([2 + f, 4, 6 + f, 8], fill=(250, 220, 80, 255))
+        for _ in range(5):
+            dd.point((rnd.randint(0, 15), rnd.randint(0, 9)), fill=(255, 255, 255, 255))
+        strip.paste(fr, (0, f * 16))
+    save(strip, "block/tv_on")
+    with open(f"{A}/textures/block/tv_on.png.mcmeta", "w") as fh:
+        json.dump({"animation": {"frametime": 6, "interpolate": True}}, fh)
+    im, d = new((235, 235, 240, 255)); d.rectangle([0, 0, 15, 15], outline=(160, 160, 170, 255)); d.ellipse([10, 5, 12, 7], fill=(60, 200, 90, 255)); save(im, "block/console_top")
+    im, d = new((250, 250, 250, 255))
+    for x in range(0, 16, 2):
+        d.line([x, 0, x, 15], fill=(170, 170, 170, 255))
+    for x in (1, 3, 7, 9, 11):
+        d.rectangle([x, 0, x + 1, 8], fill=(25, 25, 25, 255))
+    save(im, "block/piano_keys")
+    im, d = new((0, 0, 0, 0))
+    cols = [(230, 70, 70), (240, 150, 60), (240, 220, 70), (110, 200, 90), (80, 170, 230), (100, 110, 220), (170, 100, 210), (230, 110, 170)]
+    for i, c in enumerate(cols):
+        d.rectangle([i * 2, 1 + i // 2, i * 2 + 1, 14 - i // 2], fill=c + (255,))
+    save(im, "block/xylophone")
+    im, d = new((215, 140, 60, 255)); d.ellipse([3, 3, 12, 12], fill=(40, 25, 15, 255)); d.line([7, 0, 7, 15], fill=(230, 230, 230, 255)); d.line([8, 0, 8, 15], fill=(230, 230, 230, 255))
+    save(im, "block/guitar_front")
+    im, d = new((235, 220, 190, 255)); d.ellipse([0, 0, 15, 15], outline=(200, 180, 140, 255)); d.ellipse([5, 5, 10, 10], outline=(210, 60, 50, 255)); save(im, "block/taiko_skin")
+    im, d = new((0, 0, 0, 0))
+    for r, c in ((7.5, (30, 30, 30)), (6, (240, 230, 200)), (4.5, (200, 40, 40)), (3, (240, 230, 200)), (1.5, (40, 150, 60))):
+        d.ellipse([7.5 - r, 7.5 - r, 7.5 + r, 7.5 + r], fill=c + (255,))
+    d.point((7, 7), fill=(200, 40, 40, 255)); save(im, "block/darts")
+    im, d = new((220, 180, 110, 255))
+    for i in range(1, 16, 2):
+        d.line([i, 0, i, 15], fill=(60, 40, 20, 255)); d.line([0, i, 15, i], fill=(60, 40, 20, 255))
+    for x, y in ((2, 2), (6, 4), (10, 2), (12, 12), (4, 12)):
+        d.polygon([(x, y), (x + 1, y - 1), (x + 2, y), (x + 2, y + 1), (x, y + 1)], fill=(240, 215, 160, 255))
+    save(im, "block/board_shogi")
+    im, d = new((220, 180, 110, 255))
+    for i in range(1, 16, 2):
+        d.line([i, 0, i, 15], fill=(50, 35, 20, 255)); d.line([0, i, 15, i], fill=(50, 35, 20, 255))
+    for x, y, c in ((3, 3, 0), (5, 7, 255), (9, 9, 0), (11, 5, 255), (7, 13, 0)):
+        d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=(c, c, c, 255))
+    save(im, "block/board_go")
+    im, d = new((240, 220, 180, 255))
+    for y in range(0, 16, 2):
+        for x in range(0, 16, 2):
+            if (x + y) // 2 % 2:
+                d.rectangle([x, y, x + 1, y + 1], fill=(110, 70, 40, 255))
+    save(im, "block/board_chess")
+    # 屋台の食べ物
+    im, d = new((60, 60, 65, 255))
+    for x in range(1, 16, 4):
+        for y in range(1, 16, 4):
+            d.ellipse([x, y, x + 2, y + 2], fill=(200, 140, 60, 255)); d.point((x + 1, y), fill=(60, 40, 20, 255))
+    save(im, "block/food_takoyaki")
+    im, d = new((230, 220, 200, 255))
+    for x, y in ((2, 2), (8, 3), (4, 9), (11, 10)):
+        d.ellipse([x, y, x + 3, y + 3], fill=(220, 30, 40, 255)); d.point((x + 1, y + 1), fill=(255, 200, 200, 255))
+    save(im, "block/food_ringoame")
+    im, d = new((60, 60, 65, 255))
+    for i in range(30):
+        x = random.Random(i).randint(0, 14); y = random.Random(i + 99).randint(0, 14)
+        d.line([x, y, x + 2, y + 1], fill=(200, 150, 80, 255))
+    d.point([(4, 4), (10, 6), (6, 11)], fill=(80, 160, 70, 255)); save(im, "block/food_yakisoba")
+    im, d = new((230, 230, 235, 255))
+    for x, c in ((2, (230, 60, 80)), (7, (60, 180, 220)), (12, (240, 200, 60))):
+        d.ellipse([x - 2, 4, x + 2, 9], fill=(250, 250, 255, 255)); d.ellipse([x - 2, 4, x + 2, 7], fill=c + (255,))
+    save(im, "block/food_kakigori")
+    im, d = new((70, 130, 210, 255))
+    for x, y in ((3, 4), (10, 3), (6, 10), (12, 11)):
+        d.ellipse([x, y, x + 2, y + 1], fill=(240, 80, 40, 255)); d.point((x + 3, y), fill=(240, 120, 60, 255))
+    save(im, "block/food_kingyo")
+    for name, bg, fg in (("takoyaki", (200, 40, 40), (255, 255, 255)), ("ringoame", (240, 240, 240), (200, 30, 40)), ("yakisoba", (230, 120, 30), (40, 30, 20)),
+                         ("kakigori", (250, 250, 255), (40, 90, 200)), ("kingyo", (250, 250, 255), (230, 70, 40))):
+        im, d = new(bg + (255,))
+        for x in range(0, 16, 4):
+            d.line([x, 0, x, 15], fill=shade(bg + (255,), 0.85))
+        if name == "kakigori":
+            d.text((4, 2), "氷", fill=(200, 40, 40, 255))
+        d.ellipse([5, 4, 10, 9], fill=fg + (255,))
+        save(im, f"block/noren_{name}")
+    for c in ("red", "blue", "green", "yellow"):
+        im, d = new((0, 0, 0, 0))
+        for x in range(16):
+            d.line([x, 0, x, 15], fill=hx(DYE_RGB[c]) if (x // 2) % 2 == 0 else (245, 245, 245, 255))
+        save(im, f"block/awning_{c}")
+    im, d = new((250, 250, 250, 255)); d.rectangle([2, 2, 13, 5], fill=(110, 70, 40, 255)); save(im, "block/coffee_cup")
+    im, d = new((250, 245, 235, 255)); d.rectangle([0, 0, 15, 3], fill=(250, 250, 250, 255)); d.rectangle([0, 7, 15, 8], fill=(240, 150, 160, 255)); d.ellipse([6, 0, 9, 3], fill=(220, 30, 40, 255))
+    save(im, "block/cake_short")
+    im, d = new((110, 65, 40, 255)); d.rectangle([0, 0, 15, 3], fill=(80, 45, 25, 255)); d.rectangle([0, 8, 15, 9], fill=(150, 100, 70, 255)); save(im, "block/cake_choco")
+    im, d = new((240, 245, 250, 255))
+    for row, y in enumerate((1, 6, 11)):
+        for i, x in enumerate(range(1, 15, 3)):
+            c = [(220, 50, 50), (60, 120, 220), (240, 180, 40), (70, 170, 80), (160, 90, 200)][(i + row) % 5]
+            d.rectangle([x, y, x + 1, y + 3], fill=c + (255,)); d.point((x, y + 4), fill=(60, 200, 90, 255))
+    save(im, "block/vending_drinks")
+    # 時計：針は別のモデルで動かすので、文字盤だけ
+    im, d = new((245, 240, 225, 255)); d.ellipse([0, 0, 15, 15], outline=(60, 40, 20, 255))
+    for a in range(12):
+        r = math.radians(a * 30)
+        d.point((round(7.5 + math.cos(r) * 6), round(7.5 + math.sin(r) * 6)), fill=(30, 30, 30, 255))
+    save(im, "block/clock_face")
+
+
 def make_textures():
     for fid, ja, en, kind, gi, xi, look in FURIN:
         tex_furin(fid, kind, look)
@@ -1252,7 +1542,7 @@ def write_furniture(fur):
     tex = dict(fur.tex)
     if fur.on or fur.particles:
         tex["f"] = FIRE
-    base_els = fur.els
+    base_els = fur.els if fur.static is None else fur.static
     models = {}
 
     rt = "minecraft:translucent" if fur.kind in ("display", "furin") else "minecraft:cutout"
@@ -1289,8 +1579,10 @@ def write_furniture(fur):
 
     wj(f"{A}/blockstates/{fur.id}.json", {"variants": variants(fur, model_for)})
     # アイテムの見た目：全体
-    item_els = base_els + (fur.body or [])
-    wj(f"{A}/models/item/{fur.id}.json", model_json(item_els, tex, display=TALL_DISPLAY if fur.tall or fur.id in ("parasol",) else None, render_type=rt))
+    item_els = fur.els + (fur.body or []) + [e for els in (fur.parts or {}).values() for e in els]
+    for suffix, els in (fur.parts or {}).items():
+        wj(f"{A}/models/block/{fur.id}_{suffix}.json", model_json(els, tex, render_type=rt))
+    wj(f"{A}/models/item/{fur.id}.json", model_json(item_els, tex, display=TALL_DISPLAY if fur.tall or max([e.t[1] for e in item_els] + [0]) > 20 or min([e.f[2] for e in item_els] + [0]) < -4 else None, render_type=rt))
     if fur.body:
         wj(f"{A}/models/block/{fur.id}_body.json", model_json(fur.body, tex, render_type=rt))
     # ドロップ
@@ -1398,6 +1690,7 @@ def write_door(did, ja, en, recipe):
 def main():
     make_textures()
     make_animal_textures()
+    make_textures3()
     for fur in SPECS:
         write_furniture(fur)
     for w, wja, wen in WOODS:
@@ -1418,7 +1711,8 @@ def main():
         out.append({
             "id": fur.id, "kind": fur.kind, "tab": fur.tab, "tall": fur.tall, "full": fur.full, "seat": fur.seat, "rows": fur.rows,
             "light": fur.light, "sound": fur.sound, "wall": fur.wall, "hanging": fur.hanging, "particles": fur.particles,
-            "furin": fur.furin, "passable": fur.passable, "tool": fur.tool,
+            "furin": fur.furin, "passable": fur.passable, "tool": fur.tool, "anim": fur.anim, "instrument": fur.instrument,
+            "parts": list((fur.parts or {}).keys()),
             "shape": boxes(fur.els), "open": boxes(fur.open_els) if fur.open_els else None,
         })
     wj(f"{RES}/jsn_furniture_specs.json", {"furniture": out, "beds": BEDS, "doors": DOORS})
