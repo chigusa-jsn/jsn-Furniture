@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "H",
+  "C",
+  "C"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:wheat"
+  },
+  "C": {
+   "item": "minecraft:brown_terracotta"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:tanuki_okimono",
+  "count": 1
+ }
+}

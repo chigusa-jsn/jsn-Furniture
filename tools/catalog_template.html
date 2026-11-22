@@ -72,12 +72,12 @@ footer{color:var(--sub);font-size:14px}
   <div>
     <h1>jsn-Furniture<br>家具カタログ</h1>
     <p>洋風の部屋から和室まで。座れる・寝られる・しまえる・明かりがつく家具と、音の鳴る風鈴や鹿威し。木の種類や色はカードの丸いボタンで切り替えられます。</p>
-    <div class="count"><div><b>__TOTAL__</b><span>種類</span></div><div><b>11</b><span>種類の木</span></div><div><b>16</b><span>色</span></div><div><b>26</b><span>種類の風鈴</span></div></div>
+    <div class="count"><div><b>__TOTAL__</b><span>種類</span></div><div><b>11</b><span>種類の木</span></div><div><b>16</b><span>色</span></div><div><b>32</b><span>種類の風鈴</span></div></div>
   </div>
   <div class="room" id="room" role="img" aria-label="家具を並べた部屋"></div>
 </div></header>
 <nav><div class="wrap">
-  <a href="#wood">木の家具</a><a href="#color">色の家具</a><a href="#west">洋風</a><a href="#wa">和風</a><a href="#furin">風鈴</a>
+  <a href="#wood">木の家具</a><a href="#color">色の家具</a><a href="#west">洋風</a><a href="#wa">和風</a><a href="#animal">動物</a><a href="#furin">風鈴</a>
 </div></nav>
 <section class="band" id="wood"><div class="wrap">
   <h2>木の家具</h2><p class="lead">オーク・トウヒ・シラカバなど、11種類の木で作れます。丸いボタンで木を切り替え、「全部見る」で並べて比べられます。</p>
@@ -95,8 +95,12 @@ footer{color:var(--sub);font-size:14px}
   <h2>和風</h2><p class="lead">畳の部屋、縁側、神社の入り口まで。</p>
   <div class="grid" id="g-wa"></div>
 </div></section>
+<section class="band" id="animal"><div class="wrap">
+  <h2>動物</h2><p class="lead">縁起物の置物、ぬいぐるみ、ペットの家具、動物の形の家具。ペットの家具を右クリックすると、リードでつないだ動物か近くの自分のペットが座ります。</p>
+  <div class="grid" id="g-animal"></div>
+</div></section>
 <section class="band" id="furin"><div class="wrap">
-  <h2>風鈴</h2><p class="lead">風でゆれて鳴ります。雨の日はよく鳴り、右クリックでも鳴らせます。ガラス・南部鉄器・真鍮・陶器・竹で音がちがいます。</p>
+  <h2>風鈴</h2><p class="lead">風でゆれて鳴ります。雨の日はよく鳴り、右クリックでも鳴らせます。ガラス・南部鉄器・真鍮・陶器・竹で音がちがいます。動物の顔の風鈴もあります。</p>
   <div class="grid" id="g-furin"></div>
 </div></section>
 <footer class="band"><div class="wrap">絵はゲームのモデルから自動で描いたものです（実際のゲーム内の見た目と、光の当たり方などが少しちがいます）。</div></footer>
@@ -115,7 +119,7 @@ const variant=(t,names,gi,ti)=>`<div class="card wide" data-g="${gi}" data-t="${
 </div>`;
 const G={wood:[D.wood,D.woods],color:[D.color,D.colors]};
 for(const g of ['wood','color'])document.getElementById('g-'+g).innerHTML=G[g][0].map((t,i)=>variant(t,G[g][1],g,i)).join('');
-for(const g of ['west','wa','furin'])document.getElementById('g-'+g).innerHTML=D[g].map(single).join('');
+for(const g of ['west','wa','animal','furin'])document.getElementById('g-'+g).innerHTML=D[g].map(single).join('');
 document.addEventListener('click',e=>{
   const card=e.target.closest('.card.wide');if(!card)return;
   const [types,names]=G[card.dataset.g];const t=types[+card.dataset.t];

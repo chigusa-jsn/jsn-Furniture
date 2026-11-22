@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "W W",
+  "WWW"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:lime_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:lime_pet_bed",
+  "count": 1
+ }
+}

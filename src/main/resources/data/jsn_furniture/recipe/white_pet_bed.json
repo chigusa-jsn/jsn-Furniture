@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "W W",
+  "WWW"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:white_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:white_pet_bed",
+  "count": 1
+ }
+}

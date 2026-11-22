@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "u": "minecraft:block/red_concrete",
+  "q": "jsn_furniture:block/face_daruma_red",
+  "particle": "minecraft:block/red_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    0,
+    3
+   ],
+   "to": [
+    13,
+    11,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#q",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#u",
+     "uv": [
+      3,
+      5,
+      13,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#u",
+     "uv": [
+      3,
+      5,
+      13,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#u",
+     "uv": [
+      3,
+      5,
+      13,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#u",
+     "uv": [
+      3,
+      3,
+      13,
+      13
+     ]
+    },
+    "down": {
+     "texture": "#u",
+     "uv": [
+      3,
+      3,
+      13,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    11,
+    4
+   ],
+   "to": [
+    12,
+    12.5,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#u",
+     "uv": [
+      4,
+      3.5,
+      12,
+      5
+     ]
+    },
+    "south": {
+     "texture": "#u",
+     "uv": [
+      4,
+      3.5,
+      12,
+      5
+     ]
+    },
+    "east": {
+     "texture": "#u",
+     "uv": [
+      4,
+      3.5,
+      12,
+      5
+     ]
+    },
+    "west": {
+     "texture": "#u",
+     "uv": [
+      4,
+      3.5,
+      12,
+      5
+     ]
+    },
+    "up": {
+     "texture": "#u",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    },
+    "down": {
+     "texture": "#u",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

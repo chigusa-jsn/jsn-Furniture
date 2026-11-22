@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/plush_fox"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/plush_fox",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/plush_fox",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/plush_fox",
+   "y": 270
+  }
+ }
+}

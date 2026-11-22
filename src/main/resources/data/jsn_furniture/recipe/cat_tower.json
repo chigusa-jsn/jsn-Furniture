@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  " S ",
+  "WSW"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:light_gray_wool"
+  },
+  "S": {
+   "item": "minecraft:string"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cat_tower",
+  "count": 1
+ }
+}

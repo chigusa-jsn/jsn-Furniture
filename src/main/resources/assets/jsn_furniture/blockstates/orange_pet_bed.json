@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/orange_pet_bed"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/orange_pet_bed",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/orange_pet_bed",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/orange_pet_bed",
+   "y": 270
+  }
+ }
+}

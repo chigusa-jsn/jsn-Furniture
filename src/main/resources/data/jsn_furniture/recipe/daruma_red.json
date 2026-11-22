@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  " D ",
+  "PWP",
+  " P "
+ ],
+ "key": {
+  "D": {
+   "item": "minecraft:red_dye"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "W": {
+   "item": "minecraft:black_dye"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:daruma_red",
+  "count": 1
+ }
+}

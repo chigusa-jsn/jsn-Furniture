@@ -544,6 +544,167 @@ for fid, ja, en, kind, glass_item, extra_item, look in FURIN:
           tool="axe" if kind == "bamboo" else "pickaxe",
           recipe=(["S", "G", "X"], {"S": "minecraft:string", "G": glass_item, "X": extra_item})))
 
+# ------------------------------------------------------------ 動物（風鈴・縁起物・ぬいぐるみ・ペット・動物の形の家具）
+ANIMAL = {
+    # 名前: (毛の色, 顔の描き方, 耳)
+    "cat_white": ((238, 238, 236), "cat", "cat"), "cat_black": ((40, 40, 46), "cat_black", "cat"),
+    "cat_calico": ((240, 236, 228), "cat", "cat"), "cat_gray": ((140, 140, 148), "cat", "cat"),
+    "fox": ((222, 120, 45), "fox", "fox"), "rabbit": ((245, 242, 240), "rabbit", "rabbit"),
+    "tanuki": ((120, 95, 70), "tanuki", "round"), "shiba": ((214, 150, 80), "shiba", "cat"),
+    "bear": ((130, 85, 50), "bear", "round"), "panda": ((245, 245, 245), "panda", "round_black"),
+    "penguin": ((40, 45, 60), "penguin", None), "chick": ((250, 215, 70), "chick", None),
+}
+ANIMAL_JA = {"cat_white": "白猫", "cat_black": "黒猫", "cat_calico": "三毛猫", "cat_gray": "灰色の猫", "fox": "狐", "rabbit": "うさぎ",
+             "tanuki": "たぬき", "shiba": "柴犬", "bear": "くま", "panda": "パンダ", "penguin": "ペンギン", "chick": "ひよこ"}
+ANIMAL_EN = {"cat_white": "White Cat", "cat_black": "Black Cat", "cat_calico": "Calico Cat", "cat_gray": "Gray Cat", "fox": "Fox", "rabbit": "Rabbit",
+             "tanuki": "Tanuki", "shiba": "Shiba Dog", "bear": "Bear", "panda": "Panda", "penguin": "Penguin", "chick": "Chick"}
+
+
+def ears(kind, x1, x2, y, z1, tex="u", dark="k", shape=False):
+    """頭の上の耳。x1..x2 が頭の幅、y が頭のてっぺん"""
+    w = x2 - x1
+    if kind == "cat":
+        return [b(x1 + 0.3, y, z1 + 1, x1 + 2.3, y + 2, z1 + 2.5, tex, shape=shape), b(x2 - 2.3, y, z1 + 1, x2 - 0.3, y + 2, z1 + 2.5, tex, shape=shape)]
+    if kind == "fox":
+        return [b(x1, y, z1 + 1, x1 + 2.5, y + 3, z1 + 2.5, tex, shape=shape), b(x2 - 2.5, y, z1 + 1, x2, y + 3, z1 + 2.5, tex, shape=shape)]
+    if kind == "rabbit":
+        return [b(x1 + 1, y, z1 + 1.5, x1 + 2.5, y + 5, z1 + 2.5, tex, shape=shape), b(x2 - 2.5, y, z1 + 1.5, x2 - 1, y + 5, z1 + 2.5, tex, shape=shape)]
+    if kind in ("round", "round_black"):
+        t = dark if kind == "round_black" else tex
+        return [b(x1, y - 0.5, z1 + 1.5, x1 + 2, y + 1.5, z1 + 3, t, shape=shape), b(x2 - 2, y - 0.5, z1 + 1.5, x2, y + 1.5, z1 + 3, t, shape=shape)]
+    return []
+
+
+def head(x1, y1, z1, x2, y2, z2, kind, shape=True):
+    """前（北）に顔、ほかは毛"""
+    return [b(x1, y1, z1, x2, y2, z2, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"},
+              uv={"north": [0, 0, 16, 16]}, shape=shape)] + ears(ANIMAL[kind][2], x1, x2, y2, z1)
+
+
+def animal_tex(kind):
+    return {"u": f"jsn_furniture:block/fur_{kind}", "q": f"jsn_furniture:block/face_{kind}", "k": "jsn_furniture:block/fur_black",
+            "w": "jsn_furniture:block/fur_white"}
+
+
+# 動物の風鈴
+for a in ("cat_white", "cat_black", "cat_calico", "fox", "rabbit", "tanuki"):
+    fid = f"furin_{a}"
+    body = [b(7.7, 12, 7.7, 8.3, 14, 8.3, "h")] + head(5, 6, 5, 11, 11.5, 11, a, shape=False) + [
+        b(7.8, 2, 7.95, 8.2, 6, 8.05, "h"), b(6.8, -5, 7.95, 9.2, 2, 8.05, "t")]
+    tex = animal_tex(a) | {"h": "minecraft:block/white_wool", "t": "jsn_furniture:block/tanzaku"}
+    FURIN.append((fid, f"{ANIMAL_JA[a]}の風鈴", f"{ANIMAL_EN[a]} Wind Chime", "glass", "minecraft:glass_pane",
+                  {"cat_white": "minecraft:white_wool", "cat_black": "minecraft:black_wool", "cat_calico": "minecraft:orange_wool",
+                   "fox": "minecraft:sweet_berries", "rabbit": "minecraft:rabbit_hide", "tanuki": "minecraft:brown_wool"}[a], ("animal", a)))
+    add(F(fid, f"{ANIMAL_JA[a]}の風鈴", f"{ANIMAL_EN[a]} Wind Chime", "furin", furin_hook(), tex, body=body, furin="glass",
+          tab="wa", hanging=True, sound="glass", tool="pickaxe",
+          recipe=(["S", "G", "X"], {"S": "minecraft:string", "G": "minecraft:glass_pane", "X": FURIN[-1][5]})))
+
+# 縁起物
+MANEKI = [b(4, 0, 5, 12, 8, 12, "u"), b(4, 7.5, 4.8, 12, 8.5, 11.7, "r", shape=False), b(7.3, 6.3, 4.2, 8.7, 7.7, 5, "g", shape=False),
+          b(11.5, 8.5, 6, 14, 14, 8.5, "u", shape=False), b(5, 0, 4, 7, 2, 5, "u", shape=False)]
+for mid, mja, men, fur in (("maneki_neko", "招き猫", "Maneki-neko", "cat_white"), ("maneki_neko_gold", "金の招き猫", "Golden Maneki-neko", "gold")):
+    t = animal_tex("cat_white") | {"r": "minecraft:block/red_wool", "g": "minecraft:block/gold_block"}
+    if fur == "gold":
+        t["u"] = "minecraft:block/gold_block"
+        t["q"] = "jsn_furniture:block/face_maneki_gold"
+    else:
+        t["q"] = "jsn_furniture:block/face_maneki"
+    add(F(mid, mja, men, "basic", MANEKI + head(3.5, 8, 4.5, 12.5, 14.5, 11.5, "cat_white"), t, tab="wa", sound="stone", tool="pickaxe",
+          recipe=(["C", "D", "X"], {"C": "minecraft:clay_ball", "D": "minecraft:white_dye", "X": "minecraft:gold_nugget" if fur != "gold" else "minecraft:gold_ingot"}) if fur != "gold" else
+          (["GGG", "GCG", "GGG"], {"G": "minecraft:gold_ingot", "C": f"{NS}:maneki_neko"})))
+add(F("kitsune_statue", "お稲荷さんの狐", "Inari Fox Statue", "basic", [
+    b(2, 0, 2, 14, 4, 14, "s"), b(5, 4, 5, 11, 12, 12, "s"), b(5, 9, 4.6, 11, 12, 5.2, "r", shape=False),
+    b(4.5, 12, 3, 11.5, 17, 10, {"north": "q", "south": "s", "east": "s", "west": "s", "up": "s", "down": "s"}, uv={"north": [0, 0, 16, 16]}, shape=False),
+    b(4.5, 17, 5, 6.5, 20, 6.5, "s", shape=False), b(9.5, 17, 5, 11.5, 20, 6.5, "s", shape=False), b(7, 4, 12, 9, 13, 15, "s", shape=False)],
+    {"s": "minecraft:block/stone", "r": "minecraft:block/red_wool", "q": "jsn_furniture:block/face_kitsune_statue"}, tab="wa", sound="stone", tool="pickaxe",
+    recipe=(["SRS", "SSS", "SSS"], {"S": "minecraft:stone", "R": "minecraft:red_wool"})))
+add(F("tanuki_okimono", "信楽のたぬき", "Shigaraki Tanuki", "basic", [
+    b(3, 0, 4, 13, 10, 13, "u"), b(5, 3, 3.5, 11, 9, 4, "w", shape=False),
+    b(4, 10, 3.5, 12, 16, 11.5, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}),
+    b(2.5, 16, 2, 13.5, 17, 13, "h", shape=False), b(5, 17, 4.5, 11, 19, 10.5, "h", shape=False),
+    b(12, 0, 3, 14.5, 5, 5.5, "w", shape=False), b(12.5, 5, 3.5, 14, 6, 5, "w", shape=False)] + ears("round", 4, 12, 16, 3.5),
+    animal_tex("tanuki") | {"h": "minecraft:block/hay_block_top", "w": "minecraft:block/white_terracotta"}, tab="wa", sound="stone", tool="pickaxe",
+    recipe=(["H", "C", "C"], {"H": "minecraft:wheat", "C": "minecraft:brown_terracotta"})))
+for col, cja, cen in (("red", "赤", "Red"), ("white", "白", "White")):
+    add(F(f"daruma_{col}", f"{cja}いだるま", f"{cen} Daruma", "basic", [
+        b(3, 0, 3, 13, 11, 13, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}),
+        b(4, 11, 4, 12, 12.5, 12, "u", shape=False)],
+        {"u": f"minecraft:block/{col}_concrete", "q": f"jsn_furniture:block/face_daruma_{col}"}, tab="wa", sound="wood",
+        recipe=([" D ", "PWP", " P "], {"D": f"minecraft:{col}_dye", "P": "minecraft:paper", "W": "minecraft:black_dye"})))
+
+# ぬいぐるみ
+PLUSHES = ("cat_white", "fox", "shiba", "rabbit", "bear", "panda", "penguin", "chick")
+for a in PLUSHES:
+    t = animal_tex(a)
+    if a in ("penguin", "chick"):
+        els = [b(4.5, 0, 5, 11.5, 9, 11, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}),
+               b(3.5, 2, 6.5, 4.5, 7, 9.5, "u", shape=False), b(11.5, 2, 6.5, 12.5, 7, 9.5, "u", shape=False),
+               b(5.5, 0, 4, 7.5, 1, 6, "o", shape=False), b(8.5, 0, 4, 10.5, 1, 6, "o", shape=False)]
+        t["o"] = "minecraft:block/orange_concrete"
+    else:
+        limb = "k" if a == "panda" else "u"
+        els = [b(5, 0, 6, 11, 6, 11, "u"), b(5, 0, 4, 7, 2, 6, limb, shape=False), b(9, 0, 4, 11, 2, 6, limb, shape=False),
+               b(4, 2, 7, 5, 5, 9, limb, shape=False), b(11, 2, 7, 12, 5, 9, limb, shape=False)] + head(4, 6, 4.5, 12, 12, 10.5, a)
+        tail = {"fox": [b(7, 0, 11, 9, 4, 15, "u", shape=False), b(7, 0, 14, 9, 2, 16, "w", shape=False)], "rabbit": [b(7, 1, 11, 9, 3, 12.5, "u", shape=False)],
+                "shiba": [b(7, 4, 10.5, 9, 7, 12.5, "u", shape=False)], "cat_white": [b(7.5, 0, 11, 8.5, 6, 12, "u", shape=False)]}.get(a, [])
+        els += tail
+    add(F(f"plush_{a}", f"{ANIMAL_JA[a]}のぬいぐるみ", f"{ANIMAL_EN[a]} Plush", "basic", els, t, tab="west", sound="wool",
+          recipe=([" W ", "WXW", " W "], {"W": "minecraft:white_wool" if a in ("cat_white", "rabbit", "panda") else
+                                         {"fox": "minecraft:orange_wool", "shiba": "minecraft:orange_wool", "bear": "minecraft:brown_wool",
+                                          "penguin": "minecraft:black_wool", "chick": "minecraft:yellow_wool"}[a],
+                                          "X": {"cat_white": "minecraft:string", "fox": "minecraft:sweet_berries", "shiba": "minecraft:bone",
+                                                "rabbit": "minecraft:carrot", "bear": "minecraft:honeycomb", "panda": "minecraft:bamboo",
+                                                "penguin": "minecraft:cod", "chick": "minecraft:egg"}[a]})))
+
+# ペット用
+add(F("cat_tower", "キャットタワー", "Cat Tower", "pet", [
+    b(0, 0, 0, 16, 2, 16, "c"), b(6, 2, 6, 10, 28, 10, "r"), b(1, 13, 1, 15, 15, 15, "c"), b(1, 27, 1, 15, 29, 15, "c"),
+    b(1, 29, 1, 15, 31, 2, "c", shape=False), b(1, 29, 14, 15, 31, 15, "c", shape=False), b(1, 29, 2, 2, 31, 14, "c", shape=False), b(14, 29, 2, 15, 31, 14, "c", shape=False),
+    b(11, 7, 2, 13, 13, 4, "f", shape=False)],
+    {"c": "minecraft:block/light_gray_wool", "r": "jsn_furniture:block/sisal", "f": "jsn_furniture:block/fur_cat_white"},
+    tall=True, seat=29, sound="wool", recipe=(["WWW", " S ", "WSW"], {"W": "minecraft:light_gray_wool", "S": "minecraft:string"})))
+add(F("dog_house", "犬小屋", "Dog House", "pet", [
+    b(1, 0, 2, 15, 1, 15, "p"), b(1, 1, 14, 15, 12, 15, "p"), b(1, 1, 2, 2, 12, 14, "p"), b(14, 1, 2, 15, 12, 14, "p"),
+    b(1, 1, 1, 5, 12, 2, "p"), b(11, 1, 1, 15, 12, 2, "p"), b(5, 9, 1, 11, 12, 2, "p"),
+    b(-0.5, 11, 0.5, 8.5, 12, 15.5, "r", shape=False, rot={"origin": [8, 12, 8], "axis": "z", "angle": 22.5}),
+    b(7.5, 11, 0.5, 16.5, 12, 15.5, "r", shape=False, rot={"origin": [8, 12, 8], "axis": "z", "angle": -22.5}),
+    b(6, 13, 1.5, 10, 15, 2, "n", shape=False)],
+    {"p": "minecraft:block/oak_planks", "r": "minecraft:block/red_concrete", "n": "jsn_furniture:block/dog_house_sign"}, seat=1, sound="wood",
+    recipe=(["RRR", "P P", "PPP"], {"R": "minecraft:red_dye", "P": "#minecraft:planks"})))
+for c, cja, cen in COLORS:
+    add(F(f"{c}_pet_bed", f"{cja}のペットベッド", f"{cen} Pet Bed", "pet", [
+        b(1, 0, 1, 15, 1.5, 15, "w"), b(1, 1.5, 1, 15, 4, 3, "w"), b(1, 1.5, 13, 15, 4, 15, "w"), b(1, 1.5, 3, 3, 4, 13, "w"), b(13, 1.5, 3, 15, 4, 13, "w"),
+        b(3, 1.5, 3, 13, 2, 13, "i", shape=False)],
+        {"w": f"minecraft:block/{c}_wool", "i": "minecraft:block/white_wool" if c != "white" else "minecraft:block/light_gray_wool"},
+        seat=2, sound="wool", recipe=(["W W", "WWW"], {"W": f"minecraft:{c}_wool"})))
+BOWL = [b(4, 0, 4, 12, 1, 12, "b"), b(4, 1, 4, 12, 3, 5, "b"), b(4, 1, 11, 12, 3, 12, "b"), b(4, 1, 5, 5, 3, 11, "b"), b(11, 1, 5, 12, 3, 11, "b"),
+        b(5, 1, 5, 11, 2.3, 11, "f", shape=False)]
+add(F("food_bowl", "えさ皿", "Food Bowl", "basic", BOWL,
+      {"b": "minecraft:block/red_terracotta", "f": "jsn_furniture:block/pet_food"}, sound="stone", tool="pickaxe",
+      recipe=(["B", "T"], {"B": "minecraft:bone_meal", "T": "minecraft:red_terracotta"})))
+add(F("water_bowl", "水皿", "Water Bowl", "basic", BOWL,
+      {"b": "minecraft:block/blue_terracotta", "f": "jsn_furniture:block/water"}, sound="stone", tool="pickaxe",
+      recipe=(["W", "T"], {"W": "minecraft:water_bucket", "T": "minecraft:blue_terracotta"})))
+
+# 動物の形の家具
+for a in ("cat_white", "cat_black", "cat_calico", "cat_gray"):
+    add(F(f"neko_cushion_{a.split('_')[1]}", f"{ANIMAL_JA[a]}のクッション", f"{ANIMAL_EN[a]} Cushion", "seat", [
+        b(2, 0, 3, 14, 3, 14, "u"), b(2, 0, 2, 14, 5, 3, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}, shape=False)]
+        + ears("cat", 2, 14, 5, 1.5), animal_tex(a), seat=3, sound="wool",
+        recipe=(["S S", "WWW"], {"S": "minecraft:string", "W": {"cat_white": "minecraft:white_wool", "cat_black": "minecraft:black_wool",
+                                                              "cat_calico": "minecraft:orange_wool", "cat_gray": "minecraft:gray_wool"}[a]})))
+for c, cja, cen in COLORS:
+    add(F(f"{c}_paw_rug", f"{cja}の肉球ラグ", f"{cen} Paw Rug", "basic", [b(0, 0, 0, 16, 1, 16, {"up": "p", "down": "w", "north": "w", "south": "w", "east": "w", "west": "w"}, uv={"up": [0, 0, 16, 16]})],
+          {"w": f"minecraft:block/{c}_wool", "p": f"jsn_furniture:block/paw_rug_{c}"}, sound="wool",
+          recipe=(["CBC"], {"C": f"minecraft:{c}_carpet", "B": "minecraft:bone"}), count=2))
+for a, sja, sen, wool in (("bear", "くまのソファ", "Bear Sofa", "brown"), ("cat_white", "ねこのソファ", "Cat Sofa", "white")):
+    t = animal_tex(a)
+    add(F(f"{'kuma' if a == 'bear' else 'neko'}_sofa", sja, sen, "seat", [
+        b(0, 0, 1, 16, 7, 15, "u"), b(0, 7, 11, 16, 15, 15, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}, shape=False),
+        b(0, 7, 1, 2, 11, 11, "u"), b(14, 7, 1, 16, 11, 11, "u")] + ears("round" if a == "bear" else "cat", 0, 16, 15, 10.5), t, seat=8, sound="wool",
+        recipe=(["X  ", "WWW", "PPP"], {"X": "minecraft:honeycomb" if a == "bear" else "minecraft:string", "W": f"minecraft:{wool}_wool", "P": "#minecraft:planks"})))
+
+
 # ============================================================ テクスチャ
 
 
@@ -559,6 +720,8 @@ def tex_furin(fid, kind, look):
     im = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     lk, arg = look
+    if lk == "animal":
+        return
     if lk == "color":
         c = hx(DYE_RGB[arg])
         base = tuple(int(v * 0.6 + 255 * 0.4) for v in c[:3]) + (200,)
@@ -614,6 +777,107 @@ def tex_furin(fid, kind, look):
         noise_fill(im, (200, 160, 70), 10, 5)
         d.line([0, 4, 15, 4], fill=(240, 210, 120, 255))
     save(im, f"block/{fid}")
+
+
+def make_animal_textures():
+    def fur(name, rgb, seed, patches=None):
+        im = Image.new("RGBA", (16, 16)); noise_fill(im, rgb, 6, seed)
+        if patches:
+            d = ImageDraw.Draw(im)
+            for (x, y, r, c) in patches:
+                d.ellipse([x - r, y - r, x + r, y + r], fill=c)
+        save(im, f"block/fur_{name}")
+        return im
+
+    for i, (k, (rgb, face, ear)) in enumerate(ANIMAL.items()):
+        patches = [(4, 4, 3, (225, 130, 50, 255)), (12, 11, 3, (40, 35, 35, 255))] if k == "cat_calico" else None
+        fur(k, rgb, 40 + i, patches)
+    fur("black", (35, 35, 40), 90)
+    fur("white", (245, 245, 245), 91)
+
+    def face(name, rgb, style):
+        im = Image.new("RGBA", (16, 16)); noise_fill(im, rgb, 4, hash(name) & 255); d = ImageDraw.Draw(im)
+        dark = (30, 25, 25, 255)
+        if style in ("cat", "cat_black", "maneki", "maneki_gold"):
+            if style == "cat_black":
+                eye = (240, 210, 60, 255)
+                d.rectangle([3, 6, 5, 8], fill=eye); d.rectangle([10, 6, 12, 8], fill=eye)
+                d.point([(4, 7), (11, 7)], fill=dark)
+            elif style.startswith("maneki"):
+                d.line([(3, 8), (4, 7), (5, 8)], fill=dark); d.line([(10, 8), (11, 7), (12, 8)], fill=dark)
+                d.rectangle([2, 0, 4, 2], fill=(220, 90, 100, 255)); d.rectangle([11, 0, 13, 2], fill=(220, 90, 100, 255))
+                d.point([(2, 10), (3, 11)], fill=(240, 140, 150, 255)); d.point([(13, 10), (12, 11)], fill=(240, 140, 150, 255))
+            else:
+                d.rectangle([3, 6, 5, 8], fill=(80, 150, 210, 255)); d.rectangle([10, 6, 12, 8], fill=(80, 150, 210, 255))
+                d.rectangle([4, 6, 4, 8], fill=dark); d.rectangle([11, 6, 11, 8], fill=dark)
+            d.rectangle([7, 9, 8, 9], fill=(235, 140, 150, 255))
+            d.line([(6, 11), (7, 12), (8, 11), (9, 12)], fill=dark if style != "cat_black" else (200, 200, 200, 255))
+            if style != "cat_black":
+                d.line([(0, 10), (3, 10)], fill=(120, 120, 120, 255)); d.line([(12, 10), (15, 10)], fill=(120, 120, 120, 255))
+        elif style == "fox" or style == "kitsune":
+            d.polygon([(3, 9), (8, 15), (12, 9)], fill=(250, 245, 240, 255) if style == "fox" else (200, 30, 30, 255))
+            if style == "kitsune":
+                d.line([(3, 6), (6, 7)], fill=(200, 30, 30, 255)); d.line([(12, 6), (9, 7)], fill=(200, 30, 30, 255))
+            else:
+                d.rectangle([3, 6, 5, 7], fill=dark); d.rectangle([10, 6, 12, 7], fill=dark)
+            d.rectangle([7, 12, 8, 13], fill=dark)
+        elif style == "rabbit":
+            d.rectangle([3, 6, 5, 8], fill=(200, 50, 70, 255)); d.rectangle([10, 6, 12, 8], fill=(200, 50, 70, 255))
+            d.point((7, 10), fill=(240, 150, 160, 255)); d.point((8, 10), fill=(240, 150, 160, 255)); d.line([(6, 12), (7, 11), (8, 11), (9, 12)], fill=dark)
+        elif style == "tanuki":
+            d.ellipse([1, 4, 7, 10], fill=(60, 45, 35, 255)); d.ellipse([8, 4, 14, 10], fill=(60, 45, 35, 255))
+            d.rectangle([3, 6, 4, 7], fill=(250, 250, 250, 255)); d.rectangle([10, 6, 11, 7], fill=(250, 250, 250, 255))
+            d.ellipse([5, 9, 10, 14], fill=(225, 210, 190, 255)); d.rectangle([7, 10, 8, 11], fill=dark)
+        elif style == "shiba":
+            d.ellipse([3, 8, 12, 15], fill=(250, 245, 235, 255)); d.rectangle([3, 6, 4, 7], fill=dark); d.rectangle([11, 6, 12, 7], fill=dark)
+            d.rectangle([7, 10, 8, 11], fill=dark); d.line([(6, 13), (7, 13), (8, 13), (9, 13)], fill=(200, 80, 80, 255))
+        elif style == "bear":
+            d.ellipse([4, 8, 11, 14], fill=(200, 165, 120, 255)); d.rectangle([3, 6, 4, 7], fill=dark); d.rectangle([11, 6, 12, 7], fill=dark)
+            d.rectangle([7, 9, 8, 10], fill=dark)
+        elif style == "panda":
+            d.ellipse([1, 5, 6, 10], fill=dark); d.ellipse([9, 5, 14, 10], fill=dark)
+            d.point([(4, 7), (10, 7)], fill=(250, 250, 250, 255)); d.rectangle([7, 10, 8, 11], fill=dark)
+        elif style == "penguin":
+            d.ellipse([2, 3, 13, 15], fill=(245, 245, 245, 255)); d.rectangle([4, 5, 5, 6], fill=dark); d.rectangle([10, 5, 11, 6], fill=dark)
+            d.polygon([(6, 8), (9, 8), (7.5, 10)], fill=(240, 150, 40, 255))
+        elif style == "chick":
+            d.rectangle([4, 5, 5, 6], fill=dark); d.rectangle([10, 5, 11, 6], fill=dark); d.polygon([(6, 8), (9, 8), (7.5, 10)], fill=(240, 120, 30, 255))
+            d.point([(3, 9), (12, 9)], fill=(250, 160, 140, 255))
+        elif style.startswith("daruma"):
+            d.ellipse([2, 2, 13, 13], fill=(250, 245, 235, 255))
+            d.ellipse([3, 5, 6, 8], fill=(250, 250, 250, 255), outline=dark); d.ellipse([9, 5, 12, 8], fill=(250, 250, 250, 255), outline=dark)
+            d.point((4, 6), fill=dark)  # 片目だけ黒（願いをこめて）
+            d.line([(3, 4), (6, 3)], fill=dark, width=1); d.line([(9, 3), (12, 4)], fill=dark)
+            d.arc([4, 8, 11, 13], 20, 160, fill=dark)
+            d.text((5, 14), "", fill=dark)
+        save(im, f"block/face_{name}")
+
+    for k, (rgb, style, ear) in ANIMAL.items():
+        face(k, rgb, style)
+    face("maneki", (238, 238, 236), "maneki")
+    face("maneki_gold", (235, 190, 60), "maneki_gold")
+    face("kitsune_statue", (128, 128, 128), "kitsune")
+    face("daruma_red", (180, 30, 30), "daruma")
+    face("daruma_white", (240, 240, 240), "daruma")
+    # キャットタワーの麻ひも・犬小屋の札・えさ
+    im = Image.new("RGBA", (16, 16)); noise_fill(im, (190, 160, 110), 8, 95); d = ImageDraw.Draw(im)
+    for y in range(0, 16, 2):
+        d.line([0, y, 15, y + 1], fill=(160, 130, 85, 255))
+    save(im, "block/sisal")
+    im = Image.new("RGBA", (16, 16), (240, 230, 200, 255)); d = ImageDraw.Draw(im); d.rectangle([0, 0, 15, 15], outline=(120, 80, 40, 255))
+    d.ellipse([5, 7, 8, 10], fill=(90, 60, 40, 255))
+    for x, y in ((4, 4), (7, 3), (10, 4), (11, 7)):
+        d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=(90, 60, 40, 255))
+    save(im, "block/dog_house_sign")
+    im = Image.new("RGBA", (16, 16)); noise_fill(im, (150, 95, 50), 25, 97); save(im, "block/pet_food")
+    for c, cja, cen in COLORS:
+        base = hx(DYE_RGB[c])
+        im = Image.new("RGBA", (16, 16)); noise_fill(im, base, 5, 99); d = ImageDraw.Draw(im)
+        pad = (250, 250, 250, 255) if c not in ("white", "light_gray", "yellow") else (120, 90, 80, 255)
+        d.ellipse([5, 7, 10, 12], fill=pad)
+        for x, y in ((4, 5), (7, 3), (10, 5)):
+            d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=pad)
+        save(im, f"block/paw_rug_{c}")
 
 
 def make_textures():
@@ -950,6 +1214,7 @@ def write_door(did, ja, en, recipe):
 
 def main():
     make_textures()
+    make_animal_textures()
     for fur in SPECS:
         write_furniture(fur)
     for w, wja, wen in WOODS:

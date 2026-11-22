@@ -12020,6 +12020,2502 @@
     ]
    ],
    "open": null
+  },
+  {
+   "id": "furin_cat_white",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_cat_black",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_cat_calico",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_fox",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_rabbit",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_tanuki",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "maneki_neko",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     5,
+     12,
+     8,
+     12
+    ],
+    [
+     3.5,
+     8,
+     4.5,
+     12.5,
+     14.5,
+     11.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "maneki_neko_gold",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     5,
+     12,
+     8,
+     12
+    ],
+    [
+     3.5,
+     8,
+     4.5,
+     12.5,
+     14.5,
+     11.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kitsune_statue",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     4,
+     14
+    ],
+    [
+     5,
+     4,
+     5,
+     11,
+     12,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "tanuki_okimono",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     3,
+     0,
+     4,
+     13,
+     10,
+     13
+    ],
+    [
+     4,
+     10,
+     3.5,
+     12,
+     16,
+     11.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "daruma_red",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     13,
+     11,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "daruma_white",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     13,
+     11,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_cat_white",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_fox",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_shiba",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_rabbit",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_bear",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_panda",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_penguin",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     5,
+     11.5,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_chick",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     5,
+     11.5,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cat_tower",
+   "kind": "pet",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": 29,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     2,
+     16
+    ],
+    [
+     6,
+     2,
+     6,
+     10,
+     28,
+     10
+    ],
+    [
+     1,
+     13,
+     1,
+     15,
+     15,
+     15
+    ],
+    [
+     1,
+     27,
+     1,
+     15,
+     29,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dog_house",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     1,
+     15
+    ],
+    [
+     1,
+     1,
+     14,
+     15,
+     12,
+     15
+    ],
+    [
+     1,
+     1,
+     2,
+     2,
+     12,
+     14
+    ],
+    [
+     14,
+     1,
+     2,
+     15,
+     12,
+     14
+    ],
+    [
+     1,
+     1,
+     1,
+     5,
+     12,
+     2
+    ],
+    [
+     11,
+     1,
+     1,
+     15,
+     12,
+     2
+    ],
+    [
+     5,
+     9,
+     1,
+     11,
+     12,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "white_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "orange_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "magenta_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_blue_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "yellow_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "lime_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "pink_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "gray_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_gray_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cyan_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "purple_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "blue_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "brown_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "green_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "red_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "black_pet_bed",
+   "kind": "pet",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     1.5,
+     15
+    ],
+    [
+     1,
+     1.5,
+     1,
+     15,
+     4,
+     3
+    ],
+    [
+     1,
+     1.5,
+     13,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     1.5,
+     3,
+     3,
+     4,
+     13
+    ],
+    [
+     13,
+     1.5,
+     3,
+     15,
+     4,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "food_bowl",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     1,
+     12
+    ],
+    [
+     4,
+     1,
+     4,
+     12,
+     3,
+     5
+    ],
+    [
+     4,
+     1,
+     11,
+     12,
+     3,
+     12
+    ],
+    [
+     4,
+     1,
+     5,
+     5,
+     3,
+     11
+    ],
+    [
+     11,
+     1,
+     5,
+     12,
+     3,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "water_bowl",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     1,
+     12
+    ],
+    [
+     4,
+     1,
+     4,
+     12,
+     3,
+     5
+    ],
+    [
+     4,
+     1,
+     11,
+     12,
+     3,
+     12
+    ],
+    [
+     4,
+     1,
+     5,
+     5,
+     3,
+     11
+    ],
+    [
+     11,
+     1,
+     5,
+     12,
+     3,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "neko_cushion_white",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "neko_cushion_black",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "neko_cushion_calico",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "neko_cushion_gray",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "white_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "orange_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "magenta_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_blue_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "yellow_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "lime_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "pink_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "gray_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_gray_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cyan_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "purple_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "blue_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "brown_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "green_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "red_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "black_paw_rug",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kuma_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "neko_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ]
+   ],
+   "open": null
   }
  ],
  "beds": [

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "GGG",
+  "GCG",
+  "GGG"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:gold_ingot"
+  },
+  "C": {
+   "item": "jsn_furniture:maneki_neko"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:maneki_neko_gold",
+  "count": 1
+ }
+}

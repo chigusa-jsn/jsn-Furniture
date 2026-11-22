@@ -20,7 +20,7 @@ for f in sorted(os.listdir(IMG)):
     imgs[f[:-4]] = "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
 
 kind_of = {s["id"]: s for s in specs["furniture"]}
-DO = {"seat": "座れる", "storage": "しまえる", "lamp": "つく・消える", "curtain": "開け閉め", "display": "飾れる", "furin": "音が鳴る",
+DO = {"pet": "ペットが座る", "seat": "座れる", "storage": "しまえる", "lamp": "つく・消える", "curtain": "開け閉め", "display": "飾れる", "furin": "音が鳴る",
       "shishi": "音が鳴る", "sink": "水をくめる"}
 
 
@@ -51,25 +51,26 @@ for suffix in ["chair", "stool", "bench", "table", "coffee_table", "desk", "shel
     name = ja[f"block.jsn_furniture.oak_{suffix}"].replace("オークの", "")
     wood_types.append({"name": name, "ids": ids, "tags": tags(ids[0])})
 color_types = []
-for suffix in ["sofa", "curtain", "zabuton", "noren"]:
+for suffix in ["sofa", "curtain", "zabuton", "noren", "pet_bed", "paw_rug"]:
     ids = [f"{c}_{suffix}" for c in COLORS]
     name = ja[f"block.jsn_furniture.red_{suffix}"].replace("赤の", "")
     color_types.append({"name": name, "ids": ids, "tags": tags(ids[0])})
-west, wa, furin = [], [], []
+west, wa, furin, animal = [], [], [], []
 for s in specs["furniture"]:
     i = s["id"]
     if any(i.endswith("_" + x) for x in ["chair", "stool", "bench", "table", "coffee_table", "desk", "shelf", "cabinet", "wardrobe", "counter", "chabudai",
-                                         "sofa", "curtain", "zabuton", "noren"]):
+                                         "sofa", "curtain", "zabuton", "noren", "pet_bed", "paw_rug"]):
         continue
     item = {"id": i, "name": ja[f"block.jsn_furniture.{i}"], "tags": tags(i)}
-    (furin if i.startswith("furin") else wa if s["tab"] == "wa" else west).append(item)
+    is_animal = i.startswith(("plush_", "maneki", "kitsune", "tanuki_", "daruma", "cat_tower", "dog_house", "food_bowl", "water_bowl", "neko_", "kuma_"))
+    (furin if i.startswith("furin") else animal if is_animal else wa if s["tab"] == "wa" else west).append(item)
 for i in ["futon", "shoji", "fusuma"]:
     wa.append({"id": i, "name": ja[f"block.jsn_furniture.{i}"], "tags": tags(i)})
-SOUND = {"furin_nanbu": "低く長く響く", "furin_brass": "やわらかく響く", "furin_ceramic": "短くやさしい", "furin_bamboo": "カラコロ"}
+SOUND = {**{f"furin_{a}": "高く澄んだ音" for a in ["cat_white"]}, "furin_nanbu": "低く長く響く", "furin_brass": "やわらかく響く", "furin_ceramic": "短くやさしい", "furin_bamboo": "カラコロ"}
 for f in furin:
     f["tags"] = [SOUND.get(f["id"], "高く澄んだ音")]
 
-data = {"img": imgs, "wood": wood_types, "color": color_types, "west": west, "wa": wa, "furin": furin,
+data = {"img": imgs, "wood": wood_types, "color": color_types, "west": west, "wa": wa, "furin": furin, "animal": animal,
         "woods": [[a, b] for a, b in zip(WOOD_JA, WOOD_RGB)], "colors": [[a, b] for a, b in zip(COLOR_JA, COLOR_RGB)]}
 total = len(specs["furniture"]) + len(specs["beds"]) + len(specs["doors"])
 html = open(f"{ROOT}/tools/catalog_template.html", encoding="utf-8").read()

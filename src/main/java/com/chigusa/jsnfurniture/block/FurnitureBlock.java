@@ -265,6 +265,10 @@ public class FurnitureBlock extends Block implements EntityBlock {
                 if (!level.isClientSide) SeatEntity.sit(level, pos, spec.seat() / 16.0, player, st.getValue(FACING));
                 return InteractionResult.sidedSuccess(level.isClientSide);
             }
+            case "pet" -> {
+                if (!level.isClientSide) SeatEntity.seatPet(level, pos, spec.seat() / 16.0, player, st.getValue(FACING));
+                return InteractionResult.sidedSuccess(level.isClientSide);
+            }
             case "storage" -> {
                 if (!level.isClientSide && level.getBlockEntity(pos) instanceof StorageBlockEntity s) {
                     player.openMenu(s);

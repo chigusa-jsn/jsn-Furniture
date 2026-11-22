@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "CBC"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:white_carpet"
+  },
+  "B": {
+   "item": "minecraft:bone"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:white_paw_rug",
+  "count": 2
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SRS",
+  "SSS",
+  "SSS"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stone"
+  },
+  "R": {
+   "item": "minecraft:red_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:kitsune_statue",
+  "count": 1
+ }
+}

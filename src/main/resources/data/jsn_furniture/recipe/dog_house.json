@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "RRR",
+  "P P",
+  "PPP"
+ ],
+ "key": {
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:dog_house",
+  "count": 1
+ }
+}

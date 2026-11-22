@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "C",
+  "D",
+  "X"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:clay_ball"
+  },
+  "D": {
+   "item": "minecraft:white_dye"
+  },
+  "X": {
+   "item": "minecraft:gold_nugget"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:maneki_neko",
+  "count": 1
+ }
+}

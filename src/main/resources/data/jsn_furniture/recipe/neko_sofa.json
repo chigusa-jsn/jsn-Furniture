@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "X  ",
+  "WWW",
+  "PPP"
+ ],
+ "key": {
+  "X": {
+   "item": "minecraft:string"
+  },
+  "W": {
+   "item": "minecraft:white_wool"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:neko_sofa",
+  "count": 1
+ }
+}

@@ -38,6 +38,18 @@
   "jsn_furniture:furin_suika",
   "jsn_furniture:furin_nanbu",
   "jsn_furniture:furin_ceramic",
-  "jsn_furniture:furin_brass"
+  "jsn_furniture:furin_brass",
+  "jsn_furniture:furin_cat_white",
+  "jsn_furniture:furin_cat_black",
+  "jsn_furniture:furin_cat_calico",
+  "jsn_furniture:furin_fox",
+  "jsn_furniture:furin_rabbit",
+  "jsn_furniture:furin_tanuki",
+  "jsn_furniture:maneki_neko",
+  "jsn_furniture:maneki_neko_gold",
+  "jsn_furniture:kitsune_statue",
+  "jsn_furniture:tanuki_okimono",
+  "jsn_furniture:food_bowl",
+  "jsn_furniture:water_bowl"
  ]
 }

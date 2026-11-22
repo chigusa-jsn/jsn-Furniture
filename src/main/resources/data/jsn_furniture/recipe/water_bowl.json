@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "W",
+  "T"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:water_bucket"
+  },
+  "T": {
+   "item": "minecraft:blue_terracotta"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:water_bowl",
+  "count": 1
+ }
+}
