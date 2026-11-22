@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "PCS"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:dark_oak_slab"
+  },
+  "P": {
+   "item": "minecraft:dark_oak_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:dark_oak_desk",
+  "count": 1
+ }
+}

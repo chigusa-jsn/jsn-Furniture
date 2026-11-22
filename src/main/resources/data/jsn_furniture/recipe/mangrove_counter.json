@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "PCP",
+  "PPP"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:smooth_stone_slab"
+  },
+  "P": {
+   "item": "minecraft:mangrove_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mangrove_counter",
+  "count": 1
+ }
+}

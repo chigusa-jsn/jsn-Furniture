@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "P P"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:jungle_slab"
+  },
+  "P": {
+   "item": "minecraft:jungle_planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_bench",
+  "count": 2
+ }
+}

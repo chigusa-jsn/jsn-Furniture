@@ -1,0 +1,215 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "w": "minecraft:block/yellow_wool",
+  "d": "minecraft:block/stripped_dark_oak_log",
+  "particle": "minecraft:block/yellow_wool"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    15,
+    7
+   ],
+   "to": [
+    16,
+    16,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "south": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "east": {
+     "texture": "#d",
+     "uv": [
+      7,
+      0,
+      9,
+      1
+     ]
+    },
+    "west": {
+     "texture": "#d",
+     "uv": [
+      7,
+      0,
+      9,
+      1
+     ]
+    },
+    "up": {
+     "texture": "#d",
+     "uv": [
+      0,
+      7,
+      16,
+      9
+     ]
+    },
+    "down": {
+     "texture": "#d",
+     "uv": [
+      0,
+      7,
+      16,
+      9
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0.5,
+    5,
+    7.6
+   ],
+   "to": [
+    7.7,
+    15,
+    8.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      8.3,
+      1,
+      15.5,
+      11
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      0.5,
+      1,
+      7.7,
+      11
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      7.6,
+      1,
+      8.4,
+      11
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      7.6,
+      1,
+      8.4,
+      11
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      0.5,
+      7.6,
+      7.7,
+      8.4
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      0.5,
+      7.6,
+      7.7,
+      8.4
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    8.3,
+    5,
+    7.6
+   ],
+   "to": [
+    15.5,
+    15,
+    8.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      0.5,
+      1,
+      7.7,
+      11
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      8.3,
+      1,
+      15.5,
+      11
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      7.6,
+      1,
+      8.4,
+      11
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      7.6,
+      1,
+      8.4,
+      11
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      8.3,
+      7.6,
+      15.5,
+      8.4
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      8.3,
+      7.6,
+      15.5,
+      8.4
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "Q Q",
+  "QQQ"
+ ],
+ "key": {
+  "Q": {
+   "item": "minecraft:quartz_block"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bathtub",
+  "count": 1
+ }
+}

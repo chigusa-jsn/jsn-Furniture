@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "C",
+  "W"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:purple_carpet"
+  },
+  "W": {
+   "item": "minecraft:purple_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:purple_zabuton",
+  "count": 2
+ }
+}

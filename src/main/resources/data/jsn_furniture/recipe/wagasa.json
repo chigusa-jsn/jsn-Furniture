@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PRP",
+  " B ",
+  " B "
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "B": {
+   "item": "minecraft:bamboo"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:wagasa",
+  "count": 1
+ }
+}

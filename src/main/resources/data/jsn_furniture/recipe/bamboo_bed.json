@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  "BBB",
+  "PLP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:white_wool"
+  },
+  "B": {
+   "item": "minecraft:light_blue_wool"
+  },
+  "P": {
+   "item": "minecraft:bamboo_planks"
+  },
+  "L": {
+   "item": "minecraft:bamboo_block"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bamboo_bed",
+  "count": 1
+ }
+}

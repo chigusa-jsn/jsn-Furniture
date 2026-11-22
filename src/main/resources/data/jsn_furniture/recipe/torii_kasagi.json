@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "BBB",
+  "RRR",
+  "LLL"
+ ],
+ "key": {
+  "B": {
+   "item": "minecraft:black_dye"
+  },
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:torii_kasagi",
+  "count": 3
+ }
+}

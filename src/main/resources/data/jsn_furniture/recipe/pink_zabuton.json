@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "C",
+  "W"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:pink_carpet"
+  },
+  "W": {
+   "item": "minecraft:pink_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:pink_zabuton",
+  "count": 2
+ }
+}

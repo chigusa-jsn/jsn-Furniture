@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "BBB",
+  "WWW"
+ ],
+ "key": {
+  "B": {
+   "item": "minecraft:blue_wool"
+  },
+  "W": {
+   "item": "minecraft:white_carpet"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:futon",
+  "count": 1
+ }
+}

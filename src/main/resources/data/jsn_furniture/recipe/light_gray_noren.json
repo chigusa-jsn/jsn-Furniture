@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "W W"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "W": {
+   "item": "minecraft:light_gray_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:light_gray_noren",
+  "count": 2
+ }
+}

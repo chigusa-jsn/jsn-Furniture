@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "m": "minecraft:block/white_concrete",
+  "g": "jsn_furniture:block/lamp_shade",
+  "particle": "minecraft:block/white_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    3,
+    14,
+    3
+   ],
+   "to": [
+    13,
+    16,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#m",
+     "uv": [
+      3,
+      0,
+      13,
+      2
+     ]
+    },
+    "south": {
+     "texture": "#m",
+     "uv": [
+      3,
+      0,
+      13,
+      2
+     ]
+    },
+    "east": {
+     "texture": "#m",
+     "uv": [
+      3,
+      0,
+      13,
+      2
+     ]
+    },
+    "west": {
+     "texture": "#m",
+     "uv": [
+      3,
+      0,
+      13,
+      2
+     ]
+    },
+    "up": {
+     "texture": "#m",
+     "uv": [
+      3,
+      3,
+      13,
+      13
+     ]
+    },
+    "down": {
+     "texture": "#m",
+     "uv": [
+      3,
+      3,
+      13,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    4,
+    13,
+    4
+   ],
+   "to": [
+    12,
+    14,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#g",
+     "uv": [
+      4,
+      2,
+      12,
+      3
+     ]
+    },
+    "south": {
+     "texture": "#g",
+     "uv": [
+      4,
+      2,
+      12,
+      3
+     ]
+    },
+    "east": {
+     "texture": "#g",
+     "uv": [
+      4,
+      2,
+      12,
+      3
+     ]
+    },
+    "west": {
+     "texture": "#g",
+     "uv": [
+      4,
+      2,
+      12,
+      3
+     ]
+    },
+    "up": {
+     "texture": "#g",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    },
+    "down": {
+     "texture": "#g",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

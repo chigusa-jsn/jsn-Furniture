@@ -1,0 +1,44 @@
+{
+ "furin_glass": {
+  "subtitle": "subtitles.jsn_furniture.furin_glass",
+  "sounds": [
+   "jsn_furniture:furin_glass_1",
+   "jsn_furniture:furin_glass_2",
+   "jsn_furniture:furin_glass_3"
+  ]
+ },
+ "furin_iron": {
+  "subtitle": "subtitles.jsn_furniture.furin_iron",
+  "sounds": [
+   "jsn_furniture:furin_iron_1",
+   "jsn_furniture:furin_iron_2"
+  ]
+ },
+ "furin_brass": {
+  "subtitle": "subtitles.jsn_furniture.furin_brass",
+  "sounds": [
+   "jsn_furniture:furin_brass_1",
+   "jsn_furniture:furin_brass_2"
+  ]
+ },
+ "furin_ceramic": {
+  "subtitle": "subtitles.jsn_furniture.furin_ceramic",
+  "sounds": [
+   "jsn_furniture:furin_ceramic_1",
+   "jsn_furniture:furin_ceramic_2"
+  ]
+ },
+ "furin_bamboo": {
+  "subtitle": "subtitles.jsn_furniture.furin_bamboo",
+  "sounds": [
+   "jsn_furniture:furin_bamboo_1",
+   "jsn_furniture:furin_bamboo_2"
+  ]
+ },
+ "shishi_odoshi": {
+  "subtitle": "subtitles.jsn_furniture.shishi_odoshi",
+  "sounds": [
+   "jsn_furniture:shishi_odoshi_1"
+  ]
+ }
+}

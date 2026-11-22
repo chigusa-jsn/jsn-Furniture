@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  " L "
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:cherry_slab"
+  },
+  "L": {
+   "item": "minecraft:cherry_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cherry_chabudai",
+  "count": 1
+ }
+}

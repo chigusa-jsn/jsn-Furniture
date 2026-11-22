@@ -1,0 +1,18 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "Q  ",
+  "QQQ",
+  " Q "
+ ],
+ "key": {
+  "Q": {
+   "item": "minecraft:white_terracotta"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:toilet",
+  "count": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "L",
+  "S",
+  "T"
+ ],
+ "key": {
+  "L": {
+   "item": "minecraft:azalea_leaves"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "T": {
+   "item": "minecraft:terracotta"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:house_plant",
+  "count": 1
+ }
+}

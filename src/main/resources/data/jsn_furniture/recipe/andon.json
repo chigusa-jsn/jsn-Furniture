@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SPS",
+  "PTP",
+  "SPS"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "T": {
+   "item": "minecraft:torch"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:andon",
+  "count": 1
+ }
+}

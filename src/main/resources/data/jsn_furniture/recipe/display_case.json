@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "GGG",
+  "G G",
+  "PPP"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:display_case",
+  "count": 1
+ }
+}

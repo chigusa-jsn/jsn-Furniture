@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "w": "minecraft:block/magenta_wool",
+  "d": "minecraft:block/red_wool",
+  "particle": "minecraft:block/magenta_wool"
+ },
+ "elements": [
+  {
+   "from": [
+    2,
+    0,
+    2
+   ],
+   "to": [
+    14,
+    2,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      2,
+      14,
+      14,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      2,
+      2,
+      14,
+      14
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7,
+    2,
+    7
+   ],
+   "to": [
+    9,
+    2.3,
+    9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d",
+     "uv": [
+      7,
+      13.7,
+      9,
+      14
+     ]
+    },
+    "south": {
+     "texture": "#d",
+     "uv": [
+      7,
+      13.7,
+      9,
+      14
+     ]
+    },
+    "east": {
+     "texture": "#d",
+     "uv": [
+      7,
+      13.7,
+      9,
+      14
+     ]
+    },
+    "west": {
+     "texture": "#d",
+     "uv": [
+      7,
+      13.7,
+      9,
+      14
+     ]
+    },
+    "up": {
+     "texture": "#d",
+     "uv": [
+      7,
+      7,
+      9,
+      9
+     ]
+    },
+    "down": {
+     "texture": "#d",
+     "uv": [
+      7,
+      7,
+      9,
+      9
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

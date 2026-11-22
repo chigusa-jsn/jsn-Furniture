@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/torii_nuki"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/torii_nuki",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/torii_nuki",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/torii_nuki",
+   "y": 270
+  }
+ }
+}

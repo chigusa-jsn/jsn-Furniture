@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PCP",
+  "PCP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:dark_oak_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:dark_oak_wardrobe",
+  "count": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "G",
+  "X"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:string"
+  },
+  "G": {
+   "item": "minecraft:cyan_stained_glass_pane"
+  },
+  "X": {
+   "item": "minecraft:paper"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:furin_cyan",
+  "count": 1
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "W W",
+  "W W"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "W": {
+   "item": "minecraft:white_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:white_curtain",
+  "count": 3
+ }
+}

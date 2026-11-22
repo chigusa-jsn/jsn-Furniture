@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "P P"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:bamboo_slab"
+  },
+  "P": {
+   "item": "minecraft:bamboo_planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bamboo_bench",
+  "count": 2
+ }
+}

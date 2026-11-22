@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:jungle_slab"
+  },
+  "S": {
+   "item": "minecraft:jungle_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_coffee_table",
+  "count": 1
+ }
+}

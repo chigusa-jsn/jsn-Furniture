@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "P",
+  "X"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "X": {
+   "item": "minecraft:snowball"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:kakejiku_fuji",
+  "count": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "III",
+  "ICI",
+  "IRI"
+ ],
+ "key": {
+  "I": {
+   "item": "minecraft:iron_ingot"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "R": {
+   "item": "minecraft:snowball"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:fridge",
+  "count": 1
+ }
+}

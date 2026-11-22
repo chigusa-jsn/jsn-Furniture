@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/lime_sofa"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/lime_sofa",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/lime_sofa",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/lime_sofa",
+   "y": 270
+  }
+ }
+}

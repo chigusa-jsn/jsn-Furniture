@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "P P"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:mangrove_slab"
+  },
+  "P": {
+   "item": "minecraft:mangrove_planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mangrove_bench",
+  "count": 2
+ }
+}

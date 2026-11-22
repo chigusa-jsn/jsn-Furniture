@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/furin_asagao"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/furin_asagao",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/furin_asagao",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/furin_asagao",
+   "y": 270
+  }
+ }
+}

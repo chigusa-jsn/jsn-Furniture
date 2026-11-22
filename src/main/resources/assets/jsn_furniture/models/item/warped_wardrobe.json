@@ -1,0 +1,526 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "p": "minecraft:block/warped_planks",
+  "l": "minecraft:block/warped_stem",
+  "s": "minecraft:block/stripped_warped_stem",
+  "m": "minecraft:block/iron_block",
+  "c": "minecraft:block/smooth_stone",
+  "particle": "minecraft:block/warped_planks"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    31,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#p",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#p",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#p",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#p",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#p",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    },
+    "down": {
+     "texture": "#p",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0.5,
+    31,
+    0.5
+   ],
+   "to": [
+    15.5,
+    32,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      15.5,
+      1
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      15.5,
+      1
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      15.5,
+      1
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      15.5,
+      1
+     ]
+    },
+    "up": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0.5,
+      15.5,
+      15.5
+     ]
+    },
+    "down": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0.5,
+      15.5,
+      15.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    1,
+    0.5
+   ],
+   "to": [
+    7.8,
+    30,
+    1
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s",
+     "uv": [
+      8.2,
+      0,
+      14,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      2,
+      0,
+      7.8,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      15,
+      0,
+      15.5,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      1,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#s",
+     "uv": [
+      2,
+      0.5,
+      7.8,
+      1
+     ]
+    },
+    "down": {
+     "texture": "#s",
+     "uv": [
+      2,
+      15,
+      7.8,
+      15.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    8.2,
+    1,
+    0.5
+   ],
+   "to": [
+    14,
+    30,
+    1
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s",
+     "uv": [
+      2,
+      0,
+      7.8,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      8.2,
+      0,
+      14,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      15,
+      0,
+      15.5,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      0.5,
+      0,
+      1,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#s",
+     "uv": [
+      8.2,
+      0.5,
+      14,
+      1
+     ]
+    },
+    "down": {
+     "texture": "#s",
+     "uv": [
+      8.2,
+      15,
+      14,
+      15.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    14,
+    0
+   ],
+   "to": [
+    7.5,
+    18,
+    0.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#m",
+     "uv": [
+      8.5,
+      0,
+      9.5,
+      4
+     ]
+    },
+    "south": {
+     "texture": "#m",
+     "uv": [
+      6.5,
+      0,
+      7.5,
+      4
+     ]
+    },
+    "east": {
+     "texture": "#m",
+     "uv": [
+      15.5,
+      0,
+      16,
+      4
+     ]
+    },
+    "west": {
+     "texture": "#m",
+     "uv": [
+      0,
+      0,
+      0.5,
+      4
+     ]
+    },
+    "up": {
+     "texture": "#m",
+     "uv": [
+      6.5,
+      0,
+      7.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "#m",
+     "uv": [
+      6.5,
+      15.5,
+      7.5,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    8.5,
+    14,
+    0
+   ],
+   "to": [
+    9.5,
+    18,
+    0.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#m",
+     "uv": [
+      6.5,
+      0,
+      7.5,
+      4
+     ]
+    },
+    "south": {
+     "texture": "#m",
+     "uv": [
+      8.5,
+      0,
+      9.5,
+      4
+     ]
+    },
+    "east": {
+     "texture": "#m",
+     "uv": [
+      15.5,
+      0,
+      16,
+      4
+     ]
+    },
+    "west": {
+     "texture": "#m",
+     "uv": [
+      0,
+      0,
+      0.5,
+      4
+     ]
+    },
+    "up": {
+     "texture": "#m",
+     "uv": [
+      8.5,
+      0,
+      9.5,
+      0.5
+     ]
+    },
+    "down": {
+     "texture": "#m",
+     "uv": [
+      8.5,
+      15.5,
+      9.5,
+      16
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout",
+ "display": {
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    0,
+    -3,
+    0
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    0.4
+   ]
+  },
+  "ground": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    3,
+    0
+   ],
+   "scale": [
+    0.2,
+    0.2,
+    0.2
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    -4,
+    0
+   ],
+   "scale": [
+    0.4,
+    0.4,
+    0.4
+   ]
+  },
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    2.5,
+    0
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    0.3
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    0.3
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    0,
+    225,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    0.3,
+    0.3,
+    0.3
+   ]
+  }
+ }
+}

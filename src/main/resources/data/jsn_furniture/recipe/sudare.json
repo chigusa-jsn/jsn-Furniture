@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "BBB",
+  "BBB"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:string"
+  },
+  "B": {
+   "item": "minecraft:bamboo"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:sudare",
+  "count": 3
+ }
+}

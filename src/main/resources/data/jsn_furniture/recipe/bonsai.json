@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "L",
+  "S",
+  "T"
+ ],
+ "key": {
+  "L": {
+   "item": "minecraft:spruce_sapling"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "T": {
+   "item": "minecraft:brown_terracotta"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bonsai",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:acacia_slab"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:acacia_stool",
+  "count": 2
+ }
+}

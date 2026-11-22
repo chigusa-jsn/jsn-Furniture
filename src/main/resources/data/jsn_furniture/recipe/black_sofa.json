@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "W  ",
+  "WWW",
+  "PPP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:black_wool"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:black_sofa",
+  "count": 1
+ }
+}

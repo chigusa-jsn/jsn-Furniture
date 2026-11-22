@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "PCS"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:jungle_slab"
+  },
+  "P": {
+   "item": "minecraft:jungle_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_desk",
+  "count": 1
+ }
+}

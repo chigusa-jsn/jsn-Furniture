@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:crimson_slab"
+  },
+  "S": {
+   "item": "minecraft:crimson_stem"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:crimson_coffee_table",
+  "count": 1
+ }
+}

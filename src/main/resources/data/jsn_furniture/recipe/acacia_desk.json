@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "PCS"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:acacia_slab"
+  },
+  "P": {
+   "item": "minecraft:acacia_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:acacia_desk",
+  "count": 1
+ }
+}

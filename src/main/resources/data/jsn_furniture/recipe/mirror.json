@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "GSG",
+  "GSG",
+  "GSG"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:gold_nugget"
+  },
+  "S": {
+   "item": "minecraft:glass_pane"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mirror",
+  "count": 1
+ }
+}

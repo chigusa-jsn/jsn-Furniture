@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  "BBB",
+  "PLP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:white_wool"
+  },
+  "B": {
+   "item": "minecraft:light_blue_wool"
+  },
+  "P": {
+   "item": "minecraft:cherry_planks"
+  },
+  "L": {
+   "item": "minecraft:cherry_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cherry_bed",
+  "count": 1
+ }
+}

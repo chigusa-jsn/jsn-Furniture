@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:birch_slab"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:birch_table",
+  "count": 1
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/gray_zabuton"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/gray_zabuton",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/gray_zabuton",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/gray_zabuton",
+   "y": 270
+  }
+ }
+}

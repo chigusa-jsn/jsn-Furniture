@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:bamboo_slab"
+  },
+  "S": {
+   "item": "minecraft:bamboo_block"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:bamboo_coffee_table",
+  "count": 1
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "PCS"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:birch_slab"
+  },
+  "P": {
+   "item": "minecraft:birch_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:birch_desk",
+  "count": 1
+ }
+}

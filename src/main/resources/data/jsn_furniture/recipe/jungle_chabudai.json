@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  " L "
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:jungle_slab"
+  },
+  "L": {
+   "item": "minecraft:jungle_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_chabudai",
+  "count": 1
+ }
+}

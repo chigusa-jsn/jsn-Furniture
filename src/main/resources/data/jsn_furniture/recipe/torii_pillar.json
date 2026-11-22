@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "R",
+  "L",
+  "L"
+ ],
+ "key": {
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "L": {
+   "tag": "minecraft:logs"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:torii_pillar",
+  "count": 3
+ }
+}

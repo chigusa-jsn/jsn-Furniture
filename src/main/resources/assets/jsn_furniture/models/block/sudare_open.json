@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "s": "jsn_furniture:block/sudare",
+  "r": "minecraft:block/stripped_bamboo_block",
+  "particle": "jsn_furniture:block/sudare"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    15,
+    14
+   ],
+   "to": [
+    16,
+    16,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#r",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "south": {
+     "texture": "#r",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "east": {
+     "texture": "#r",
+     "uv": [
+      1,
+      0,
+      2,
+      1
+     ]
+    },
+    "west": {
+     "texture": "#r",
+     "uv": [
+      14,
+      0,
+      15,
+      1
+     ]
+    },
+    "up": {
+     "texture": "#r",
+     "uv": [
+      0,
+      14,
+      16,
+      15
+     ]
+    },
+    "down": {
+     "texture": "#r",
+     "uv": [
+      0,
+      1,
+      16,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    12,
+    13.5
+   ],
+   "to": [
+    16,
+    15,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#r",
+     "uv": [
+      0,
+      1,
+      16,
+      4
+     ]
+    },
+    "south": {
+     "texture": "#r",
+     "uv": [
+      0,
+      1,
+      16,
+      4
+     ]
+    },
+    "east": {
+     "texture": "#r",
+     "uv": [
+      0,
+      1,
+      2.5,
+      4
+     ]
+    },
+    "west": {
+     "texture": "#r",
+     "uv": [
+      13.5,
+      1,
+      16,
+      4
+     ]
+    },
+    "up": {
+     "texture": "#r",
+     "uv": [
+      0,
+      13.5,
+      16,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#r",
+     "uv": [
+      0,
+      0,
+      16,
+      2.5
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "jsn_furniture"
+version = "0.1.0"
+displayName = "jsn-Furniture"
+authors = "chigusa-jsn"
+description = '''
+洋風・和風の家具。座れる・寝られる・物を入れられる・明かりをつけられる。風鈴や鹿威しの音つき。
+'''
+
+[[dependencies.jsn_furniture]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.jsn_furniture]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"

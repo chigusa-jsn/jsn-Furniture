@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "W  ",
+  "WWW",
+  "PPP"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:magenta_wool"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:magenta_sofa",
+  "count": 1
+ }
+}

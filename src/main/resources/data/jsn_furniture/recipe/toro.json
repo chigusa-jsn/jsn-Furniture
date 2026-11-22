@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  " T ",
+  "SSS"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stone_slab"
+  },
+  "T": {
+   "item": "minecraft:torch"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:toro",
+  "count": 1
+ }
+}

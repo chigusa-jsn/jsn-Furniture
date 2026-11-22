@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/torii_kasagi"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/torii_kasagi",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/torii_kasagi",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/torii_kasagi",
+   "y": 270
+  }
+ }
+}

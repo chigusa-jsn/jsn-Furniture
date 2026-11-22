@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "PCP"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:spruce_slab"
+  },
+  "P": {
+   "item": "minecraft:spruce_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:saisenbako",
+  "count": 1
+ }
+}

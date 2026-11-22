@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "P",
+  "T"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:string"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "T": {
+   "item": "minecraft:torch"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:chochin_white",
+  "count": 1
+ }
+}

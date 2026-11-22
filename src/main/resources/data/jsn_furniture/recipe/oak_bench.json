@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "P P"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:oak_slab"
+  },
+  "P": {
+   "item": "minecraft:oak_planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:oak_bench",
+  "count": 2
+ }
+}

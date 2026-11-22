@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "WWW",
+  "WTW",
+  " G "
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:white_wool"
+  },
+  "T": {
+   "item": "minecraft:torch"
+  },
+  "G": {
+   "item": "minecraft:gold_ingot"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:table_lamp",
+  "count": 1
+ }
+}

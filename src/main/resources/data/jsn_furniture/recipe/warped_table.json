@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:warped_slab"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:warped_table",
+  "count": 1
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,tilt=false": {
+   "model": "jsn_furniture:block/shishi_odoshi"
+  },
+  "facing=east,tilt=false": {
+   "model": "jsn_furniture:block/shishi_odoshi",
+   "y": 90
+  },
+  "facing=south,tilt=false": {
+   "model": "jsn_furniture:block/shishi_odoshi",
+   "y": 180
+  },
+  "facing=west,tilt=false": {
+   "model": "jsn_furniture:block/shishi_odoshi",
+   "y": 270
+  },
+  "facing=north,tilt=true": {
+   "model": "jsn_furniture:block/shishi_odoshi_tilt"
+  },
+  "facing=east,tilt=true": {
+   "model": "jsn_furniture:block/shishi_odoshi_tilt",
+   "y": 90
+  },
+  "facing=south,tilt=true": {
+   "model": "jsn_furniture:block/shishi_odoshi_tilt",
+   "y": 180
+  },
+  "facing=west,tilt=true": {
+   "model": "jsn_furniture:block/shishi_odoshi_tilt",
+   "y": 270
+  }
+ }
+}

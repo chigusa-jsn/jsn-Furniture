@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PCP",
+  "PCP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:jungle_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_wardrobe",
+  "count": 1
+ }
+}

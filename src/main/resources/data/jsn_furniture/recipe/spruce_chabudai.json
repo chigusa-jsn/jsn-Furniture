@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  " L "
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:spruce_slab"
+  },
+  "L": {
+   "item": "minecraft:spruce_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:spruce_chabudai",
+  "count": 1
+ }
+}

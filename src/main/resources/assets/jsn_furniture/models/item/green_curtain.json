@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "w": "minecraft:block/green_wool",
+  "d": "minecraft:block/dark_oak_planks",
+  "particle": "minecraft:block/green_wool"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    15,
+    14
+   ],
+   "to": [
+    16,
+    16,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "south": {
+     "texture": "#d",
+     "uv": [
+      0,
+      0,
+      16,
+      1
+     ]
+    },
+    "east": {
+     "texture": "#d",
+     "uv": [
+      1,
+      0,
+      2,
+      1
+     ]
+    },
+    "west": {
+     "texture": "#d",
+     "uv": [
+      14,
+      0,
+      15,
+      1
+     ]
+    },
+    "up": {
+     "texture": "#d",
+     "uv": [
+      0,
+      14,
+      16,
+      15
+     ]
+    },
+    "down": {
+     "texture": "#d",
+     "uv": [
+      0,
+      1,
+      16,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0,
+    0,
+    14.5
+   ],
+   "to": [
+    16,
+    15,
+    15.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#w",
+     "uv": [
+      0,
+      1,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#w",
+     "uv": [
+      0,
+      1,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#w",
+     "uv": [
+      0.5,
+      1,
+      1.5,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#w",
+     "uv": [
+      14.5,
+      1,
+      15.5,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#w",
+     "uv": [
+      0,
+      14.5,
+      16,
+      15.5
+     ]
+    },
+    "down": {
+     "texture": "#w",
+     "uv": [
+      0,
+      0.5,
+      16,
+      1.5
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

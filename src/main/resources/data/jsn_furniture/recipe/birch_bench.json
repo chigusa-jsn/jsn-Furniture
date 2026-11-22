@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "P P"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:birch_slab"
+  },
+  "P": {
+   "item": "minecraft:birch_planks"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:birch_bench",
+  "count": 2
+ }
+}

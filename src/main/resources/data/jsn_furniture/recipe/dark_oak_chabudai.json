@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  " L "
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:dark_oak_slab"
+  },
+  "L": {
+   "item": "minecraft:dark_oak_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:dark_oak_chabudai",
+  "count": 1
+ }
+}

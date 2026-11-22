@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PCP",
+  "PCP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:mangrove_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mangrove_wardrobe",
+  "count": 1
+ }
+}

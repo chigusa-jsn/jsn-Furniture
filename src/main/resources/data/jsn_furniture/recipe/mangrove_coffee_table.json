@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "S S"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:mangrove_slab"
+  },
+  "S": {
+   "item": "minecraft:mangrove_log"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mangrove_coffee_table",
+  "count": 1
+ }
+}

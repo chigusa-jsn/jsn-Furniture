@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PGP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "G": {
+   "item": "minecraft:green_dye"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:fusuma",
+  "count": 2
+ }
+}

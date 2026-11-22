@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "C",
+  "W"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:magenta_carpet"
+  },
+  "W": {
+   "item": "minecraft:magenta_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:magenta_zabuton",
+  "count": 2
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/warped_chair"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/warped_chair",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/warped_chair",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/warped_chair",
+   "y": 270
+  }
+ }
+}

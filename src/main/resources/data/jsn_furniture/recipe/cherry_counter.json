@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "SSS",
+  "PCP",
+  "PPP"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:smooth_stone_slab"
+  },
+  "P": {
+   "item": "minecraft:cherry_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cherry_counter",
+  "count": 1
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "HHH",
+  "PCS"
+ ],
+ "key": {
+  "H": {
+   "item": "minecraft:warped_slab"
+  },
+  "P": {
+   "item": "minecraft:warped_planks"
+  },
+  "C": {
+   "item": "minecraft:chest"
+  },
+  "S": {
+   "item": "minecraft:stick"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:warped_desk",
+  "count": 1
+ }
+}

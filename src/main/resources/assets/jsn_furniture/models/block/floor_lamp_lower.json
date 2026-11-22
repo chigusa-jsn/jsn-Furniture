@@ -1,0 +1,147 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "m": "minecraft:block/black_concrete",
+  "g": "jsn_furniture:block/lamp_shade",
+  "particle": "minecraft:block/black_concrete"
+ },
+ "elements": [
+  {
+   "from": [
+    4,
+    0,
+    4
+   ],
+   "to": [
+    12,
+    1,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#m",
+     "uv": [
+      4,
+      15,
+      12,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#m",
+     "uv": [
+      4,
+      15,
+      12,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#m",
+     "uv": [
+      4,
+      15,
+      12,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#m",
+     "uv": [
+      4,
+      15,
+      12,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#m",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    },
+    "down": {
+     "texture": "#m",
+     "uv": [
+      4,
+      4,
+      12,
+      12
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    7.5,
+    1,
+    7.5
+   ],
+   "to": [
+    8.5,
+    16,
+    8.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      15
+     ]
+    },
+    "south": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      15
+     ]
+    },
+    "east": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      15
+     ]
+    },
+    "west": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      0,
+      8.5,
+      15
+     ]
+    },
+    "up": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      7.5,
+      8.5,
+      8.5
+     ]
+    },
+    "down": {
+     "texture": "#m",
+     "uv": [
+      7.5,
+      7.5,
+      8.5,
+      8.5
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "C",
+  "W"
+ ],
+ "key": {
+  "C": {
+   "item": "minecraft:lime_carpet"
+  },
+  "W": {
+   "item": "minecraft:lime_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:lime_zabuton",
+  "count": 2
+ }
+}

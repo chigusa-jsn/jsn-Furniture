@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "PPP",
+  "PCP",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:stick"
+  },
+  "C": {
+   "item": "minecraft:clock"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:wall_clock",
+  "count": 1
+ }
+}

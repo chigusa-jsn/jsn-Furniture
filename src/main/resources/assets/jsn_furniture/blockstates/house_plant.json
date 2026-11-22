@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/house_plant"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/house_plant",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/house_plant",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/house_plant",
+   "y": 270
+  }
+ }
+}

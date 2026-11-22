@@ -1,0 +1,12095 @@
+{
+ "furniture": [
+  {
+   "id": "oak_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "oak_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "spruce_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "birch_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "jungle_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "acacia_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "dark_oak_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mangrove_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cherry_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bamboo_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "crimson_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_chair",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 10,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     3,
+     5,
+     8,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     8,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     8,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     8,
+     13
+    ],
+    [
+     2,
+     8,
+     2,
+     14,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_stool",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 11,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     6,
+     9,
+     6
+    ],
+    [
+     10,
+     0,
+     4,
+     12,
+     9,
+     6
+    ],
+    [
+     4,
+     0,
+     10,
+     6,
+     9,
+     12
+    ],
+    [
+     10,
+     0,
+     10,
+     12,
+     9,
+     12
+    ],
+    [
+     3,
+     9,
+     3,
+     13,
+     11,
+     13
+    ],
+    [
+     5,
+     4,
+     4,
+     11,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     11,
+     11,
+     5,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_bench",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 9,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     3,
+     7,
+     13
+    ],
+    [
+     13,
+     0,
+     3,
+     15,
+     7,
+     13
+    ],
+    [
+     0,
+     7,
+     3,
+     16,
+     9,
+     13
+    ],
+    [
+     3,
+     3,
+     7,
+     13,
+     4,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     3,
+     14,
+     3
+    ],
+    [
+     13,
+     0,
+     1,
+     15,
+     14,
+     3
+    ],
+    [
+     1,
+     0,
+     13,
+     3,
+     14,
+     15
+    ],
+    [
+     13,
+     0,
+     13,
+     15,
+     14,
+     15
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     3,
+     12,
+     1,
+     13,
+     14,
+     2
+    ],
+    [
+     3,
+     12,
+     14,
+     13,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_coffee_table",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     4,
+     7,
+     4
+    ],
+    [
+     12,
+     0,
+     2,
+     14,
+     7,
+     4
+    ],
+    [
+     2,
+     0,
+     12,
+     4,
+     7,
+     14
+    ],
+    [
+     12,
+     0,
+     12,
+     14,
+     7,
+     14
+    ],
+    [
+     1,
+     7,
+     1,
+     15,
+     9,
+     15
+    ],
+    [
+     3,
+     2,
+     3,
+     13,
+     3,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_desk",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     0,
+     0,
+     1,
+     7,
+     14,
+     15
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     14,
+     3
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     14,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_shelf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     9,
+     6,
+     16,
+     11,
+     16
+    ],
+    [
+     2,
+     5,
+     14,
+     4,
+     9,
+     16
+    ],
+    [
+     12,
+     5,
+     14,
+     14,
+     9,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_cabinet",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 3,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     16,
+     15
+    ],
+    [
+     1,
+     0,
+     1,
+     15,
+     1,
+     2
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_wardrobe",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 6,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     31,
+     15
+    ],
+    [
+     0.5,
+     31,
+     0.5,
+     15.5,
+     32,
+     15.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_counter",
+   "kind": "storage",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 2,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "warped_chabudai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     6,
+     1,
+     15,
+     8,
+     15
+    ],
+    [
+     3,
+     0,
+     3,
+     5,
+     6,
+     5
+    ],
+    [
+     11,
+     0,
+     3,
+     13,
+     6,
+     5
+    ],
+    [
+     3,
+     0,
+     11,
+     5,
+     6,
+     13
+    ],
+    [
+     11,
+     0,
+     11,
+     13,
+     6,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "white_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "white_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "white_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "white_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "orange_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "orange_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "orange_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "orange_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "magenta_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "magenta_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "magenta_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "magenta_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_blue_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_blue_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "light_blue_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_blue_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "yellow_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "yellow_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "yellow_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "yellow_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "lime_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "lime_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "lime_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "lime_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "pink_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "pink_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "pink_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "pink_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "gray_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "gray_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "gray_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "gray_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_gray_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_gray_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "light_gray_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "light_gray_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cyan_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cyan_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "cyan_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cyan_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "purple_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "purple_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "purple_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "purple_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "blue_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "blue_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "blue_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "blue_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "brown_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "brown_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "brown_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "brown_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "green_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "green_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "green_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "green_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "red_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "red_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "red_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "red_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "black_sofa",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     14,
+     0,
+     1,
+     16,
+     2,
+     3
+    ],
+    [
+     0,
+     0,
+     13,
+     2,
+     2,
+     15
+    ],
+    [
+     14,
+     0,
+     13,
+     16,
+     2,
+     15
+    ],
+    [
+     0,
+     2,
+     1,
+     16,
+     7,
+     15
+    ],
+    [
+     0,
+     7,
+     1,
+     2,
+     11,
+     11
+    ],
+    [
+     14,
+     7,
+     1,
+     16,
+     11,
+     11
+    ],
+    [
+     2,
+     7,
+     2,
+     14,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "black_curtain",
+   "kind": "curtain",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.5,
+     16,
+     15,
+     15.5
+    ]
+   ],
+   "open": [
+    [
+     0,
+     0,
+     13.5,
+     3,
+     15,
+     16
+    ],
+    [
+     13,
+     0,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "black_zabuton",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 2,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     2,
+     14,
+     2,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "black_noren",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": true,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     15,
+     7,
+     16,
+     16,
+     9
+    ],
+    [
+     0.5,
+     5,
+     7.6,
+     7.7,
+     15,
+     8.4
+    ],
+    [
+     8.3,
+     5,
+     7.6,
+     15.5,
+     15,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "fridge",
+   "kind": "storage",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 4,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     1,
+     0,
+     2,
+     15,
+     32,
+     15
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "stove",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 10,
+   "sound": "metal",
+   "wall": false,
+   "hanging": false,
+   "particles": "flame",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     16,
+     15,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "sink",
+   "kind": "sink",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     0,
+     0,
+     1,
+     16,
+     12,
+     16
+    ],
+    [
+     0,
+     12,
+     0,
+     16,
+     14,
+     16
+    ],
+    [
+     0,
+     14,
+     0,
+     2,
+     16,
+     16
+    ],
+    [
+     14,
+     14,
+     0,
+     16,
+     16,
+     16
+    ],
+    [
+     2,
+     14,
+     0,
+     14,
+     16,
+     2
+    ],
+    [
+     2,
+     14,
+     14,
+     14,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bathtub",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     2,
+     16
+    ],
+    [
+     0,
+     2,
+     0,
+     16,
+     10,
+     1.5
+    ],
+    [
+     0,
+     2,
+     14.5,
+     16,
+     10,
+     16
+    ],
+    [
+     0,
+     2,
+     1.5,
+     1.5,
+     10,
+     14.5
+    ],
+    [
+     14.5,
+     2,
+     1.5,
+     16,
+     10,
+     14.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "toilet",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 8,
+   "rows": 0,
+   "light": 0,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     5,
+     0,
+     3,
+     11,
+     6,
+     11
+    ],
+    [
+     3,
+     6,
+     1,
+     13,
+     8,
+     12
+    ],
+    [
+     3,
+     6,
+     12,
+     13,
+     14,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "table_lamp",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 14,
+   "sound": "glass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     5,
+     0,
+     5,
+     11,
+     1,
+     11
+    ],
+    [
+     7.5,
+     1,
+     7.5,
+     8.5,
+     8,
+     8.5
+    ],
+    [
+     4,
+     8,
+     4,
+     12,
+     14,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "floor_lamp",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 15,
+   "sound": "glass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     1,
+     12
+    ],
+    [
+     7.5,
+     1,
+     7.5,
+     8.5,
+     24,
+     8.5
+    ],
+    [
+     3,
+     22,
+     3,
+     13,
+     31,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "chandelier",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 15,
+   "sound": "metal",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.5,
+     10,
+     7.5,
+     8.5,
+     16,
+     8.5
+    ],
+    [
+     2,
+     8,
+     7.5,
+     14,
+     9,
+     8.5
+    ],
+    [
+     7.5,
+     8,
+     2,
+     8.5,
+     9,
+     14
+    ],
+    [
+     6,
+     6,
+     6,
+     10,
+     10,
+     10
+    ],
+    [
+     1.5,
+     9,
+     7,
+     3,
+     12,
+     8.5
+    ],
+    [
+     13,
+     9,
+     7,
+     14.5,
+     12,
+     8.5
+    ],
+    [
+     7,
+     9,
+     1.5,
+     8.5,
+     12,
+     3
+    ],
+    [
+     7,
+     9,
+     13,
+     8.5,
+     12,
+     14.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "ceiling_light",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 15,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     3,
+     14,
+     3,
+     13,
+     16,
+     13
+    ],
+    [
+     4,
+     13,
+     4,
+     12,
+     14,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "wall_clock",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     3,
+     15,
+     13,
+     13,
+     16
+    ],
+    [
+     2.5,
+     2.5,
+     15.5,
+     13.5,
+     13.5,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "mirror",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     2,
+     0,
+     15,
+     14,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "house_plant",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "grass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     6,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "display_case",
+   "kind": "display",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     1,
+     15,
+     4,
+     15
+    ],
+    [
+     1,
+     15,
+     1,
+     15,
+     16,
+     15
+    ],
+    [
+     1.5,
+     4,
+     1.5,
+     14.5,
+     15,
+     14.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cash_register",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     5,
+     14
+    ],
+    [
+     3,
+     5,
+     6,
+     13,
+     9,
+     13
+    ],
+    [
+     4,
+     9,
+     9,
+     12,
+     13,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "signboard",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     6,
+     15,
+     16,
+     7
+    ],
+    [
+     1,
+     0,
+     9,
+     15,
+     16,
+     10
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "street_lamp",
+   "kind": "lamp",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 15,
+   "sound": "metal",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     6,
+     0,
+     6,
+     10,
+     2,
+     10
+    ],
+    [
+     7,
+     2,
+     7,
+     9,
+     26,
+     9
+    ],
+    [
+     5,
+     26,
+     5,
+     11,
+     27,
+     11
+    ],
+    [
+     5.5,
+     27,
+     5.5,
+     10.5,
+     31,
+     10.5
+    ],
+    [
+     6,
+     31,
+     6,
+     10,
+     32,
+     10
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "parasol",
+   "kind": "basic",
+   "tab": "west",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     7.5,
+     0,
+     7.5,
+     8.5,
+     28,
+     8.5
+    ],
+    [
+     4,
+     0,
+     4,
+     12,
+     1,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kotatsu",
+   "kind": "seat",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": 4,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     6,
+     16
+    ],
+    [
+     0,
+     7,
+     0,
+     16,
+     8,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "sudare",
+   "kind": "curtain",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "bamboo",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     14.6,
+     16,
+     15,
+     15.4
+    ]
+   ],
+   "open": [
+    [
+     0,
+     12,
+     13.5,
+     16,
+     15,
+     16
+    ]
+   ]
+  },
+  {
+   "id": "andon",
+   "kind": "lamp",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 12,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     2,
+     12
+    ],
+    [
+     4,
+     2,
+     4,
+     12,
+     14,
+     12
+    ],
+    [
+     4,
+     14,
+     4,
+     12,
+     15,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "chochin_red",
+   "kind": "lamp",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 13,
+   "sound": "wool",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     11,
+     5,
+     11,
+     13,
+     11
+    ],
+    [
+     4,
+     3,
+     4,
+     12,
+     11,
+     12
+    ],
+    [
+     5,
+     1,
+     5,
+     11,
+     3,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "chochin_white",
+   "kind": "lamp",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 13,
+   "sound": "wool",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     11,
+     5,
+     11,
+     13,
+     11
+    ],
+    [
+     4,
+     3,
+     4,
+     12,
+     11,
+     12
+    ],
+    [
+     5,
+     1,
+     5,
+     11,
+     3,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "toro",
+   "kind": "lamp",
+   "tab": "wa",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 13,
+   "sound": "stone",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     3,
+     12
+    ],
+    [
+     6,
+     3,
+     6,
+     10,
+     14,
+     10
+    ],
+    [
+     3,
+     14,
+     3,
+     13,
+     16,
+     13
+    ],
+    [
+     4,
+     16,
+     4,
+     12,
+     22,
+     12
+    ],
+    [
+     1,
+     22,
+     1,
+     15,
+     24,
+     15
+    ],
+    [
+     4,
+     24,
+     4,
+     12,
+     26,
+     12
+    ],
+    [
+     7,
+     26,
+     7,
+     9,
+     28,
+     9
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "irori",
+   "kind": "lamp",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 13,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "flame_smoke",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     3,
+     16
+    ],
+    [
+     0,
+     3,
+     0,
+     16,
+     4,
+     2
+    ],
+    [
+     0,
+     3,
+     14,
+     16,
+     4,
+     16
+    ],
+    [
+     0,
+     3,
+     2,
+     2,
+     4,
+     14
+    ],
+    [
+     14,
+     3,
+     2,
+     16,
+     4,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "tatami",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": true,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "grass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "tatami_half",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": true,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "grass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     0,
+     16,
+     16,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kakejiku_fuji",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     1,
+     15.5,
+     12,
+     15,
+     16
+    ],
+    [
+     3,
+     15,
+     15,
+     13,
+     16,
+     16
+    ],
+    [
+     3,
+     0,
+     15,
+     13,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kakejiku_koi",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     1,
+     15.5,
+     12,
+     15,
+     16
+    ],
+    [
+     3,
+     15,
+     15,
+     13,
+     16,
+     16
+    ],
+    [
+     3,
+     0,
+     15,
+     13,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "kakejiku_wa",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": true,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     1,
+     15.5,
+     12,
+     15,
+     16
+    ],
+    [
+     3,
+     15,
+     15,
+     13,
+     16,
+     16
+    ],
+    [
+     3,
+     0,
+     15,
+     13,
+     1,
+     16
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "bonsai",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "grass",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     5,
+     13,
+     3,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "wagasa",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": true,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "bamboo",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     7.5,
+     0,
+     7.5,
+     8.5,
+     26,
+     8.5
+    ],
+    [
+     5,
+     0,
+     5,
+     11,
+     1,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "saisenbako",
+   "kind": "storage",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 1,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     1,
+     0,
+     3,
+     15,
+     10,
+     13
+    ],
+    [
+     0.5,
+     10,
+     2.5,
+     15.5,
+     11,
+     13.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "torii_pillar",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     16,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "torii_kasagi",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     3,
+     16,
+     6,
+     13
+    ],
+    [
+     0,
+     6,
+     2,
+     16,
+     10,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "torii_nuki",
+   "kind": "basic",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wood",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     5,
+     5,
+     16,
+     11,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "shishi_odoshi",
+   "kind": "shishi",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "bamboo",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     0,
+     0,
+     3,
+     16,
+     2,
+     13
+    ],
+    [
+     1,
+     2,
+     5,
+     2,
+     9,
+     11
+    ],
+    [
+     14,
+     2,
+     5,
+     15,
+     9,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_white",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_orange",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_magenta",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_light_blue",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_yellow",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_lime",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_pink",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_gray",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_light_gray",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_cyan",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_purple",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_blue",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_brown",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_green",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_red",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_black",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_kingyo",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_asagao",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_hanabi",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_nami",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_sakura",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_suika",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_nanbu",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "iron",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_bamboo",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "bamboo",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "bamboo",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_ceramic",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "ceramic",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_brass",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "metal",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "brass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  }
+ ],
+ "beds": [
+  {
+   "id": "oak_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "spruce_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "birch_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "jungle_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "acacia_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "dark_oak_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "mangrove_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "cherry_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "bamboo_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "crimson_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "warped_bed",
+   "tab": "west",
+   "futon": false
+  },
+  {
+   "id": "futon",
+   "tab": "wa",
+   "futon": true
+  }
+ ],
+ "doors": [
+  {
+   "id": "shoji"
+  },
+  {
+   "id": "fusuma"
+  }
+ ]
+}
