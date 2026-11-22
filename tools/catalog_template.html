@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jsn-Furniture カタログ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: 家具屋さんの店頭カタログ。明るく、見て選ぶ楽しさ
+   IDEA: 紙のカタログ＋ショールームの床。1点ずつ台の上に置いて見せる
+   PICTURE: 一面目に、家具を並べた小さな部屋（実際の立体の絵）
+   COLOUR and TYPE: 木の茶（主）・白（地）・鳥居の朱（差し色）、風鈴の章だけ夏の夜の藍。M PLUS Rounded 1c
+   LAYOUT: 帯の見出し → 章ごとのカード格子。木・色ちがいは1枚のカードで切り替え */
+:root{color-scheme:light dark;
+  --bg:light-dark(#ffffff,#16110d);--ink:light-dark(#2a1d12,#f3ebe2);--sub:light-dark(#76624f,#bba895);
+  --wood:light-dark(#7a4a24,#4a2c15);--woodink:#fff7ee;--card:light-dark(#faf6f1,#211912);--line:light-dark(#eadfd3,#3a2c20);
+  --stage:light-dark(#f0e6da,#2c2118);--red:#d9482b;--night:#1c2550;--nightcard:#26306a}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "M PLUS Rounded 1c",system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{margin:0;line-height:1.1;text-wrap:balance}
+.band{padding:clamp(28px,4vw,56px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+header{background:var(--wood);color:var(--woodink)}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(16px,3vw,40px);align-items:center}
+.hero h1{font-size:clamp(34px,5vw,52px);font-weight:800}
+.hero p{margin:14px 0 0;max-width:34em;opacity:.92}
+.count{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px}
+.count b{display:block;font-size:30px;line-height:1;font-weight:800}
+.count span{font-size:13px;opacity:.85}
+.room{position:relative;aspect-ratio:16/11;border-radius:18px;background:
+  radial-gradient(ellipse 70% 45% at 50% 70%,rgba(255,240,220,.35),transparent 70%),linear-gradient(#93623a,#6b4423)}
+.room img{position:absolute;image-rendering:pixelated;filter:drop-shadow(0 10px 8px rgba(0,0,0,.25))}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px max(5vw,16px)}
+nav a{flex:none;padding:10px 16px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+nav a:hover,nav a:focus-visible{background:var(--card);outline:2px solid var(--red)}
+section h2{font-size:clamp(26px,3.2vw,34px);font-weight:800}
+section .lead{color:var(--sub);margin:8px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px 14px;display:flex;flex-direction:column}
+.stage{aspect-ratio:1;border-radius:12px;background:radial-gradient(ellipse 60% 30% at 50% 78%,rgba(0,0,0,.10),transparent 70%),var(--stage);display:grid;place-items:center}
+.stage img{width:88%;image-rendering:pixelated}
+.card h3{font-size:16px;font-weight:700;margin-top:10px}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.tags i{font-style:normal;font-size:13px;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--red) 14%,transparent);color:light-dark(#9a2c16,#ffb29f)}
+.sw{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.sw button{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.sw button[aria-pressed=true]{outline:3px solid var(--red);outline-offset:1px}
+.sw button:focus-visible{outline:3px solid var(--ink)}
+.vname{font-size:13px;color:var(--sub);margin-top:4px}
+.more{margin-top:10px;align-self:flex-start;font:inherit;font-size:14px;font-weight:700;color:var(--ink);background:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;min-height:40px}
+.all{display:none;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:4px;margin-top:10px}
+.card.open .all{display:grid}
+.card.wide.open{grid-column:1/-1}
+.card.open .stage{width:min(220px,100%)}
+.all figure{margin:0;text-align:center;font-size:12px;color:var(--sub)}
+.all img{width:100%;image-rendering:pixelated;background:var(--stage);border-radius:8px}
+#furin{background:var(--night);color:#eef1ff}
+#furin .lead{color:#c3cbf5}
+#furin .card{background:var(--nightcard);border-color:#3b468c}
+#furin .stage{background:radial-gradient(ellipse 50% 50% at 50% 45%,rgba(140,170,255,.25),transparent 70%),#202a5c}
+#furin .tags i{background:rgba(255,255,255,.12);color:#e6ebff}
+footer{color:var(--sub);font-size:14px}
+@media(max-width:700px){.hero{grid-template-columns:minmax(0,1fr)}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
+@media(prefers-reduced-motion:no-preference){.stage img{transition:transform .25s}.card:hover .stage img{transform:translateY(-4px)}}
+</style>
+</head>
+<body>
+<header class="band"><div class="wrap hero">
+  <div>
+    <h1>jsn-Furniture<br>家具カタログ</h1>
+    <p>洋風の部屋から和室まで。座れる・寝られる・しまえる・明かりがつく家具と、音の鳴る風鈴や鹿威し。木の種類や色はカードの丸いボタンで切り替えられます。</p>
+    <div class="count"><div><b>__TOTAL__</b><span>種類</span></div><div><b>11</b><span>種類の木</span></div><div><b>16</b><span>色</span></div><div><b>26</b><span>種類の風鈴</span></div></div>
+  </div>
+  <div class="room" id="room" role="img" aria-label="家具を並べた部屋"></div>
+</div></header>
+<nav><div class="wrap">
+  <a href="#wood">木の家具</a><a href="#color">色の家具</a><a href="#west">洋風</a><a href="#wa">和風</a><a href="#furin">風鈴</a>
+</div></nav>
+<section class="band" id="wood"><div class="wrap">
+  <h2>木の家具</h2><p class="lead">オーク・トウヒ・シラカバなど、11種類の木で作れます。丸いボタンで木を切り替え、「全部見る」で並べて比べられます。</p>
+  <div class="grid" id="g-wood"></div>
+</div></section>
+<section class="band" id="color"><div class="wrap">
+  <h2>色の家具</h2><p class="lead">羊毛の16色。ソファとカーテン、和室には座布団とのれん。</p>
+  <div class="grid" id="g-color"></div>
+</div></section>
+<section class="band" id="west"><div class="wrap">
+  <h2>洋風</h2><p class="lead">キッチン・水まわり・明かり・お店の家具。</p>
+  <div class="grid" id="g-west"></div>
+</div></section>
+<section class="band" id="wa"><div class="wrap">
+  <h2>和風</h2><p class="lead">畳の部屋、縁側、神社の入り口まで。</p>
+  <div class="grid" id="g-wa"></div>
+</div></section>
+<section class="band" id="furin"><div class="wrap">
+  <h2>風鈴</h2><p class="lead">風でゆれて鳴ります。雨の日はよく鳴り、右クリックでも鳴らせます。ガラス・南部鉄器・真鍮・陶器・竹で音がちがいます。</p>
+  <div class="grid" id="g-furin"></div>
+</div></section>
+<footer class="band"><div class="wrap">絵はゲームのモデルから自動で描いたものです（実際のゲーム内の見た目と、光の当たり方などが少しちがいます）。</div></footer>
+<script>
+{
+const D=__DATA__;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tags=t=>t&&t.length?`<div class="tags">${t.map(x=>`<i>${esc(x)}</i>`).join('')}</div>`:'';
+const single=it=>`<div class="card"><div class="stage"><img src="${D.img[it.id]}" alt="${esc(it.name)}"></div><h3>${esc(it.name)}</h3>${tags(it.tags)}</div>`;
+const variant=(t,names,gi,ti)=>`<div class="card wide" data-g="${gi}" data-t="${ti}">
+  <div class="stage"><img src="${D.img[t.ids[0]]}" alt="${esc(names[0][0]+'の'+t.name)}"></div>
+  <h3>${esc(t.name)}</h3><div class="vname">${esc(names[0][0])}</div>${tags(t.tags)}
+  <div class="sw">${t.ids.map((id,i)=>`<button type="button" aria-label="${esc(names[i][0])}" aria-pressed="${i===0}" data-i="${i}" style="background:${names[i][1]}"></button>`).join('')}</div>
+  <button type="button" class="more" aria-expanded="false">全部見る</button>
+  <div class="all">${t.ids.map((id,i)=>`<figure><img src="${D.img[id]}" alt=""><figcaption>${esc(names[i][0])}</figcaption></figure>`).join('')}</div>
+</div>`;
+const G={wood:[D.wood,D.woods],color:[D.color,D.colors]};
+for(const g of ['wood','color'])document.getElementById('g-'+g).innerHTML=G[g][0].map((t,i)=>variant(t,G[g][1],g,i)).join('');
+for(const g of ['west','wa','furin'])document.getElementById('g-'+g).innerHTML=D[g].map(single).join('');
+document.addEventListener('click',e=>{
+  const card=e.target.closest('.card.wide');if(!card)return;
+  const [types,names]=G[card.dataset.g];const t=types[+card.dataset.t];
+  const b=e.target.closest('.sw button');
+  if(b){const i=+b.dataset.i;card.querySelector('.stage img').src=D.img[t.ids[i]];card.querySelector('.stage img').alt=names[i][0]+'の'+t.name;
+    card.querySelector('.vname').textContent=names[i][0];card.querySelectorAll('.sw button').forEach(x=>x.setAttribute('aria-pressed',x===b));return}
+  const m=e.target.closest('.more');
+  if(m){const o=card.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'閉じる':'全部見る'}
+});
+/* 一面目の部屋：左奥から右手前へ並べる */
+const room=document.getElementById('room');
+const place=[['oak_wardrobe',4,2,22],['floor_lamp',27,6,15],['red_sofa',36,22,26],['oak_coffee_table',58,40,20],['house_plant',78,10,17],['oak_chair',6,46,19],['table_lamp',62,26,12],['furin_kingyo',86,3,10],['cherry_cabinet',20,30,20]];
+room.innerHTML=place.map(([id,x,y,w])=>`<img src="${D.img[id]}" alt="" style="left:${x}%;top:${y}%;width:${w}%">`).join('');
+}
+</script>
+</body>
+</html>

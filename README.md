@@ -24,3 +24,4 @@ NeoForge 1.21.1 の家具MOD。洋風・和風の家具が約260種類。
 ## 作り直し
 - `python3 tools/gen.py`：家具の一覧・モデル・テクスチャ・レシピ・名前
 - `python3 tools/gen_sounds.py`：風鈴・鹿威しの音
+- `python3 tools/render_preview.py <バニラのtextures/blockのフォルダ> build/preview/all` → `python3 tools/build_catalog.py build/preview/all build/preview/catalog.html`：家具カタログ（立体の絵の一覧）
