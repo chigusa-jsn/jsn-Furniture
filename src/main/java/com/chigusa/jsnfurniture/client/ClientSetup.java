@@ -9,7 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.ModelEvent;
 
-@EventBusSubscriber(modid = JsnFurniture.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = JsnFurniture.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class ClientSetup {
     @SubscribeEvent
     public static void renderers(EntityRenderersEvent.RegisterRenderers e) {
