@@ -1035,7 +1035,7 @@ for w, wja, wen in WOODS:
     for y0 in (0, 16):
         closed += [b(0, y0, 4, 16, y0 + 16, 16, {"north": "b", "south": "b", "east": "p", "west": "p", "up": "p", "down": "p"}, uv={"north": [0, 0, 16, 16], "south": [0, 0, 16, 16]}),
                    b(0, y0, 3, 16, y0 + 1, 4, "p"), b(0, y0 + 15, 3, 16, y0 + 16, 4, "p"), b(0, y0 + 1, 3, 1, y0 + 15, 4, "p"), b(15, y0 + 1, 3, 16, y0 + 15, 4, "p"),
-                   b(1, y0 + 7.5, 3, 15, y0 + 8.5, 4, "p"), b(0, y0, 0, 16, y0 + 16, 3, {"north": "p", "south": "p", "east": "p", "west": "p", "up": "p", "down": "p"}, shape=True)]
+                   b(1, y0 + 7.5, 3, 15, y0 + 8.5, 4, "p")]
     opened = [b(0, 0, 0, 3, 32, 16, {"north": "p", "south": "p", "east": "b", "west": "p", "up": "p", "down": "p"}, uv={"east": [0, 0, 16, 16]})]
     add(F(f"{w}_bookshelf_door", f"{wja}の本棚の隠し扉", f"{wen} Hidden Bookshelf Door", "curtain", closed, {"p": T["p"], "b": "minecraft:block/bookshelf"},
           open_els=opened, tall=True, sound="wood",
