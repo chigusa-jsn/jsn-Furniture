@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  " W ",
+  "WXW",
+  " W "
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:red_wool"
+  },
+  "X": {
+   "item": "minecraft:wheat_seeds"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:plush_parrot",
+  "count": 1
+ }
+}

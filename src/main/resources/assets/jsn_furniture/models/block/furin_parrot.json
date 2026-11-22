@@ -1,0 +1,91 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "u": "jsn_furniture:block/fur_parrot",
+  "q": "jsn_furniture:block/face_parrot",
+  "k": "jsn_furniture:block/fur_black",
+  "w": "jsn_furniture:block/fur_white",
+  "e": "jsn_furniture:block/fur_parrot",
+  "h": "minecraft:block/white_terracotta",
+  "r": "minecraft:block/red_wool",
+  "o": "minecraft:block/orange_concrete",
+  "y": "minecraft:block/yellow_concrete",
+  "g": "jsn_furniture:block/wing",
+  "s": "jsn_furniture:block/fur_turtle_shell",
+  "g2": "minecraft:block/green_wool",
+  "fh": "minecraft:block/white_wool",
+  "ft": "jsn_furniture:block/tanzaku",
+  "particle": "jsn_furniture:block/fur_parrot"
+ },
+ "elements": [
+  {
+   "from": [
+    7.6,
+    14,
+    7.6
+   ],
+   "to": [
+    8.4,
+    16,
+    8.4
+   ],
+   "faces": {
+    "north": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      0,
+      8.4,
+      2
+     ]
+    },
+    "south": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      0,
+      8.4,
+      2
+     ]
+    },
+    "east": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      0,
+      8.4,
+      2
+     ]
+    },
+    "west": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      0,
+      8.4,
+      2
+     ]
+    },
+    "up": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      7.6,
+      8.4,
+      8.4
+     ]
+    },
+    "down": {
+     "texture": "#fh",
+     "uv": [
+      7.6,
+      7.6,
+      8.4,
+      8.4
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:translucent"
+}

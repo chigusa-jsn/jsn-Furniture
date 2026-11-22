@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "X",
+  "W"
+ ],
+ "key": {
+  "X": {
+   "item": "jsn_furniture:plush_bear"
+  },
+  "W": {
+   "item": "minecraft:brown_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cushion_bear",
+  "count": 2
+ }
+}

@@ -14516,6 +14516,1486 @@
     ]
    ],
    "open": null
+  },
+  {
+   "id": "plush_wolf",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_wolf",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_polar_bear",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     6,
+     11.5,
+     6.5,
+     11.5
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_polar_bear",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_axolotl",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     4,
+     14
+    ],
+    [
+     4.5,
+     0,
+     1.5,
+     11.5,
+     5.5,
+     6
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_axolotl",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_frog",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     6,
+     12,
+     5,
+     12
+    ],
+    [
+     4,
+     2,
+     3,
+     12,
+     7,
+     8
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_frog",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_bee",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     2,
+     4,
+     12,
+     9,
+     13
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_bee",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_sheep",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     6,
+     11.5,
+     6.5,
+     11.5
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_sheep",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_pig",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_pig",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_cow",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5,
+     0,
+     6,
+     11,
+     6,
+     11
+    ],
+    [
+     4,
+     6,
+     4.5,
+     12,
+     12,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_cow",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_chicken",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     5,
+     11.5,
+     10,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_chicken",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_parrot",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4.5,
+     0,
+     5,
+     11.5,
+     10,
+     11
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_parrot",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_turtle",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3,
+     0,
+     4,
+     13,
+     3,
+     13
+    ],
+    [
+     3.5,
+     3,
+     4.5,
+     12.5,
+     6,
+     12.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_turtle",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_allay",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     5.5,
+     1,
+     6,
+     10.5,
+     6,
+     10
+    ],
+    [
+     5,
+     6,
+     5.5,
+     11,
+     11,
+     10.5
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_allay",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_enaga",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     4,
+     0,
+     4,
+     12,
+     8,
+     12
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_enaga",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "plush_capybara",
+   "kind": "basic",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     3.5,
+     0,
+     5,
+     12.5,
+     7,
+     13
+    ],
+    [
+     4.5,
+     4,
+     1.5,
+     11.5,
+     11,
+     7
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "furin_capybara",
+   "kind": "furin",
+   "tab": "wa",
+   "tall": false,
+   "full": false,
+   "seat": -1,
+   "rows": 0,
+   "light": 0,
+   "sound": "glass",
+   "wall": false,
+   "hanging": true,
+   "particles": "",
+   "furin": "glass",
+   "passable": false,
+   "tool": "pickaxe",
+   "shape": [
+    [
+     7.6,
+     14,
+     7.6,
+     8.4,
+     16,
+     8.4
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_fox",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_rabbit",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_tanuki",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_shiba",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_bear",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_panda",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_penguin",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_chick",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_wolf",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_polar_bear",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_axolotl",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_frog",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_bee",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_sheep",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_pig",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_cow",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_chicken",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_parrot",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_turtle",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_allay",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_enaga",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
+  },
+  {
+   "id": "cushion_capybara",
+   "kind": "seat",
+   "tab": "west",
+   "tall": false,
+   "full": false,
+   "seat": 3,
+   "rows": 0,
+   "light": 0,
+   "sound": "wool",
+   "wall": false,
+   "hanging": false,
+   "particles": "",
+   "furin": "",
+   "passable": false,
+   "tool": "axe",
+   "shape": [
+    [
+     2,
+     0,
+     3,
+     14,
+     3,
+     14
+    ]
+   ],
+   "open": null
   }
  ],
  "beds": [

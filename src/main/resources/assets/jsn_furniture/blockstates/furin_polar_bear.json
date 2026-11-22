@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/furin_polar_bear"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/furin_polar_bear",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/furin_polar_bear",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/furin_polar_bear",
+   "y": 270
+  }
+ }
+}

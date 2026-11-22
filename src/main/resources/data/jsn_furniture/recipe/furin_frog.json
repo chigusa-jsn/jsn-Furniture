@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "G",
+  "X"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:string"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "X": {
+   "item": "jsn_furniture:plush_frog"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:furin_frog",
+  "count": 1
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "X",
+  "W"
+ ],
+ "key": {
+  "X": {
+   "item": "jsn_furniture:plush_frog"
+  },
+  "W": {
+   "item": "minecraft:lime_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cushion_frog",
+  "count": 2
+ }
+}

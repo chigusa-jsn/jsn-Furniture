@@ -705,6 +705,140 @@ for a, sja, sen, wool in (("bear", "くまのソファ", "Bear Sofa", "brown"), 
         recipe=(["X  ", "WWW", "PPP"], {"X": "minecraft:honeycomb" if a == "bear" else "minecraft:string", "W": f"minecraft:{wool}_wool", "P": "#minecraft:planks"})))
 
 
+# ------------------------------------------------------------ 動物をもっと（マイクラのモブ・シマエナガ・カピバラ）
+MORE = {
+    # id: (毛の色, 顔, 耳, 体の形, 日本語, 英語, 羊毛, 特別な材料)
+    "wolf": ((200, 200, 205), "wolf", "fox", "quad", "オオカミ", "Wolf", "light_gray", "minecraft:bone"),
+    "polar_bear": ((242, 242, 238), "polar_bear", "round", "quad", "シロクマ", "Polar Bear", "white", "minecraft:salmon"),
+    "axolotl": ((240, 160, 190), "axolotl", "gills", "axolotl", "ウーパールーパー", "Axolotl", "pink", "minecraft:tropical_fish_bucket"),
+    "frog": ((120, 165, 75), "frog", "frog", "frog", "カエル", "Frog", "lime", "minecraft:slime_ball"),
+    "bee": ((245, 200, 60), "bee", "antenna", "bee", "ハチ", "Bee", "yellow", "minecraft:honeycomb"),
+    "sheep": ((245, 245, 245), "sheep", "side", "quad", "ヒツジ", "Sheep", "white", "minecraft:mutton"),
+    "pig": ((240, 165, 165), "pig", "side", "quad", "ブタ", "Pig", "pink", "minecraft:carrot"),
+    "cow": ((245, 245, 245), "cow", "horn", "quad", "ウシ", "Cow", "black", "minecraft:leather"),
+    "chicken": ((245, 245, 245), "chicken", "comb", "bird", "ニワトリ", "Chicken", "white", "minecraft:feather"),
+    "parrot": ((220, 40, 40), "parrot", None, "bird", "オウム", "Parrot", "red", "minecraft:wheat_seeds"),
+    "turtle": ((100, 160, 85), "turtle", None, "turtle", "カメ", "Turtle", "green", "minecraft:seagrass"),
+    "allay": ((110, 200, 240), "allay", None, "allay", "アレイ", "Allay", "light_blue", "minecraft:amethyst_shard"),
+    "enaga": ((250, 250, 250), "enaga", None, "ball", "シマエナガ", "Long-tailed Tit", "white", "minecraft:snowball"),
+    "capybara": ((160, 112, 72), "capybara", "round", "capy", "カピバラ", "Capybara", "brown", "minecraft:sugar_cane"),
+}
+for k, v in MORE.items():
+    ANIMAL[k] = (v[0], v[1], v[2])
+    ANIMAL_JA[k] = v[4]
+    ANIMAL_EN[k] = v[5]
+
+
+def ears2(kind, x1, x2, y, z1, tex="u"):
+    """追加の動物の耳など"""
+    if kind == "gills":
+        out = []
+        for i, yy in enumerate((y - 1, y - 2.5, y - 4)):
+            out.append(b(x1 - 1.5 + i * 0.3, yy, z1 + 1, x1, yy + 1, z1 + 2, "e", shape=False))
+            out.append(b(x2, yy, z1 + 1, x2 + 1.5 - i * 0.3, yy + 1, z1 + 2, "e", shape=False))
+        return out
+    if kind == "frog":
+        return [b(x1 + 0.5, y, z1, x1 + 3, y + 2, z1 + 2.5, "u", shape=False), b(x2 - 3, y, z1, x2 - 0.5, y + 2, z1 + 2.5, "u", shape=False),
+                b(x1 + 1, y + 0.5, z1 - 0.1, x1 + 2.5, y + 1.8, z1, "k", shape=False), b(x2 - 2.5, y + 0.5, z1 - 0.1, x2 - 1, y + 1.8, z1, "k", shape=False)]
+    if kind == "antenna":
+        return [b(x1 + 2, y, z1 + 0.5, x1 + 2.5, y + 2.5, z1 + 1, "k", shape=False), b(x2 - 2.5, y, z1 + 0.5, x2 - 2, y + 2.5, z1 + 1, "k", shape=False)]
+    if kind == "side":
+        return [b(x1 - 2, y - 2, z1 + 1, x1, y - 1, z1 + 2.5, "e", shape=False), b(x2, y - 2, z1 + 1, x2 + 2, y - 1, z1 + 2.5, "e", shape=False)]
+    if kind == "horn":
+        return [b(x1 - 1, y - 1, z1 + 1.5, x1 + 0.5, y + 1.5, z1 + 2.5, "h", shape=False), b(x2 - 0.5, y - 1, z1 + 1.5, x2 + 1, y + 1.5, z1 + 2.5, "h", shape=False),
+                b(x1 - 2, y - 2.5, z1 + 1.5, x1, y - 1.5, z1 + 3, "u", shape=False), b(x2, y - 2.5, z1 + 1.5, x2 + 2, y - 1.5, z1 + 3, "u", shape=False)]
+    if kind == "comb":
+        return [b(x1 + 3, y, z1 + 0.5, x2 - 3, y + 2, z1 + 3, "r", shape=False)]
+    return ears(kind, x1, x2, y, z1, tex)
+
+
+def head2(x1, y1, z1, x2, y2, z2, a, shape=True):
+    return [b(x1, y1, z1, x2, y2, z2, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"},
+              uv={"north": [0, 0, 16, 16]}, shape=shape)] + ears2(ANIMAL[a][2], x1, x2, y2, z1)
+
+
+def tex2(a):
+    t = animal_tex(a)
+    t.update({"e": {"axolotl": "jsn_furniture:block/fur_axolotl_gill", "sheep": "jsn_furniture:block/face_sheep",
+                    "pig": "jsn_furniture:block/fur_pig", "cow": "jsn_furniture:block/fur_black"}.get(a, t["u"]),
+              "h": "minecraft:block/white_terracotta", "r": "minecraft:block/red_wool", "o": "minecraft:block/orange_concrete",
+              "y": "minecraft:block/yellow_concrete", "g": "jsn_furniture:block/wing", "s": "jsn_furniture:block/fur_turtle_shell"})
+    return t
+
+
+def plush2(a):
+    body = MORE[a][3]
+    if body == "quad":
+        tail = {"wolf": [b(7, 2, 11, 9, 4, 15, "u", shape=False)], "pig": [b(7.5, 3, 11, 8.5, 4, 12, "u", shape=False)],
+                "cow": [b(7.5, 1, 11, 8.5, 5, 11.5, "u", shape=False)], "sheep": [b(7, 3, 11, 9, 5, 12, "u", shape=False)],
+                "polar_bear": [b(7, 2, 11, 9, 4, 12, "u", shape=False)]}.get(a, [])
+        big = 0.5 if a in ("polar_bear", "sheep") else 0
+        return [b(5 - big, 0, 6, 11 + big, 6 + big, 11 + big, "u"), b(5, 0, 4, 7, 2, 6, "u", shape=False), b(9, 0, 4, 11, 2, 6, "u", shape=False)] + \
+            head2(4, 6, 4.5, 12, 12, 10.5, a) + tail
+    if body == "capy":
+        return [b(3.5, 0, 5, 12.5, 7, 13, "u"), b(4, 0, 4, 6, 1.5, 6, "u", shape=False), b(10, 0, 4, 12, 1.5, 6, "u", shape=False)] + \
+            head2(4.5, 4, 1.5, 11.5, 11, 7, a) + [b(6, 11, 3.5, 10, 12, 6.5, "y", shape=False)]  # 頭に柚子をのせて
+    if body == "ball":  # シマエナガ：まんまるの白いもふもふと、長いしっぽ
+        return [b(4, 0, 4, 12, 8, 12, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}),
+                b(3.6, 3, 7.5, 4, 5, 10.5, "k", shape=False), b(12, 3, 7.5, 12.4, 5, 10.5, "k", shape=False),
+                b(7.2, 1.5, 12, 8.8, 2.3, 16, "k", shape=False), b(6, 0, 5, 7, 0.5, 6, "k", shape=False), b(9, 0, 5, 10, 0.5, 6, "k", shape=False)]
+    if body == "bird":
+        tail = [b(6.5, 1, 11, 9.5, 5, 13, "u" if a == "chicken" else "y", shape=False)]
+        extra = [b(7, 4, 4, 9, 6, 4.5, "r", shape=False)] if a == "chicken" else [b(3.5, 3, 6, 4.5, 8, 10, "g2", shape=False), b(11.5, 3, 6, 12.5, 8, 10, "g2", shape=False)]
+        return [b(4.5, 0, 5, 11.5, 10, 11, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]})] + \
+            ears2(ANIMAL[a][2], 4.5, 11.5, 10, 5) + tail + extra
+    if body == "bee":
+        return [b(4, 2, 4, 12, 9, 13, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}),
+                b(5, 9, 7, 8, 9.5, 12, "g", shape=False), b(8, 9, 7, 11, 9.5, 12, "g", shape=False), b(7.5, 4, 13, 8.5, 5, 14.5, "k", shape=False),
+                b(5, 0, 6, 6, 2, 7, "k", shape=False), b(10, 0, 6, 11, 2, 7, "k", shape=False)] + ears2("antenna", 4, 12, 9, 4)
+    if body == "turtle":
+        return [b(3, 0, 4, 13, 3, 13, "u"), b(3.5, 3, 4.5, 12.5, 6, 12.5, "s"), b(6, 1, 1.5, 10, 5, 4.5,
+                {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}, shape=False),
+                b(2, 0, 4, 3, 1.5, 6, "u", shape=False), b(13, 0, 4, 14, 1.5, 6, "u", shape=False), b(2, 0, 11, 3, 1.5, 13, "u", shape=False), b(13, 0, 11, 14, 1.5, 13, "u", shape=False)]
+    if body == "frog":
+        return [b(4, 0, 6, 12, 5, 12, "u"), b(3, 0, 4, 5, 1, 7, "u", shape=False), b(11, 0, 4, 13, 1, 7, "u", shape=False)] + head2(4, 2, 3, 12, 7, 8, a)
+    if body == "axolotl":
+        return [b(5, 0, 6, 11, 4, 14, "u"), b(7, 0.5, 14, 9, 3, 16, "e", shape=False), b(4, 0, 6, 5, 1, 8, "u", shape=False), b(11, 0, 6, 12, 1, 8, "u", shape=False)] + \
+            head2(4.5, 0, 1.5, 11.5, 5.5, 6, a)
+    if body == "allay":
+        return [b(5.5, 1, 6, 10.5, 6, 10, "u"), b(10.5, 2, 6.5, 13, 6, 7, "g", shape=False), b(3, 2, 6.5, 5.5, 6, 7, "g", shape=False)] + \
+            head2(5, 6, 5.5, 11, 11, 10.5, a)
+    raise ValueError(a)
+
+
+for a, (rgb, face, ear, body, ja, en, wool, extra) in MORE.items():
+    t = tex2(a)
+    t["g2"] = "minecraft:block/green_wool"
+    add(F(f"plush_{a}", f"{ja}のぬいぐるみ", f"{en} Plush", "basic", plush2(a), t, tab="west", sound="wool",
+          recipe=([" W ", "WXW", " W "], {"W": f"minecraft:{wool}_wool", "X": extra})))
+    # 風鈴（顔の形）
+    fid = f"furin_{a}"
+    body_els = [b(7.7, 12, 7.7, 8.3, 14, 8.3, "fh")] + head2(5, 6, 5, 11, 11.5, 11, a, shape=False) + [
+        b(7.8, 2, 7.95, 8.2, 6, 8.05, "fh"), b(6.8, -5, 7.95, 9.2, 2, 8.05, "ft")]
+    tf = dict(t)
+    tf.update({"fh": "minecraft:block/white_wool", "ft": "jsn_furniture:block/tanzaku"})
+    tf["h"] = "minecraft:block/white_wool" if False else tf["h"]
+    add(F(fid, f"{ja}の風鈴", f"{en} Wind Chime", "furin", [b(7.6, 14, 7.6, 8.4, 16, 8.4, "fh")], tf, body=body_els, furin="glass",
+          tab="wa", hanging=True, sound="glass", tool="pickaxe",
+          recipe=(["S", "G", "X"], {"S": "minecraft:string", "G": "minecraft:glass_pane", "X": f"{NS}:plush_{a}"})))
+    FURIN.append((fid, "", "", "glass", "", "", ("animal", a)))
+
+# クッション：動物みんな
+CUSHION_WOOL = {"fox": "orange", "rabbit": "white", "tanuki": "brown", "shiba": "orange", "bear": "brown", "panda": "white", "penguin": "black", "chick": "yellow"}
+CUSHION_WOOL.update({k: v[6] for k, v in MORE.items()})
+for a, wool in CUSHION_WOOL.items():
+    t = tex2(a)
+    els = [b(2, 0, 3, 14, 3, 14, "u"),
+           b(2, 0, 2, 14, 5, 3, {"north": "q", "south": "u", "east": "u", "west": "u", "up": "u", "down": "u"}, uv={"north": [0, 0, 16, 16]}, shape=False)]
+    els += ears2(ANIMAL[a][2], 2, 14, 5, 1.5) if ANIMAL[a][2] else []
+    if a == "turtle":
+        els.append(b(3, 3, 4, 13, 4, 13, "s", shape=False))
+    if a == "enaga":
+        els.append(b(7.2, 0.5, 14, 8.8, 1.3, 17, "k", shape=False))
+    add(F(f"cushion_{a}", f"{ANIMAL_JA[a]}のクッション", f"{ANIMAL_EN[a]} Cushion", "seat", els, t, seat=3, sound="wool",
+          recipe=(["X", "W"], {"X": f"{NS}:tanuki_okimono" if a == "tanuki" else f"{NS}:plush_{a}", "W": f"minecraft:{wool}_wool"}), count=2))
+
+
 # ============================================================ テクスチャ
 
 
@@ -790,8 +924,17 @@ def make_animal_textures():
         return im
 
     for i, (k, (rgb, face, ear)) in enumerate(ANIMAL.items()):
-        patches = [(4, 4, 3, (225, 130, 50, 255)), (12, 11, 3, (40, 35, 35, 255))] if k == "cat_calico" else None
-        fur(k, rgb, 40 + i, patches)
+        patches = {"cat_calico": [(4, 4, 3, (225, 130, 50, 255)), (12, 11, 3, (40, 35, 35, 255))],
+                   "cow": [(3, 4, 3, (35, 30, 30, 255)), (12, 10, 4, (35, 30, 30, 255)), (5, 13, 2, (35, 30, 30, 255))]}.get(k)
+        im = fur(k, rgb, 40 + i, patches)
+        if k == "bee":
+            d = ImageDraw.Draw(im)
+            for y0 in (3, 9):
+                d.rectangle([0, y0, 15, y0 + 2], fill=(40, 30, 20, 255))
+            save(im, "block/fur_bee")
+    fur("axolotl_gill", (215, 80, 120), 92)
+    fur("turtle_shell", (60, 110, 55), 93, [(4, 4, 2, (80, 130, 60, 255)), (11, 5, 2, (80, 130, 60, 255)), (8, 11, 2, (80, 130, 60, 255))])
+    im = Image.new("RGBA", (16, 16), (230, 245, 255, 150)); ImageDraw.Draw(im).rectangle([0, 0, 15, 15], outline=(255, 255, 255, 200)); save(im, "block/wing")
     fur("black", (35, 35, 40), 90)
     fur("white", (245, 245, 245), 91)
 
@@ -843,6 +986,46 @@ def make_animal_textures():
         elif style == "chick":
             d.rectangle([4, 5, 5, 6], fill=dark); d.rectangle([10, 5, 11, 6], fill=dark); d.polygon([(6, 8), (9, 8), (7.5, 10)], fill=(240, 120, 30, 255))
             d.point([(3, 9), (12, 9)], fill=(250, 160, 140, 255))
+        elif style in ("wolf", "polar_bear"):
+            d.ellipse([4, 8, 11, 15], fill=(240, 240, 240, 255) if style == "wolf" else (250, 250, 248, 255))
+            d.rectangle([3, 5, 4, 6], fill=dark); d.rectangle([11, 5, 12, 6], fill=dark); d.rectangle([6, 9, 9, 10], fill=dark)
+            if style == "wolf":
+                d.line([(2, 4), (5, 5)], fill=(150, 150, 155, 255)); d.line([(13, 4), (10, 5)], fill=(150, 150, 155, 255))
+        elif style == "axolotl":
+            d.rectangle([2, 6, 3, 7], fill=dark); d.rectangle([12, 6, 13, 7], fill=dark); d.arc([5, 7, 10, 11], 20, 160, fill=(150, 60, 90, 255))
+            d.point([(3, 9), (12, 9)], fill=(250, 120, 150, 255))
+        elif style == "frog":
+            d.line([(2, 9), (13, 9)], fill=(60, 80, 40, 255)); d.arc([3, 5, 12, 11], 20, 160, fill=(60, 80, 40, 255))
+            d.point([(4, 11), (11, 11)], fill=(230, 150, 120, 255))
+        elif style == "bee":
+            d.rectangle([0, 0, 15, 15], fill=(245, 200, 60, 255))
+            d.rectangle([2, 5, 5, 10], fill=dark); d.rectangle([10, 5, 13, 10], fill=dark)
+            d.point([(3, 6), (11, 6)], fill=(255, 255, 255, 255)); d.rectangle([6, 12, 9, 12], fill=(90, 60, 20, 255))
+        elif style == "sheep":
+            d.rectangle([0, 0, 15, 15], fill=(225, 205, 180, 255)); d.rectangle([0, 0, 15, 3], fill=(250, 250, 250, 255))
+            d.rectangle([3, 6, 4, 7], fill=dark); d.rectangle([11, 6, 12, 7], fill=dark); d.rectangle([6, 10, 9, 11], fill=(230, 160, 160, 255))
+        elif style == "pig":
+            d.rectangle([3, 5, 4, 6], fill=dark); d.rectangle([11, 5, 12, 6], fill=dark)
+            d.rectangle([5, 8, 10, 12], fill=(250, 190, 195, 255)); d.rectangle([6, 9, 6, 10], fill=(150, 80, 90, 255)); d.rectangle([9, 9, 9, 10], fill=(150, 80, 90, 255))
+        elif style == "cow":
+            d.rectangle([0, 0, 6, 5], fill=(35, 30, 30, 255)); d.rectangle([3, 6, 4, 7], fill=dark); d.rectangle([11, 6, 12, 7], fill=dark)
+            d.rectangle([4, 10, 11, 14], fill=(240, 180, 175, 255)); d.point([(6, 12), (9, 12)], fill=(120, 70, 70, 255))
+        elif style == "chicken":
+            d.rectangle([3, 5, 4, 6], fill=dark); d.rectangle([11, 5, 12, 6], fill=dark)
+            d.rectangle([6, 7, 9, 9], fill=(240, 160, 40, 255)); d.rectangle([7, 10, 8, 12], fill=(220, 40, 40, 255))
+        elif style == "parrot":
+            d.ellipse([1, 3, 6, 8], fill=(250, 250, 250, 255)); d.ellipse([9, 3, 14, 8], fill=(250, 250, 250, 255))
+            d.point([(4, 5), (11, 5)], fill=dark); d.polygon([(6, 8), (9, 8), (8, 13)], fill=(250, 200, 40, 255))
+        elif style == "turtle":
+            d.rectangle([3, 5, 5, 7], fill=dark); d.rectangle([10, 5, 12, 7], fill=dark); d.arc([4, 8, 11, 12], 20, 160, fill=(40, 70, 40, 255))
+        elif style == "allay":
+            d.rectangle([2, 4, 13, 13], fill=(40, 100, 170, 255)); d.rectangle([4, 7, 5, 9], fill=(230, 250, 255, 255)); d.rectangle([10, 7, 11, 9], fill=(230, 250, 255, 255))
+        elif style == "enaga":
+            d.rectangle([4, 7, 4, 7], fill=dark); d.rectangle([11, 7, 11, 7], fill=dark)
+            d.rectangle([7, 9, 8, 9], fill=dark); d.point([(2, 10), (13, 10)], fill=(250, 225, 225, 255))
+        elif style == "capybara":
+            d.rectangle([3, 4, 4, 5], fill=dark); d.rectangle([11, 4, 12, 5], fill=dark)
+            d.rectangle([4, 8, 11, 15], fill=(110, 75, 50, 255)); d.rectangle([5, 9, 6, 10], fill=dark); d.rectangle([9, 9, 10, 10], fill=dark)
         elif style.startswith("daruma"):
             d.ellipse([2, 2, 13, 13], fill=(250, 245, 235, 255))
             d.ellipse([3, 5, 6, 8], fill=(250, 250, 250, 255), outline=dark); d.ellipse([9, 5, 12, 8], fill=(250, 250, 250, 255), outline=dark)

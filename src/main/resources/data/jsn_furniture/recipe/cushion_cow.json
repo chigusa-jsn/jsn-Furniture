@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "X",
+  "W"
+ ],
+ "key": {
+  "X": {
+   "item": "jsn_furniture:plush_cow"
+  },
+  "W": {
+   "item": "minecraft:black_wool"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:cushion_cow",
+  "count": 2
+ }
+}

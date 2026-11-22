@@ -50,6 +50,20 @@
   "jsn_furniture:kitsune_statue",
   "jsn_furniture:tanuki_okimono",
   "jsn_furniture:food_bowl",
-  "jsn_furniture:water_bowl"
+  "jsn_furniture:water_bowl",
+  "jsn_furniture:furin_wolf",
+  "jsn_furniture:furin_polar_bear",
+  "jsn_furniture:furin_axolotl",
+  "jsn_furniture:furin_frog",
+  "jsn_furniture:furin_bee",
+  "jsn_furniture:furin_sheep",
+  "jsn_furniture:furin_pig",
+  "jsn_furniture:furin_cow",
+  "jsn_furniture:furin_chicken",
+  "jsn_furniture:furin_parrot",
+  "jsn_furniture:furin_turtle",
+  "jsn_furniture:furin_allay",
+  "jsn_furniture:furin_enaga",
+  "jsn_furniture:furin_capybara"
  ]
 }

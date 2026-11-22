@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/plush_enaga"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/plush_enaga",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/plush_enaga",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/plush_enaga",
+   "y": 270
+  }
+ }
+}

@@ -62,7 +62,7 @@ for s in specs["furniture"]:
                                          "sofa", "curtain", "zabuton", "noren", "pet_bed", "paw_rug"]):
         continue
     item = {"id": i, "name": ja[f"block.jsn_furniture.{i}"], "tags": tags(i)}
-    is_animal = i.startswith(("plush_", "maneki", "kitsune", "tanuki_", "daruma", "cat_tower", "dog_house", "food_bowl", "water_bowl", "neko_", "kuma_"))
+    is_animal = i.startswith(("plush_", "cushion_", "maneki", "kitsune", "tanuki_", "daruma", "cat_tower", "dog_house", "food_bowl", "water_bowl", "neko_", "kuma_"))
     (furin if i.startswith("furin") else animal if is_animal else wa if s["tab"] == "wa" else west).append(item)
 for i in ["futon", "shoji", "fusuma"]:
     wa.append({"id": i, "name": ja[f"block.jsn_furniture.{i}"], "tags": tags(i)})

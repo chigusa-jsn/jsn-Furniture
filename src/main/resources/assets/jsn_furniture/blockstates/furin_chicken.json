@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "jsn_furniture:block/furin_chicken"
+  },
+  "facing=east": {
+   "model": "jsn_furniture:block/furin_chicken",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "jsn_furniture:block/furin_chicken",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "jsn_furniture:block/furin_chicken",
+   "y": 270
+  }
+ }
+}
