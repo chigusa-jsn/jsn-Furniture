@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "D",
+  "S"
+ ],
+ "key": {
+  "S": {
+   "item": "jsn_furniture:acacia_bookshelf"
+  },
+  "D": {
+   "item": "minecraft:acacia_door"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:acacia_bookshelf_door",
+  "count": 1
+ }
+}

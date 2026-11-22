@@ -63,6 +63,7 @@ public class FurnitureBlock extends Block implements EntityBlock {
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     public static final BooleanProperty TILT = BooleanProperty.create("tilt");
+    public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
     /** ブロックの状態の種類は親のコンストラクタの中で決まるので、そのあいだ Spec をここに置いておく */
     private static final ThreadLocal<Spec> BUILDING = new ThreadLocal<>();
@@ -79,6 +80,7 @@ public class FurnitureBlock extends Block implements EntityBlock {
         if (d.hasProperty(OPEN)) d = d.setValue(OPEN, false);
         if (d.hasProperty(HALF)) d = d.setValue(HALF, DoubleBlockHalf.LOWER);
         if (d.hasProperty(TILT)) d = d.setValue(TILT, false);
+        if (d.hasProperty(POWERED)) d = d.setValue(POWERED, false);
         registerDefaultState(d);
     }
 
@@ -94,6 +96,7 @@ public class FurnitureBlock extends Block implements EntityBlock {
         if (s == null) return;
         if (s.is("lamp")) b.add(LIT);
         if (s.is("curtain")) b.add(OPEN);
+        if (s.is("curtain") && s.tall()) b.add(POWERED);
         if (s.tall()) b.add(HALF);
         if (s.is("shishi")) b.add(TILT);
     }
@@ -308,12 +311,7 @@ public class FurnitureBlock extends Block implements EntityBlock {
                 return InteractionResult.sidedSuccess(level.isClientSide);
             }
             case "curtain" -> {
-                if (!level.isClientSide) {
-                    boolean open = !st.getValue(OPEN);
-                    level.setBlock(pos, st.setValue(OPEN, open), 3);
-                    level.playSound(null, pos, spec.sound().equals("bamboo") ? SoundEvents.BAMBOO_WOOD_TRAPDOOR_OPEN : SoundEvents.WOOL_PLACE,
-                            SoundSource.BLOCKS, 0.8f, open ? 1.1f : 0.9f);
-                }
+                if (!level.isClientSide) setOpen(level, pos, st, !st.getValue(OPEN), null);
                 return InteractionResult.sidedSuccess(level.isClientSide);
             }
             case "display" -> {
@@ -339,6 +337,30 @@ public class FurnitureBlock extends Block implements EntityBlock {
                 return InteractionResult.PASS;
             }
         }
+    }
+
+    /** 開け閉め（2マスなら上下いっしょに）。powered が null でなければ、レッドストーンの状態も覚える */
+    private void setOpen(Level level, BlockPos pos, BlockState st, boolean open, @Nullable Boolean powered) {
+        BlockPos lower = upper(st) ? pos.below() : pos;
+        for (BlockPos p : spec.tall() ? new BlockPos[]{lower, lower.above()} : new BlockPos[]{pos}) {
+            BlockState s = level.getBlockState(p);
+            if (!s.is(this)) continue;
+            s = s.setValue(OPEN, open);
+            if (powered != null && s.hasProperty(POWERED)) s = s.setValue(POWERED, powered);
+            level.setBlock(p, s, 2 | 16);
+        }
+        SoundEvent sound = spec.tall() ? (open ? SoundEvents.WOODEN_DOOR_OPEN : SoundEvents.WOODEN_DOOR_CLOSE)
+                : spec.sound().equals("bamboo") ? SoundEvents.BAMBOO_WOOD_TRAPDOOR_OPEN : SoundEvents.WOOL_PLACE;
+        level.playSound(null, pos, sound, SoundSource.BLOCKS, 0.8f, open ? 1.1f : 0.9f);
+    }
+
+    /** 隠し扉は、レバーやボタン（レッドストーン）でも開く */
+    @Override
+    protected void neighborChanged(BlockState st, Level level, BlockPos pos, Block block, BlockPos from, boolean moving) {
+        if (level.isClientSide || !st.hasProperty(POWERED)) return;
+        BlockPos other = upper(st) ? pos.below() : pos.above();
+        boolean power = level.hasNeighborSignal(pos) || level.hasNeighborSignal(other);
+        if (power != st.getValue(POWERED)) setOpen(level, pos, st, power, power);
     }
 
     @Override

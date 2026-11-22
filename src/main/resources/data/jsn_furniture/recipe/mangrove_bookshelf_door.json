@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "D",
+  "S"
+ ],
+ "key": {
+  "S": {
+   "item": "jsn_furniture:mangrove_bookshelf"
+  },
+  "D": {
+   "item": "minecraft:mangrove_door"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:mangrove_bookshelf_door",
+  "count": 1
+ }
+}

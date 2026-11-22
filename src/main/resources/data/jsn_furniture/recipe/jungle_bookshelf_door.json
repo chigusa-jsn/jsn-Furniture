@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "D",
+  "S"
+ ],
+ "key": {
+  "S": {
+   "item": "jsn_furniture:jungle_bookshelf"
+  },
+  "D": {
+   "item": "minecraft:jungle_door"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:jungle_bookshelf_door",
+  "count": 1
+ }
+}

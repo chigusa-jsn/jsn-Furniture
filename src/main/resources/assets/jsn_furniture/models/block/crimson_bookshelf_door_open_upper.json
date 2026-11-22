@@ -1,0 +1,79 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "p": "minecraft:block/crimson_planks",
+  "b": "minecraft:block/bookshelf",
+  "particle": "minecraft:block/crimson_planks"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    3,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#p",
+     "uv": [
+      13,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#p",
+     "uv": [
+      0,
+      0,
+      3,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#b",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#p",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#p",
+     "uv": [
+      0,
+      0,
+      3,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#p",
+     "uv": [
+      0,
+      0,
+      3,
+      16
+     ]
+    }
+   }
+  }
+ ],
+ "render_type": "minecraft:cutout"
+}

@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "facing=north,half=lower,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower"
+  },
+  "facing=east,half=lower,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 90
+  },
+  "facing=south,half=lower,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 180
+  },
+  "facing=west,half=lower,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 270
+  },
+  "facing=north,half=lower,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower"
+  },
+  "facing=east,half=lower,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 90
+  },
+  "facing=south,half=lower,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 180
+  },
+  "facing=west,half=lower,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_lower",
+   "y": 270
+  },
+  "facing=north,half=lower,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower"
+  },
+  "facing=east,half=lower,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 90
+  },
+  "facing=south,half=lower,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 180
+  },
+  "facing=west,half=lower,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 270
+  },
+  "facing=north,half=lower,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower"
+  },
+  "facing=east,half=lower,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 90
+  },
+  "facing=south,half=lower,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 180
+  },
+  "facing=west,half=lower,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_lower",
+   "y": 270
+  },
+  "facing=north,half=upper,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper"
+  },
+  "facing=east,half=upper,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 90
+  },
+  "facing=south,half=upper,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 180
+  },
+  "facing=west,half=upper,open=false,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 270
+  },
+  "facing=north,half=upper,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper"
+  },
+  "facing=east,half=upper,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 90
+  },
+  "facing=south,half=upper,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 180
+  },
+  "facing=west,half=upper,open=false,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_upper",
+   "y": 270
+  },
+  "facing=north,half=upper,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper"
+  },
+  "facing=east,half=upper,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 90
+  },
+  "facing=south,half=upper,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 180
+  },
+  "facing=west,half=upper,open=true,powered=false": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 270
+  },
+  "facing=north,half=upper,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper"
+  },
+  "facing=east,half=upper,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 90
+  },
+  "facing=south,half=upper,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 180
+  },
+  "facing=west,half=upper,open=true,powered=true": {
+   "model": "jsn_furniture:block/dark_oak_bookshelf_door_open_upper",
+   "y": 270
+  }
+ }
+}

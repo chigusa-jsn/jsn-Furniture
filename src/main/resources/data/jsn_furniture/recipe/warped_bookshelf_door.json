@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "D",
+  "S"
+ ],
+ "key": {
+  "S": {
+   "item": "jsn_furniture:warped_bookshelf"
+  },
+  "D": {
+   "item": "minecraft:warped_door"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:warped_bookshelf_door",
+  "count": 1
+ }
+}

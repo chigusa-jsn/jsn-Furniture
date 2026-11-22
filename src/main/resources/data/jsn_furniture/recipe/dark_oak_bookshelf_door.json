@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "building",
+ "pattern": [
+  "S",
+  "D",
+  "S"
+ ],
+ "key": {
+  "S": {
+   "item": "jsn_furniture:dark_oak_bookshelf"
+  },
+  "D": {
+   "item": "minecraft:dark_oak_door"
+  }
+ },
+ "result": {
+  "id": "jsn_furniture:dark_oak_bookshelf_door",
+  "count": 1
+ }
+}

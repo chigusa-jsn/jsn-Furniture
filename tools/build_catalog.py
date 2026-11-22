@@ -48,7 +48,7 @@ def tags(i):
 groups = []
 # 木の家具
 wood_types = []
-for suffix in ["chair", "stool", "bench", "table", "coffee_table", "desk", "shelf", "cabinet", "wardrobe", "counter", "chabudai", "bed", "rocking_chair", "bookshelf"]:
+for suffix in ["chair", "stool", "bench", "table", "coffee_table", "desk", "shelf", "cabinet", "wardrobe", "counter", "chabudai", "bed", "rocking_chair", "bookshelf", "bookshelf_door"]:
     ids = [f"{w}_{suffix}" for w in WOODS]
     name = ja[f"block.jsn_furniture.oak_{suffix}"].replace("オークの", "")
     wood_types.append({"name": name, "ids": ids, "tags": tags(ids[0])})
@@ -61,7 +61,7 @@ west, wa, furin, animal, play, shop = [], [], [], [], [], []
 for s in specs["furniture"]:
     i = s["id"]
     if any(i.endswith("_" + x) for x in ["chair", "stool", "bench", "table", "coffee_table", "desk", "shelf", "cabinet", "wardrobe", "counter", "chabudai",
-                                         "sofa", "curtain", "zabuton", "noren", "pet_bed", "paw_rug", "rocking_chair", "bookshelf"]):
+                                         "sofa", "curtain", "zabuton", "noren", "pet_bed", "paw_rug", "rocking_chair", "bookshelf", "bookshelf_door"]):
         continue
     item = {"id": i, "name": ja[f"block.jsn_furniture.{i}"], "tags": tags(i)}
     is_play = i.startswith(("swing", "slide", "fountain", "flower_bed", "garden_", "piano", "xylophone", "guitar", "taiko", "darts", "shogi", "go_board", "chess", "telescope", "game_console", "tv", "ceiling_fan", "grandfather", "washing"))

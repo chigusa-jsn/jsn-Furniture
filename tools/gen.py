@@ -1013,6 +1013,35 @@ add(F("vending_machine", "自動販売機", "Vending Machine", "storage", [
     recipe=(["IRI", "IGI", "ICI"], {"I": "minecraft:iron_ingot", "R": "minecraft:red_dye", "G": "minecraft:glass_pane", "C": "minecraft:chest"})))
 
 
+# ------------------------------------------------------------ 本棚の隠し扉（2マス。閉じていると本棚にしか見えない。開けると横にずれる）
+
+
+def hidden_door(front, side, top):
+    closed = [b(0, 0, 0, 16, 32, 16, {"north": "b", "south": "b", "east": "p", "west": "p", "up": "t", "down": "t"})]
+    opened = [b(0, 0, 0, 3, 32, 16, {"north": "p", "south": "p", "east": "b", "west": "p", "up": "t", "down": "t"},
+                uv={"east": [0, 0, 16, 16]})]
+    return closed, opened
+
+
+c, o = hidden_door("b", "p", "t")
+add(F("bookshelf_door", "本棚の隠し扉", "Hidden Bookshelf Door", "curtain", c,
+      {"b": "minecraft:block/bookshelf", "p": "minecraft:block/oak_planks", "t": "minecraft:block/oak_planks"},
+      open_els=o, tall=True, sound="wood",
+      recipe=(["B", "D", "B"], {"B": "minecraft:bookshelf", "D": "minecraft:oak_door"})))
+for w, wja, wen in WOODS:
+    T = wood_tex(w)
+    # この MOD の本棚と同じ見た目：枠の中に本
+    closed = []
+    for y0 in (0, 16):
+        closed += [b(0, y0, 4, 16, y0 + 16, 16, {"north": "b", "south": "b", "east": "p", "west": "p", "up": "p", "down": "p"}, uv={"north": [0, 0, 16, 16], "south": [0, 0, 16, 16]}),
+                   b(0, y0, 3, 16, y0 + 1, 4, "p"), b(0, y0 + 15, 3, 16, y0 + 16, 4, "p"), b(0, y0 + 1, 3, 1, y0 + 15, 4, "p"), b(15, y0 + 1, 3, 16, y0 + 15, 4, "p"),
+                   b(1, y0 + 7.5, 3, 15, y0 + 8.5, 4, "p"), b(0, y0, 0, 16, y0 + 16, 3, {"north": "p", "south": "p", "east": "p", "west": "p", "up": "p", "down": "p"}, shape=True)]
+    opened = [b(0, 0, 0, 3, 32, 16, {"north": "p", "south": "p", "east": "b", "west": "p", "up": "p", "down": "p"}, uv={"east": [0, 0, 16, 16]})]
+    add(F(f"{w}_bookshelf_door", f"{wja}の本棚の隠し扉", f"{wen} Hidden Bookshelf Door", "curtain", closed, {"p": T["p"], "b": "minecraft:block/bookshelf"},
+          open_els=opened, tall=True, sound="wood",
+          recipe=(["S", "D", "S"], {"S": f"{NS}:{w}_bookshelf", "D": f"minecraft:{w}_door"})))
+
+
 # ============================================================ テクスチャ
 
 
@@ -1519,6 +1548,8 @@ def variants(fur, model_for):
         props.append(("lit", ["false", "true"]))
     if fur.kind == "curtain":
         props.append(("open", ["false", "true"]))
+        if fur.tall:
+            props.append(("powered", ["false", "true"]))
     if fur.kind == "shishi":
         props.append(("tilt", ["false", "true"]))
 
